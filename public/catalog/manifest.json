@@ -1,0 +1,792 @@
+{
+  "version": "ochen-originals-2026-11-10-v1",
+  "source": "https://www.figma.com/design/4MCFttsSoP7hgQh29zq5G3/",
+  "families": [
+    {
+      "id": "book",
+      "name": "Книга",
+      "aliases": [
+        "книги",
+        "книжка",
+        "учебник",
+        "чтение"
+      ],
+      "tags": [
+        "study",
+        "work"
+      ],
+      "canonicalWidth": 1447.893798828125,
+      "canonicalHeight": 978.66748046875,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/book-L-main.svg",
+            "width": 1447.893798828125,
+            "height": 978.66748046875,
+            "viewBox": [
+              390.64410400390625,
+              3466.3701171875,
+              1447.893798828125,
+              978.66748046875
+            ],
+            "sourceNodeId": "21:29965",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/book-L-background.svg",
+            "width": 1447.893798828125,
+            "height": 978.66162109375,
+            "viewBox": [
+              390.64410400390625,
+              7490.56005859375,
+              1447.893798828125,
+              978.66162109375
+            ],
+            "sourceNodeId": "24:6273",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/book-S-main.svg",
+            "width": 724.9459228515625,
+            "height": 490.331787109375,
+            "viewBox": [
+              267.3890686035156,
+              2059.389892578125,
+              724.9459228515625,
+              490.331787109375
+            ],
+            "sourceNodeId": "24:3810",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/book-S-background.svg",
+            "width": 724.9459228515625,
+            "height": 490.32666015625,
+            "viewBox": [
+              267.3890686035156,
+              5160.7998046875,
+              724.9459228515625,
+              490.32666015625
+            ],
+            "sourceNodeId": "24:6934",
+            "sourceScale": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "phone",
+      "name": "Телефон",
+      "aliases": [
+        "смартфон",
+        "телефоны",
+        "связь"
+      ],
+      "tags": [
+        "communication",
+        "time"
+      ],
+      "canonicalWidth": 798.5301513671875,
+      "canonicalHeight": 463.671630859375,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/phone-L-main.svg",
+            "width": 798.5301513671875,
+            "height": 463.671630859375,
+            "viewBox": [
+              2037.5780029296875,
+              3717.638427734375,
+              798.5301513671875,
+              463.671630859375
+            ],
+            "sourceNodeId": "21:25472",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/phone-L-background.svg",
+            "width": 798.5301513671875,
+            "height": 463.6669921875,
+            "viewBox": [
+              2037.5780029296875,
+              7741.8232421875,
+              798.5301513671875,
+              463.6669921875
+            ],
+            "sourceNodeId": "24:6327",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/phone-S-main.svg",
+            "width": 400.26171875,
+            "height": 232.836181640625,
+            "viewBox": [
+              1293.2322998046875,
+              2252.163818359375,
+              400.26171875,
+              232.836181640625
+            ],
+            "sourceNodeId": "24:4746",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/phone-S-background.svg",
+            "width": 400.26171875,
+            "height": 232.83642578125,
+            "viewBox": [
+              1293.2322998046875,
+              5353.57373046875,
+              400.26171875,
+              232.83642578125
+            ],
+            "sourceNodeId": "24:6990",
+            "sourceScale": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "puzzle",
+      "name": "Пазлы",
+      "aliases": [
+        "пазл",
+        "головоломка",
+        "паззл"
+      ],
+      "tags": [
+        "ideas",
+        "study"
+      ],
+      "canonicalWidth": 546.164306640625,
+      "canonicalHeight": 315.53564453125,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/puzzle-L-main.svg",
+            "width": 546.164306640625,
+            "height": 315.53564453125,
+            "viewBox": [
+              3099.244140625,
+              3826.73974609375,
+              546.164306640625,
+              315.53564453125
+            ],
+            "sourceNodeId": "21:417",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/puzzle-L-background.svg",
+            "width": 546.164306640625,
+            "height": 315.53173828125,
+            "viewBox": [
+              3099.244140625,
+              7850.9296875,
+              546.164306640625,
+              315.53173828125
+            ],
+            "sourceNodeId": "24:6214",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/puzzle-S-main.svg",
+            "width": 274.0819091796875,
+            "height": 158.763427734375,
+            "viewBox": [
+              1924.3387451171875,
+              2283.119873046875,
+              274.0819091796875,
+              158.763427734375
+            ],
+            "sourceNodeId": "24:4903",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/puzzle-S-background.svg",
+            "width": 274.0819091796875,
+            "height": 158.76806640625,
+            "viewBox": [
+              1924.3387451171875,
+              5384.52001953125,
+              274.0819091796875,
+              158.76806640625
+            ],
+            "sourceNodeId": "24:7147",
+            "sourceScale": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "headphones",
+      "name": "Наушники",
+      "aliases": [
+        "музыка",
+        "наушник"
+      ],
+      "tags": [
+        "focus",
+        "calm"
+      ],
+      "canonicalWidth": 890.15185546875,
+      "canonicalHeight": 693.5390625,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/headphones-L-main.svg",
+            "width": 890.15185546875,
+            "height": 693.5390625,
+            "viewBox": [
+              469.0229187011719,
+              4802.08984375,
+              890.15185546875,
+              693.5390625
+            ],
+            "sourceNodeId": "23:122",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/headphones-L-background.svg",
+            "width": 890.15185546875,
+            "height": 693.5439453125,
+            "viewBox": [
+              469.0229187011719,
+              8826.26953125,
+              890.15185546875,
+              693.5439453125
+            ],
+            "sourceNodeId": "24:6484",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/headphones-S-main.svg",
+            "width": 446.0747985839844,
+            "height": 347.769775390625,
+            "viewBox": [
+              373.8586730957031,
+              2934.97998046875,
+              446.0747985839844,
+              347.769775390625
+            ],
+            "sourceNodeId": "24:5089",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/headphones-S-background.svg",
+            "width": 446.0747985839844,
+            "height": 347.76953125,
+            "viewBox": [
+              373.8586730957031,
+              6036.39013671875,
+              446.0747985839844,
+              347.76953125
+            ],
+            "sourceNodeId": "24:7344",
+            "sourceScale": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "lamp",
+      "name": "Лампа",
+      "aliases": [
+        "светильник",
+        "настольная лампа",
+        "свет"
+      ],
+      "tags": [
+        "ideas",
+        "work"
+      ],
+      "canonicalWidth": 947.9449462890625,
+      "canonicalHeight": 1130.98828125,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/lamp-L-main.svg",
+            "width": 947.9449462890625,
+            "height": 1130.98828125,
+            "viewBox": [
+              1821.2296142578125,
+              4437.75244140625,
+              947.9449462890625,
+              1130.98828125
+            ],
+            "sourceNodeId": "23:121",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/lamp-L-background.svg",
+            "width": 947.9449462890625,
+            "height": 1130.9833984375,
+            "viewBox": [
+              1821.2296142578125,
+              8461.94140625,
+              947.9449462890625,
+              1130.9833984375
+            ],
+            "sourceNodeId": "24:6569",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/lamp-S-main.svg",
+            "width": 474.9739990234375,
+            "height": 566.4892578125,
+            "viewBox": [
+              1191.0023193359375,
+              2817.26806640625,
+              474.9739990234375,
+              566.4892578125
+            ],
+            "sourceNodeId": "24:5485",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/lamp-S-background.svg",
+            "width": 474.9739990234375,
+            "height": 566.494140625,
+            "viewBox": [
+              1191.0023193359375,
+              5918.67333984375,
+              474.9739990234375,
+              566.494140625
+            ],
+            "sourceNodeId": "24:7429",
+            "sourceScale": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "wallet",
+      "name": "Кошелёк",
+      "aliases": [
+        "кошелек",
+        "деньги",
+        "портмоне"
+      ],
+      "tags": [
+        "finance",
+        "work"
+      ],
+      "canonicalWidth": 632.41943359375,
+      "canonicalHeight": 398.3076171875,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/wallet-L-main.svg",
+            "width": 632.41943359375,
+            "height": 398.3076171875,
+            "viewBox": [
+              3867.25830078125,
+              5094.109375,
+              632.41943359375,
+              398.3076171875
+            ],
+            "sourceNodeId": "23:211",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/wallet-L-background.svg",
+            "width": 632.41943359375,
+            "height": 398.3154296875,
+            "viewBox": [
+              3867.25830078125,
+              9118.2890625,
+              632.41943359375,
+              398.3154296875
+            ],
+            "sourceNodeId": "24:6660",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/wallet-S-main.svg",
+            "width": 317.207275390625,
+            "height": 200.154296875,
+            "viewBox": [
+              2398.498779296875,
+              3186.6455078125,
+              317.207275390625,
+              200.154296875
+            ],
+            "sourceNodeId": "24:4594",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/wallet-S-background.svg",
+            "width": 317.207275390625,
+            "height": 200.15625,
+            "viewBox": [
+              2398.498779296875,
+              6288.0537109375,
+              317.207275390625,
+              200.15625
+            ],
+            "sourceNodeId": "24:7568",
+            "sourceScale": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "pen",
+      "name": "Ручка",
+      "aliases": [
+        "ручки",
+        "письмо",
+        "карандаш"
+      ],
+      "tags": [
+        "work",
+        "ideas"
+      ],
+      "canonicalWidth": 510.4281005859375,
+      "canonicalHeight": 287.40185546875,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/pen-L-main.svg",
+            "width": 510.4281005859375,
+            "height": 287.40185546875,
+            "viewBox": [
+              1794.7952880859375,
+              6126.6298828125,
+              510.4281005859375,
+              287.40185546875
+            ],
+            "sourceNodeId": "24:1734",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/pen-L-background.svg",
+            "width": 510.4281005859375,
+            "height": 287.35546875,
+            "viewBox": [
+              1794.7952880859375,
+              10150.8408203125,
+              510.4281005859375,
+              287.35546875
+            ],
+            "sourceNodeId": "24:6747",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/pen-S-main.svg",
+            "width": 256.2088623046875,
+            "height": 144.70361328125,
+            "viewBox": [
+              1297.057861328125,
+              3856.5361328125,
+              256.2088623046875,
+              144.70361328125
+            ],
+            "sourceNodeId": "24:4287",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/pen-S-background.svg",
+            "width": 256.2088623046875,
+            "height": 144.701171875,
+            "viewBox": [
+              1297.057861328125,
+              6957.9404296875,
+              256.2088623046875,
+              144.701171875
+            ],
+            "sourceNodeId": "24:7543",
+            "sourceScale": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "folder",
+      "name": "Папка",
+      "aliases": [
+        "папки",
+        "документы",
+        "файлы"
+      ],
+      "tags": [
+        "time",
+        "work"
+      ],
+      "canonicalWidth": 1242.6175537109375,
+      "canonicalHeight": 660.58349609375,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/folder-L-main.svg",
+            "width": 1242.6175537109375,
+            "height": 660.58349609375,
+            "viewBox": [
+              364.2723693847656,
+              5919.177734375,
+              1242.6175537109375,
+              660.58349609375
+            ],
+            "sourceNodeId": "24:1899",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/folder-L-background.svg",
+            "width": 1242.6175537109375,
+            "height": 660.6142578125,
+            "viewBox": [
+              364.2723693847656,
+              9943.359375,
+              1242.6175537109375,
+              660.6142578125
+            ],
+            "sourceNodeId": "24:6772",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/folder-S-main.svg",
+            "width": 622.3092651367188,
+            "height": 331.293701171875,
+            "viewBox": [
+              260.2703857421875,
+              3740.491455078125,
+              622.3092651367188,
+              331.293701171875
+            ],
+            "sourceNodeId": "24:4430",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/folder-S-background.svg",
+            "width": 622.3092651367188,
+            "height": 331.2978515625,
+            "viewBox": [
+              260.2703857421875,
+              6841.8974609375,
+              622.3092651367188,
+              331.2978515625
+            ],
+            "sourceNodeId": "24:7520",
+            "sourceScale": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "coin",
+      "name": "Монета",
+      "aliases": [
+        "монеты",
+        "сбережения",
+        "копилка"
+      ],
+      "tags": [
+        "finance",
+        "time"
+      ],
+      "canonicalWidth": 288.676025390625,
+      "canonicalHeight": 190.501708984375,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/coin-L-main.svg",
+            "width": 288.676025390625,
+            "height": 190.501708984375,
+            "viewBox": [
+              4004.301513671875,
+              3944.818115234375,
+              288.676025390625,
+              190.501708984375
+            ],
+            "sourceNodeId": "24:2207",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/coin-L-background.svg",
+            "width": 288.676025390625,
+            "height": 190.5,
+            "viewBox": [
+              4004.301513671875,
+              7969,
+              288.676025390625,
+              190.5
+            ],
+            "sourceNodeId": "24:6795",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/coin-S-main.svg",
+            "width": 154.395263671875,
+            "height": 102.19775390625,
+            "viewBox": [
+              2497.226318359375,
+              2338.80224609375,
+              154.395263671875,
+              102.19775390625
+            ],
+            "sourceNodeId": "24:5345",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/coin-S-background.svg",
+            "width": 154.392578125,
+            "height": 102.2060546875,
+            "viewBox": [
+              2497.22900390625,
+              5440.2041015625,
+              154.392578125,
+              102.2060546875
+            ],
+            "sourceNodeId": "24:7205",
+            "sourceScale": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "flowers",
+      "name": "Цветы",
+      "aliases": [
+        "ваза",
+        "цветок",
+        "тюльпаны",
+        "ваза с цветами",
+        "букет"
+      ],
+      "tags": [
+        "calm",
+        "ideas"
+      ],
+      "canonicalWidth": 592.57421875,
+      "canonicalHeight": 749.10546875,
+      "variants": {
+        "L": {
+          "main": {
+            "url": "/catalog/assets/flowers-L-main.svg",
+            "width": 592.57421875,
+            "height": 749.10546875,
+            "viewBox": [
+              3035.0185546875,
+              4711.71826171875,
+              592.57421875,
+              749.10546875
+            ],
+            "sourceNodeId": "28:11628",
+            "sourceScale": 1
+          },
+          "background": {
+            "url": "/catalog/assets/flowers-L-background.svg",
+            "width": 592.568603515625,
+            "height": 749.1064453125,
+            "viewBox": [
+              3059.9150390625,
+              8796.6025390625,
+              592.568603515625,
+              749.1064453125
+            ],
+            "sourceNodeId": "30:11902",
+            "sourceScale": 1
+          }
+        },
+        "S": {
+          "main": {
+            "url": "/catalog/assets/flowers-S-main.svg",
+            "width": 325.2685546875,
+            "height": 410.945556640625,
+            "viewBox": [
+              1917.908935546875,
+              2947.5849609375,
+              325.2685546875,
+              410.945556640625
+            ],
+            "sourceNodeId": "28:11629",
+            "sourceScale": 2
+          },
+          "background": {
+            "url": "/catalog/assets/flowers-S-background.svg",
+            "width": 325.2677001953125,
+            "height": 410.94677734375,
+            "viewBox": [
+              1890.2689208984375,
+              6050.9794921875,
+              325.2677001953125,
+              410.94677734375
+            ],
+            "sourceNodeId": "28:11766",
+            "sourceScale": 2
+          }
+        }
+      }
+    }
+  ],
+  "colorRoles": {
+    "background": "background",
+    "backgroundShade": "background",
+    "backgroundInk": "background",
+    "accent": "object",
+    "highlight": "object",
+    "soft": "object",
+    "ink": "neutral",
+    "paper": "neutral"
+  },
+  "palettes": [
+    {
+      "id": "lilac",
+      "name": "Лиловая",
+      "colors": {
+        "background": "#D7CDF5",
+        "accent": "#F9ECB0",
+        "backgroundShade": "#AA9BF0",
+        "highlight": "#F9A3AA",
+        "backgroundInk": "#7864D7",
+        "soft": "#FFE3E1",
+        "ink": "#181817",
+        "paper": "#FFFFFF"
+      }
+    },
+    {
+      "id": "peach",
+      "name": "Персиковая",
+      "colors": {
+        "background": "#FDD7B9",
+        "accent": "#F9ECB0",
+        "backgroundShade": "#FAC896",
+        "highlight": "#80DADA",
+        "backgroundInk": "#D27532",
+        "soft": "#BEEBEB",
+        "ink": "#181817",
+        "paper": "#FFFFFF"
+      }
+    },
+    {
+      "id": "mint",
+      "name": "Мятная",
+      "colors": {
+        "background": "#BEEBEB",
+        "accent": "#FFD4F2",
+        "backgroundShade": "#80DADA",
+        "highlight": "#6D7BFC",
+        "backgroundInk": "#5ABEBE",
+        "soft": "#B6C6FE",
+        "ink": "#181817",
+        "paper": "#FFFFFF"
+      }
+    }
+  ]
+}

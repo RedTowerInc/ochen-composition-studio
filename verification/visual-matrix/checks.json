@@ -1,0 +1,110 @@
+[
+  {
+    "detail": "S",
+    "palette": "Лиловая",
+    "format": "16:9",
+    "filename": "S-0-16-9.png"
+  },
+  {
+    "detail": "S",
+    "palette": "Лиловая",
+    "format": "1:1",
+    "filename": "S-0-1-1.png"
+  },
+  {
+    "detail": "S",
+    "palette": "Лиловая",
+    "format": "4:5",
+    "filename": "S-0-4-5.png"
+  },
+  {
+    "detail": "S",
+    "palette": "Персиковая",
+    "format": "16:9",
+    "filename": "S-1-16-9.png"
+  },
+  {
+    "detail": "S",
+    "palette": "Персиковая",
+    "format": "1:1",
+    "filename": "S-1-1-1.png"
+  },
+  {
+    "detail": "S",
+    "palette": "Персиковая",
+    "format": "4:5",
+    "filename": "S-1-4-5.png"
+  },
+  {
+    "detail": "S",
+    "palette": "Мятная",
+    "format": "16:9",
+    "filename": "S-2-16-9.png"
+  },
+  {
+    "detail": "S",
+    "palette": "Мятная",
+    "format": "1:1",
+    "filename": "S-2-1-1.png"
+  },
+  {
+    "detail": "S",
+    "palette": "Мятная",
+    "format": "4:5",
+    "filename": "S-2-4-5.png"
+  },
+  {
+    "detail": "L",
+    "palette": "Лиловая",
+    "format": "16:9",
+    "filename": "L-0-16-9.png"
+  },
+  {
+    "detail": "L",
+    "palette": "Лиловая",
+    "format": "1:1",
+    "filename": "L-0-1-1.png"
+  },
+  {
+    "detail": "L",
+    "palette": "Лиловая",
+    "format": "4:5",
+    "filename": "L-0-4-5.png"
+  },
+  {
+    "detail": "L",
+    "palette": "Персиковая",
+    "format": "16:9",
+    "filename": "L-1-16-9.png"
+  },
+  {
+    "detail": "L",
+    "palette": "Персиковая",
+    "format": "1:1",
+    "filename": "L-1-1-1.png"
+  },
+  {
+    "detail": "L",
+    "palette": "Персиковая",
+    "format": "4:5",
+    "filename": "L-1-4-5.png"
+  },
+  {
+    "detail": "L",
+    "palette": "Мятная",
+    "format": "16:9",
+    "filename": "L-2-16-9.png"
+  },
+  {
+    "detail": "L",
+    "palette": "Мятная",
+    "format": "1:1",
+    "filename": "L-2-1-1.png"
+  },
+  {
+    "detail": "L",
+    "palette": "Мятная",
+    "format": "4:5",
+    "filename": "L-2-4-5.png"
+  }
+]

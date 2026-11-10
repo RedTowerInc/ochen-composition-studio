@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "99bbdea4-da22-4af4-bd3f-3fc86bc99b4d",
+  "name": "Время для себя",
+  "catalogVersion": "ochen-originals-2026-11-10-v1",
+  "width": 800,
+  "height": 1000,
+  "detail": "L",
+  "palette": {
+    "id": "peach",
+    "name": "Персиковая",
+    "colors": {
+      "background": "#FDD7B9",
+      "backgroundShade": "#FAC896",
+      "backgroundInk": "#D27532",
+      "accent": "#F9ECB0",
+      "highlight": "#80DADA",
+      "soft": "#BEEBEB",
+      "ink": "#181817",
+      "paper": "#FFFFFF"
+    }
+  },
+  "scale": 0.44202136960458965,
+  "instances": [
+    {
+      "id": "64967e28-312c-45f3-94bd-b3c1e8fa1c3c",
+      "familyId": "headphones",
+      "role": "background",
+      "x": 0.17,
+      "y": 0.76,
+      "rotation": -13
+    },
+    {
+      "id": "7ed770b1-40fd-4011-85e1-e3171f4c37b7",
+      "familyId": "book",
+      "role": "main",
+      "x": 0.37631587699288505,
+      "y": 0.4263976994995028,
+      "rotation": -12
+    },
+    {
+      "id": "9c8f7603-0c50-4443-a84c-d33df9d33812",
+      "familyId": "flowers",
+      "role": "main",
+      "x": 0.7217709666630253,
+      "y": 0.6695308897760697,
+      "rotation": 9
+    },
+    {
+      "id": "76ac856a-1bd2-4c18-a2b5-e652bd0efb85",
+      "familyId": "headphones",
+      "role": "main",
+      "x": 0.6635219995281658,
+      "y": 0.19751073791179807,
+      "rotation": -9
+    }
+  ],
+  "seed": 2,
+  "layout": "diagonal",
+  "revision": 5
+}

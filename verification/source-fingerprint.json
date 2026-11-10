@@ -1,0 +1,278 @@
+{
+  "algorithm": "sha256(file names + sha256 content)",
+  "fingerprint": "c9b9e82a7b0a187a88a1a35b33a314e6772a54b628d74a52055375f7a202e771",
+  "entries": [
+    {
+      "file": ".openai/hosting.json",
+      "sha256": "d2861d16fa11bc38d790a7588fa4bccd28ae5d5e5ea7f76d1664f4da01c8bc5b"
+    },
+    {
+      "file": "index.html",
+      "sha256": "af8547e9d958827cb8860692b46fa697e6a05be4669d0057820ab6c9cd1287d9"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "f5c961f104c09b0872c9f562e5641429c547b35bd01c0f0b5534e48bd7b64c96"
+    },
+    {
+      "file": "package.json",
+      "sha256": "089652a6b6edfd1c61c49d7bd435c9e6f5b318d83b8e38552c44ce9db492a3e7"
+    },
+    {
+      "file": "public/catalog/assets/book-L-background.svg",
+      "sha256": "1e3e928690d1946713a0deffbecf4cc18baf57d079ec970baa22b4e3603bf762"
+    },
+    {
+      "file": "public/catalog/assets/book-L-main.svg",
+      "sha256": "b4d213529684cb65ad13a73d50062b6b344f22da92b35bc41ba9d906a2a63dd5"
+    },
+    {
+      "file": "public/catalog/assets/book-S-background.svg",
+      "sha256": "09d8b5773d699f303ff9dc6b45106a727698921b84b0e4898b5fb78f8499c692"
+    },
+    {
+      "file": "public/catalog/assets/book-S-main.svg",
+      "sha256": "18da98635e74e84c7cf80ac7d476b105362c735604c386bb3c34a34f228b61df"
+    },
+    {
+      "file": "public/catalog/assets/coin-L-background.svg",
+      "sha256": "2fd5e1c32b0ff79161ebdd5dd04ef48514cd62b3e1038c73bfdd402df3038f36"
+    },
+    {
+      "file": "public/catalog/assets/coin-L-main.svg",
+      "sha256": "8b168ae21891e7696f4f0f1797c12a608bd5f150b86feeb2bca4218fffcb1c3b"
+    },
+    {
+      "file": "public/catalog/assets/coin-S-background.svg",
+      "sha256": "cb467757bba9985f65ebe1bd34847407ea98f5e958f6425f1620df79b544f294"
+    },
+    {
+      "file": "public/catalog/assets/coin-S-main.svg",
+      "sha256": "b66b2b558066fa75fef287e19cfa508a4724aeb11f61885cc1e32accf7a7dfb8"
+    },
+    {
+      "file": "public/catalog/assets/flowers-L-background.svg",
+      "sha256": "09aeac8773564de36183c006ac5684acc10ab325f96769e490c17ab7d9d733df"
+    },
+    {
+      "file": "public/catalog/assets/flowers-L-main.svg",
+      "sha256": "25900a085767d8b0dcfe1553d7919f899274798dc3bb8f9ac129d0e9f515ac8e"
+    },
+    {
+      "file": "public/catalog/assets/flowers-S-background.svg",
+      "sha256": "f76664727d0765501b18517baa7e83add28049a7ac2621a96fdb8bc5544c7b25"
+    },
+    {
+      "file": "public/catalog/assets/flowers-S-main.svg",
+      "sha256": "ac4028fdac85ad3195f449b66a46299705a55bbecaecd88557b0c6f45b6fda0a"
+    },
+    {
+      "file": "public/catalog/assets/folder-L-background.svg",
+      "sha256": "08672d802bb90d8ad12e84165d29cbf33826d918ed47006ceaaef0e274c1d5a4"
+    },
+    {
+      "file": "public/catalog/assets/folder-L-main.svg",
+      "sha256": "e73a552f8d2ec447c9ce7cdee5873dcb5b1caee9df88c37f391c8fe77ab8bd24"
+    },
+    {
+      "file": "public/catalog/assets/folder-S-background.svg",
+      "sha256": "9ca42cdf2c0419216ada5edcce9761a11bed6a17fa3d1f2720b1b34339c65ee6"
+    },
+    {
+      "file": "public/catalog/assets/folder-S-main.svg",
+      "sha256": "1200812796a1f84818c9e7efb8aa078c5d1023304487dbf4a104b125426da936"
+    },
+    {
+      "file": "public/catalog/assets/headphones-L-background.svg",
+      "sha256": "7b3d8c365e0e59db6a00bae831cc3b37ce9f78f827e276644c117235e76a0edc"
+    },
+    {
+      "file": "public/catalog/assets/headphones-L-main.svg",
+      "sha256": "e4aa39d08dd9463ec659ff275b81eb5d2408589d43ecb46fb94d7c5bc5609bb4"
+    },
+    {
+      "file": "public/catalog/assets/headphones-S-background.svg",
+      "sha256": "4f9630d9ca4a5aad9437f033d12ee20b5f662705bc176184135e68d5a11c25b5"
+    },
+    {
+      "file": "public/catalog/assets/headphones-S-main.svg",
+      "sha256": "5ad7ef4187fa18c35cad6e1e98023f0aae0cdfdfe73d9156c8b61773a6ead12f"
+    },
+    {
+      "file": "public/catalog/assets/lamp-L-background.svg",
+      "sha256": "8865de148d298386ff903fe3a54446ad44a8318bea2d57aa8d64042099f1d152"
+    },
+    {
+      "file": "public/catalog/assets/lamp-L-main.svg",
+      "sha256": "7b5a366e3d0ac01b3baad35df366e95ccc46efe38feedfa45a60edf774a49a1e"
+    },
+    {
+      "file": "public/catalog/assets/lamp-S-background.svg",
+      "sha256": "e8a43825eb12fc421d592c9be2adbba09fc96b76028b393ae6576001fa35c3bc"
+    },
+    {
+      "file": "public/catalog/assets/lamp-S-main.svg",
+      "sha256": "afec28fc26f8418201cb523919d4cc0976a511e8f8e0c4925169aada721d42fa"
+    },
+    {
+      "file": "public/catalog/assets/pen-L-background.svg",
+      "sha256": "ed13469cbfda9867e53c9e57a69c473146a0daa1b8bd9d9b6ffc4579541c8228"
+    },
+    {
+      "file": "public/catalog/assets/pen-L-main.svg",
+      "sha256": "846abd5d71f962eb7d33495191bfb73e2b8521a0709de8bc4a4404c3cda772dd"
+    },
+    {
+      "file": "public/catalog/assets/pen-S-background.svg",
+      "sha256": "5d71669102e1f6e143511cc378f4a252baffe250173c6772ca0d588d22bee3e7"
+    },
+    {
+      "file": "public/catalog/assets/pen-S-main.svg",
+      "sha256": "0c228d70bef839867fa18ffd4c3ba352ff168bacabdfc54a0601badcfdedb028"
+    },
+    {
+      "file": "public/catalog/assets/phone-L-background.svg",
+      "sha256": "a01ed43829b0882324b2d79e1a0a0043654969ffaca2dd074f8762fda09025c7"
+    },
+    {
+      "file": "public/catalog/assets/phone-L-main.svg",
+      "sha256": "f599cf13f0c0c00904fcb41b5d43adcac7ac6359c5ab25cdd5f169fff034231a"
+    },
+    {
+      "file": "public/catalog/assets/phone-S-background.svg",
+      "sha256": "604fcd0b5500624f61c359ab9e7116cdfe23d231e709e84232cc88f073e74d5b"
+    },
+    {
+      "file": "public/catalog/assets/phone-S-main.svg",
+      "sha256": "3b82d9ba37bc6221daeda47963e5f7e5f4afa9fee4bae309441c85c789f4b6d0"
+    },
+    {
+      "file": "public/catalog/assets/puzzle-L-background.svg",
+      "sha256": "4c93cb5b9ffe19a5b7a08d7628b117c02fd2c81f38d6bbf2e8b68488f2395b66"
+    },
+    {
+      "file": "public/catalog/assets/puzzle-L-main.svg",
+      "sha256": "db5402872bb9c06a3a54fb43379bc2a4a39dc78acec19772c0de580b12fb5a9d"
+    },
+    {
+      "file": "public/catalog/assets/puzzle-S-background.svg",
+      "sha256": "542ae927164533f5d0b931594056627a50ed12beeed5027b7fd55f0c7416996f"
+    },
+    {
+      "file": "public/catalog/assets/puzzle-S-main.svg",
+      "sha256": "826021b90c0d0cc0d4a4c596f5202c1b2f28dedec0abc4c05dfe54c06a15a0c0"
+    },
+    {
+      "file": "public/catalog/assets/wallet-L-background.svg",
+      "sha256": "7a7ea754b6910070980396e28f6b2b53a99698bd3c4edef4161f61be92ced639"
+    },
+    {
+      "file": "public/catalog/assets/wallet-L-main.svg",
+      "sha256": "cbdd332348891a6dcb0b6a86649701cfb54f81b0e7b60a015fe79ad204e61189"
+    },
+    {
+      "file": "public/catalog/assets/wallet-S-background.svg",
+      "sha256": "22ee9f2b2d7a1a139402dbfefaef0b69557194da9ac40e7178e3e9cb337a8d6f"
+    },
+    {
+      "file": "public/catalog/assets/wallet-S-main.svg",
+      "sha256": "febfe44cb2adaf8ef59df715ca35848fc6d2152ed953273db44dc5b2588f034f"
+    },
+    {
+      "file": "public/catalog/manifest.json",
+      "sha256": "c3ed5d6a8fc78fc85d15422a6d90377e56b7fa7a750deb8bc2bf86d5a07e3bcc"
+    },
+    {
+      "file": "public/fonts/OFL.txt",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "file": "public/fonts/manrope-400.ttf",
+      "sha256": "ed335894f8d954263675f7e457bf657374d8b7be629be4dc43aef97c309ad3ae"
+    },
+    {
+      "file": "public/fonts/manrope-500.ttf",
+      "sha256": "437dc9f921739a6893128fa4dfc299424951148475815a9a213a46457878c42b"
+    },
+    {
+      "file": "public/fonts/manrope-600.ttf",
+      "sha256": "68ed4be49ec7d32f07b42f9232dc01ca1df7a77be1d9b0731aac74db58235f34"
+    },
+    {
+      "file": "public/fonts/manrope-700.ttf",
+      "sha256": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06"
+    },
+    {
+      "file": "public/fonts/manrope-800.ttf",
+      "sha256": "a8291b05b2732801abdbbb6d06866c57431c3b990638462423e692151b5e0895"
+    },
+    {
+      "file": "src/App.tsx",
+      "sha256": "ba93db2d490903c6c7851ed13546eacb6973de50ed162c6315071fa04f525d42"
+    },
+    {
+      "file": "src/components/Panels.tsx",
+      "sha256": "c0c73ca9e4c4f9d2d62a83ed9b89d6f11c64898b14bd0f3a62ed0940e8116f92"
+    },
+    {
+      "file": "src/components/SceneView.tsx",
+      "sha256": "11f5df13ff59477ce90b5ad5cca1ff5732545c943a697f4c70eeeaf917220b18"
+    },
+    {
+      "file": "src/core/catalog.ts",
+      "sha256": "6e99653b5c1ffd154adcbbc4b810d417bcc8bb445cb8080ccae58e0819ac53db"
+    },
+    {
+      "file": "src/core/commands.ts",
+      "sha256": "1a8143d8b00e05593667177f25e20cb835c6d5a254dfbddbdb76cf00f7158e0f"
+    },
+    {
+      "file": "src/core/composition.ts",
+      "sha256": "0f40532c3551b8b80a0c7ae56ccddff658ece659d1801d1617f538be17a3ef5a"
+    },
+    {
+      "file": "src/core/history.ts",
+      "sha256": "699dac299948aa0fb56247a5c80cb51d6b522334befe10c8d8459a26f95b2da1"
+    },
+    {
+      "file": "src/core/jobs.ts",
+      "sha256": "061c2353bb7d9b31e4288b71b6da134200b7ca4d3ce9fbe1597531a939ea1bc0"
+    },
+    {
+      "file": "src/core/persistence.ts",
+      "sha256": "872cda9c6869ef556271130b5c233524b10674ccc3cf373b4550ada045a51b20"
+    },
+    {
+      "file": "src/core/semantics.ts",
+      "sha256": "5d1e22486d6608597c152f36f37d20316ff03a91fe1013586ca4135362125209"
+    },
+    {
+      "file": "src/core/svg.ts",
+      "sha256": "23b0416e4289a9f6682471dbb523850dea20df601927a587275588ec99bae54e"
+    },
+    {
+      "file": "src/core/types.ts",
+      "sha256": "798fe80ccc5e38c5b01970d2f3f5e89b44e61f8ad99ad080927f8023490b7e18"
+    },
+    {
+      "file": "src/core/validation.ts",
+      "sha256": "e36498a900d79a2da47436aa5e869e98fbf546b0495cb8c403e6e61e1356f01e"
+    },
+    {
+      "file": "src/main.tsx",
+      "sha256": "05b4005286642cf48b12fc75495e9e78598ed0c609116b7eeb2baf9b491e5123"
+    },
+    {
+      "file": "src/styles.css",
+      "sha256": "1ddfa2ddf73374167e25c676567423996ee7dce5d5da80d8f4f3c9cadb53a072"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "b2e1eab7530568a1c6062132f0b668e20c2835ddba6f756a9349b30afce9d3fc"
+    },
+    {
+      "file": "vite.config.ts",
+      "sha256": "e9f99b82eb3ee5e4ed80d48094b149a2bc6876f6243403650b55dbce5a3b63a1"
+    }
+  ]
+}

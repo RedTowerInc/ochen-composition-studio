@@ -1,0 +1,26 @@
+{
+  "productionOrigin": "http://127.0.0.1:4173",
+  "roundTrips": 20,
+  "unchanged": true,
+  "comparisons": [
+    {
+      "format": "16:9",
+      "width": 400,
+      "height": 225,
+      "meanAbsolutePixelDifference": 0
+    },
+    {
+      "format": "1:1",
+      "width": 400,
+      "height": 400,
+      "meanAbsolutePixelDifference": 0
+    },
+    {
+      "format": "4:5",
+      "width": 400,
+      "height": 500,
+      "meanAbsolutePixelDifference": 0
+    }
+  ],
+  "errors": []
+}

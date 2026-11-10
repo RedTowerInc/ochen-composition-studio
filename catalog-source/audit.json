@@ -1,0 +1,662 @@
+{
+  "sourceFileKey": "pnpYBt06NCRv8gnkQXrjYD",
+  "originalFileKey": "4MCFttsSoP7hgQh29zq5G3",
+  "files": [
+    {
+      "detail": "L",
+      "sha256": "c10613be197853b0a70e1b900640bf2bb307e0f2cf04aaf52c2904524849852b",
+      "bytes": 868079
+    },
+    {
+      "detail": "S",
+      "sha256": "f98c7dac319f53679ed614a8ef1a0feab4259d0ec60d7e88a15cbb8fe42b3355",
+      "bytes": 769457
+    }
+  ],
+  "assets": [
+    {
+      "id": "book",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "21:29965",
+      "sourceGroup": "Книга",
+      "sha256": "b4d213529684cb65ad13a73d50062b6b344f22da92b35bc41ba9d906a2a63dd5",
+      "geometrySha256": "b377c24cd19c21ed13852d1852251d24e58549c947b44a5799d20c61d296ad6e",
+      "nodes": 53,
+      "colors": [
+        "#181817",
+        "#F9A3AA",
+        "#FFE3E1",
+        "#F9ECB0",
+        "#FFFFFF"
+      ],
+      "bytes": 29277
+    },
+    {
+      "id": "book",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "24:6273",
+      "sourceGroup": "Книга_2",
+      "sha256": "1e3e928690d1946713a0deffbecf4cc18baf57d079ec970baa22b4e3603bf762",
+      "geometrySha256": "46cb211808f6122ffe98aa94cc360a271cfdec7ef47d1b847f3c1d94b1d4facb",
+      "nodes": 53,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 29320
+    },
+    {
+      "id": "book",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "24:3810",
+      "sourceGroup": "Group 2136136335",
+      "sha256": "18da98635e74e84c7cf80ac7d476b105362c735604c386bb3c34a34f228b61df",
+      "geometrySha256": "ecb3f1dc626a64d6d66adcb06132cd706772ce39f638539b8d69c593aba57847",
+      "nodes": 52,
+      "colors": [
+        "#FFFFFF",
+        "#181817",
+        "#F9A3AA",
+        "#F9ECB0"
+      ],
+      "bytes": 28138
+    },
+    {
+      "id": "book",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "24:6934",
+      "sourceGroup": "Group 2136136341",
+      "sha256": "09d8b5773d699f303ff9dc6b45106a727698921b84b0e4898b5fb78f8499c692",
+      "geometrySha256": "882b789895c639691d6d0f46b1710a1957c6fd73aba9c834c9dd205179813aa4",
+      "nodes": 55,
+      "colors": [
+        "#D7CDF5",
+        "#7864D7"
+      ],
+      "bytes": 29654
+    },
+    {
+      "id": "phone",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "21:25472",
+      "sourceGroup": "Телефон",
+      "sha256": "f599cf13f0c0c00904fcb41b5d43adcac7ac6359c5ab25cdd5f169fff034231a",
+      "geometrySha256": "b42fa1dc1c959fd5675eb952826ee4b9446a65dcb786ca697c488ed9997de44a",
+      "nodes": 155,
+      "colors": [
+        "#181817",
+        "#FFFFFF",
+        "#F9ECB0",
+        "#D7CDF5",
+        "#7864D7"
+      ],
+      "bytes": 66543
+    },
+    {
+      "id": "phone",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "24:6327",
+      "sourceGroup": "Телефон_2",
+      "sha256": "a01ed43829b0882324b2d79e1a0a0043654969ffaca2dd074f8762fda09025c7",
+      "geometrySha256": "0c205244b731b50773640b48e337795e751f35232ac7d6194a7747b5fbbd1eaa",
+      "nodes": 155,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 66610
+    },
+    {
+      "id": "phone",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "24:4746",
+      "sourceGroup": "Телефон",
+      "sha256": "3b82d9ba37bc6221daeda47963e5f7e5f4afa9fee4bae309441c85c789f4b6d0",
+      "geometrySha256": "ffbaa787a784ac9bbb19b200f140646fa7e961997e94de53c277b352ec4b2bba",
+      "nodes": 96,
+      "colors": [
+        "#181817",
+        "#FFFFFF",
+        "#F9ECB0",
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 39793
+    },
+    {
+      "id": "phone",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "24:6990",
+      "sourceGroup": "Телефон_2",
+      "sha256": "604fcd0b5500624f61c359ab9e7116cdfe23d231e709e84232cc88f073e74d5b",
+      "geometrySha256": "3a5cb7d49176443ec73017a323f58960ba1b627a5aa3338245c27f9f868c24b7",
+      "nodes": 155,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 66663
+    },
+    {
+      "id": "puzzle",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "21:417",
+      "sourceGroup": "Пазлы",
+      "sha256": "db5402872bb9c06a3a54fb43379bc2a4a39dc78acec19772c0de580b12fb5a9d",
+      "geometrySha256": "8f4a2d0aa91d18a0ad347a914e03ca204fad5c9410219b8de1bcf1419461d42c",
+      "nodes": 57,
+      "colors": [
+        "#181817",
+        "#F9ECB0",
+        "#FFFFFF",
+        "#F9A3AA"
+      ],
+      "bytes": 34950
+    },
+    {
+      "id": "puzzle",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "24:6214",
+      "sourceGroup": "Пазлы_2",
+      "sha256": "4c93cb5b9ffe19a5b7a08d7628b117c02fd2c81f38d6bbf2e8b68488f2395b66",
+      "geometrySha256": "2de1e8454a02b4cc63dfe23cdaef22c15a5ab0c2707c34ff2f49c6f9c38fc1e4",
+      "nodes": 57,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 35001
+    },
+    {
+      "id": "puzzle",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "24:4903",
+      "sourceGroup": "Пазлы",
+      "sha256": "826021b90c0d0cc0d4a4c596f5202c1b2f28dedec0abc4c05dfe54c06a15a0c0",
+      "geometrySha256": "41909c60909d0e544eab8aa5d61316f283bfe54ba0413e5b7dbfd0f52e846cf5",
+      "nodes": 57,
+      "colors": [
+        "#181817",
+        "#F9ECB0",
+        "#FFFFFF",
+        "#F9A3AA",
+        "#D7CDF5"
+      ],
+      "bytes": 35080
+    },
+    {
+      "id": "puzzle",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "24:7147",
+      "sourceGroup": "Пазлы_2",
+      "sha256": "542ae927164533f5d0b931594056627a50ed12beeed5027b7fd55f0c7416996f",
+      "geometrySha256": "3475480adf5a062ff237efadbcb7be7afc4a07fd3e9ecb7991c9b91fd5044c49",
+      "nodes": 57,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 35151
+    },
+    {
+      "id": "headphones",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "23:122",
+      "sourceGroup": "Наушники",
+      "sha256": "e4aa39d08dd9463ec659ff275b81eb5d2408589d43ecb46fb94d7c5bc5609bb4",
+      "geometrySha256": "cc5e56b628fb90f35736f615e432b718c47ed4a040afefc0d3a2156e253bf6b8",
+      "nodes": 84,
+      "colors": [
+        "#181817",
+        "#FFFFFF",
+        "#F9ECB0",
+        "#D7CDF5"
+      ],
+      "bytes": 48992
+    },
+    {
+      "id": "headphones",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "24:6484",
+      "sourceGroup": "Наушники_2",
+      "sha256": "7b3d8c365e0e59db6a00bae831cc3b37ce9f78f827e276644c117235e76a0edc",
+      "geometrySha256": "70a026e336adfd8c4efe49823a0ee8f5d615a0f018395692c1c35f91ca3422a7",
+      "nodes": 84,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 49017
+    },
+    {
+      "id": "headphones",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "24:5089",
+      "sourceGroup": "Наушники",
+      "sha256": "5ad7ef4187fa18c35cad6e1e98023f0aae0cdfdfe73d9156c8b61773a6ead12f",
+      "geometrySha256": "f885df92cb6b65d86ca96a77119cf70a3f05e0310c3396e07946710f798e71e4",
+      "nodes": 79,
+      "colors": [
+        "#181817",
+        "#FFFFFF",
+        "#D7CDF5"
+      ],
+      "bytes": 45306
+    },
+    {
+      "id": "headphones",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "24:7344",
+      "sourceGroup": "Наушники_2",
+      "sha256": "4f9630d9ca4a5aad9437f033d12ee20b5f662705bc176184135e68d5a11c25b5",
+      "geometrySha256": "fb9e54d17ad3507fcfaf4e2ece4124bc3ceabab0ef249a6bcb9f9e54624b4878",
+      "nodes": 84,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 49033
+    },
+    {
+      "id": "lamp",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "23:121",
+      "sourceGroup": "Лампа",
+      "sha256": "7b5a366e3d0ac01b3baad35df366e95ccc46efe38feedfa45a60edf774a49a1e",
+      "geometrySha256": "b39dbcd69afc8b3cea3c8ef04754dde30adaf8079f6b44c27b3270923243a011",
+      "nodes": 27,
+      "colors": [
+        "#181817",
+        "#FFFFFF",
+        "#D7CDF5",
+        "#F9ECB0",
+        "#F9A3AA"
+      ],
+      "bytes": 16349
+    },
+    {
+      "id": "lamp",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "24:6569",
+      "sourceGroup": "Лампа_2",
+      "sha256": "8865de148d298386ff903fe3a54446ad44a8318bea2d57aa8d64042099f1d152",
+      "geometrySha256": "86d243dec972f76432911a0ffbf1c05bb714faf3b7002a5290afa5934c7237ea",
+      "nodes": 27,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 16367
+    },
+    {
+      "id": "lamp",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "24:5485",
+      "sourceGroup": "Лампа",
+      "sha256": "afec28fc26f8418201cb523919d4cc0976a511e8f8e0c4925169aada721d42fa",
+      "geometrySha256": "7cda350edb32ecd66b7fe552d6fb1d75dcd6fc3ec8c05321a15c853a317aa5c9",
+      "nodes": 27,
+      "colors": [
+        "#181817",
+        "#FFFFFF",
+        "#D7CDF5",
+        "#F9ECB0",
+        "#F9A3AA"
+      ],
+      "bytes": 16355
+    },
+    {
+      "id": "lamp",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "24:7429",
+      "sourceGroup": "Лампа_2",
+      "sha256": "e8a43825eb12fc421d592c9be2adbba09fc96b76028b393ae6576001fa35c3bc",
+      "geometrySha256": "6d0faf24a1674b0555b9d58996f2798a1ab5184aaa3b2f1f699149a0d40f9615",
+      "nodes": 27,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 16434
+    },
+    {
+      "id": "wallet",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "23:211",
+      "sourceGroup": "Кошелек",
+      "sha256": "cbdd332348891a6dcb0b6a86649701cfb54f81b0e7b60a015fe79ad204e61189",
+      "geometrySha256": "62fce9063fa80ae02d0cb11d229b38978e2afd2d5f4331312a881b7de695a7bc",
+      "nodes": 86,
+      "colors": [
+        "#D7CDF5",
+        "#181817",
+        "#F9ECB0",
+        "#FFFFFF"
+      ],
+      "bytes": 33658
+    },
+    {
+      "id": "wallet",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "24:6660",
+      "sourceGroup": "Кошелек_2",
+      "sha256": "7a7ea754b6910070980396e28f6b2b53a99698bd3c4edef4161f61be92ced639",
+      "geometrySha256": "a49773e32e32ce9b1b91b16a93e5b69056f17d8b5ec70fb8e0d7a56cdff77ab3",
+      "nodes": 86,
+      "colors": [
+        "#D7CDF5",
+        "#7864D7"
+      ],
+      "bytes": 33699
+    },
+    {
+      "id": "wallet",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "24:4594",
+      "sourceGroup": "Кошелек",
+      "sha256": "febfe44cb2adaf8ef59df715ca35848fc6d2152ed953273db44dc5b2588f034f",
+      "geometrySha256": "bf9a16c6cb6180098c7613e7bcd5a4296b4ffdcc579073892cf5ef04782537b0",
+      "nodes": 83,
+      "colors": [
+        "#D7CDF5",
+        "#181817",
+        "#F9ECB0",
+        "#FFFFFF"
+      ],
+      "bytes": 32761
+    },
+    {
+      "id": "wallet",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "24:7568",
+      "sourceGroup": "Кошелек_2",
+      "sha256": "22ee9f2b2d7a1a139402dbfefaef0b69557194da9ac40e7178e3e9cb337a8d6f",
+      "geometrySha256": "49e62534943247385c959bf5dddd6e866aa5dd8bff43b1e5c20fe9f2e553dcac",
+      "nodes": 86,
+      "colors": [
+        "#D7CDF5",
+        "#7864D7"
+      ],
+      "bytes": 33767
+    },
+    {
+      "id": "pen",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "24:1734",
+      "sourceGroup": "Ручка",
+      "sha256": "846abd5d71f962eb7d33495191bfb73e2b8521a0709de8bc4a4404c3cda772dd",
+      "geometrySha256": "7e0f42559191f217af4aac495cb597079d0b2658706b1ef07e88b78eb7fb06ca",
+      "nodes": 24,
+      "colors": [
+        "#181817",
+        "#D7CDF5",
+        "#FFFFFF",
+        "#F9A3AA",
+        "#F9ECB0"
+      ],
+      "bytes": 13793
+    },
+    {
+      "id": "pen",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "24:6747",
+      "sourceGroup": "Ручка_2",
+      "sha256": "ed13469cbfda9867e53c9e57a69c473146a0daa1b8bd9d9b6ffc4579541c8228",
+      "geometrySha256": "18a8886ba873588ff5a65ec63e696da25d53d5ba69adac7c45c6404c384894f6",
+      "nodes": 24,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 13788
+    },
+    {
+      "id": "pen",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "24:4287",
+      "sourceGroup": "Group 2136136336",
+      "sha256": "0c228d70bef839867fa18ffd4c3ba352ff168bacabdfc54a0601badcfdedb028",
+      "geometrySha256": "c6281df51d9cda2a4b6ed06179edcd17fa1fb69f8a11528ec7d8533e76b82a74",
+      "nodes": 24,
+      "colors": [
+        "#181817",
+        "#FFFFFF",
+        "#F9A3AA"
+      ],
+      "bytes": 13809
+    },
+    {
+      "id": "pen",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "24:7543",
+      "sourceGroup": "Group 2136136343",
+      "sha256": "5d71669102e1f6e143511cc378f4a252baffe250173c6772ca0d588d22bee3e7",
+      "geometrySha256": "d04c165b7f6fea4af42093ae57dd6a3b1dd8d1be5571d574866e2111e2e67a82",
+      "nodes": 24,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 13866
+    },
+    {
+      "id": "folder",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "24:1899",
+      "sourceGroup": "Папка",
+      "sha256": "e73a552f8d2ec447c9ce7cdee5873dcb5b1caee9df88c37f391c8fe77ab8bd24",
+      "geometrySha256": "24e58a5334fc95e173ebdd3c0db14cd0c0f309873543188fb09d8a12aa9fa208",
+      "nodes": 22,
+      "colors": [
+        "#F9ECB0",
+        "#181817",
+        "#FFFFFF",
+        "#F9A3AA"
+      ],
+      "bytes": 14322
+    },
+    {
+      "id": "folder",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "24:6772",
+      "sourceGroup": "Папка_2",
+      "sha256": "08672d802bb90d8ad12e84165d29cbf33826d918ed47006ceaaef0e274c1d5a4",
+      "geometrySha256": "74d144b383b0c2eca3b0d3c5814123b4fc0a5657f658a56bcb7c9fe53b95f002",
+      "nodes": 22,
+      "colors": [
+        "#D7CDF5",
+        "#7864D7"
+      ],
+      "bytes": 14262
+    },
+    {
+      "id": "folder",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "24:4430",
+      "sourceGroup": "Group 2136136337",
+      "sha256": "1200812796a1f84818c9e7efb8aa078c5d1023304487dbf4a104b125426da936",
+      "geometrySha256": "57c244b307985459b1f188fe9494f3f1ba1be79631b1d1f53a876e326418ef67",
+      "nodes": 20,
+      "colors": [
+        "#F9ECB0",
+        "#181817",
+        "#FFFFFF"
+      ],
+      "bytes": 13780
+    },
+    {
+      "id": "folder",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "24:7520",
+      "sourceGroup": "Group 2136136342",
+      "sha256": "9ca42cdf2c0419216ada5edcce9761a11bed6a17fa3d1f2720b1b34339c65ee6",
+      "geometrySha256": "c43d5914764d071db99b182fb6991389ff5d8d85fd801b8c861e4f1e0b672a4f",
+      "nodes": 22,
+      "colors": [
+        "#D7CDF5",
+        "#7864D7"
+      ],
+      "bytes": 14351
+    },
+    {
+      "id": "coin",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "24:2207",
+      "sourceGroup": "Монета",
+      "sha256": "8b168ae21891e7696f4f0f1797c12a608bd5f150b86feeb2bca4218fffcb1c3b",
+      "geometrySha256": "1d34c28dcbb1f903ac8356dbedc3298ade37e446d1395a9486f4a5a46ede9751",
+      "nodes": 136,
+      "colors": [
+        "#FFFFFF",
+        "#F9ECB0",
+        "#181817"
+      ],
+      "bytes": 65934
+    },
+    {
+      "id": "coin",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "24:6795",
+      "sourceGroup": "Монета_2",
+      "sha256": "2fd5e1c32b0ff79161ebdd5dd04ef48514cd62b3e1038c73bfdd402df3038f36",
+      "geometrySha256": "797cda84910d4cbbeac13ef5f5c254c76fad55258f3f77147ff935dbaffae3a9",
+      "nodes": 136,
+      "colors": [
+        "#D7CDF5",
+        "#7864D7"
+      ],
+      "bytes": 65955
+    },
+    {
+      "id": "coin",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "24:5345",
+      "sourceGroup": "Монета",
+      "sha256": "b66b2b558066fa75fef287e19cfa508a4724aeb11f61885cc1e32accf7a7dfb8",
+      "geometrySha256": "d2c7fdeb3e5ebf5cb3b02d1c0cdc57a027f333d130dccc9aca8b9737c820a199",
+      "nodes": 130,
+      "colors": [
+        "#FFFFFF",
+        "#F9ECB0",
+        "#181817"
+      ],
+      "bytes": 63027
+    },
+    {
+      "id": "coin",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "24:7205",
+      "sourceGroup": "Монета_2",
+      "sha256": "cb467757bba9985f65ebe1bd34847407ea98f5e958f6425f1620df79b544f294",
+      "geometrySha256": "12ea586227b7682d616a501aae71aa88e04c6731ad18a1a96d4be538b2124d93",
+      "nodes": 136,
+      "colors": [
+        "#D7CDF5",
+        "#7864D7"
+      ],
+      "bytes": 65973
+    },
+    {
+      "id": "flowers",
+      "detail": "L",
+      "role": "main",
+      "sourceNodeId": "28:11628",
+      "sourceGroup": "Group 2136136344",
+      "sha256": "25900a085767d8b0dcfe1553d7919f899274798dc3bb8f9ac129d0e9f515ac8e",
+      "geometrySha256": "69de90b5b9189091734ba2b4ca9733b6f2b9ea3448e87ade93a89741070db3f9",
+      "nodes": 131,
+      "colors": [
+        "#181817",
+        "#FFFFFF",
+        "#F9ECB0",
+        "#AA9BF0",
+        "#F9A3AA"
+      ],
+      "bytes": 64072
+    },
+    {
+      "id": "flowers",
+      "detail": "L",
+      "role": "background",
+      "sourceNodeId": "30:11902",
+      "sourceGroup": "Group 2136136347",
+      "sha256": "09aeac8773564de36183c006ac5684acc10ab325f96769e490c17ab7d9d733df",
+      "geometrySha256": "3d7e9b83d618728a90c8d4635d8d8ea554f288bbd2d775f0a0b709b961578c89",
+      "nodes": 131,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 64217
+    },
+    {
+      "id": "flowers",
+      "detail": "S",
+      "role": "main",
+      "sourceNodeId": "28:11629",
+      "sourceGroup": "Group 2136136345",
+      "sha256": "ac4028fdac85ad3195f449b66a46299705a55bbecaecd88557b0c6f45b6fda0a",
+      "geometrySha256": "85a597703a4712b190e6e42b502125a70fce943a1fba7edec5ebef505650f541",
+      "nodes": 131,
+      "colors": [
+        "#181817",
+        "#FFFFFF",
+        "#F9ECB0",
+        "#AA9BF0",
+        "#F9A3AA"
+      ],
+      "bytes": 63922
+    },
+    {
+      "id": "flowers",
+      "detail": "S",
+      "role": "background",
+      "sourceNodeId": "28:11766",
+      "sourceGroup": "Group 2136136346",
+      "sha256": "f76664727d0765501b18517baa7e83add28049a7ac2621a96fdb8bc5544c7b25",
+      "geometrySha256": "5f014c9e5773e3eb478396f8065cc7731d597cce07707236017e5ba1111b5664",
+      "nodes": 131,
+      "colors": [
+        "#7864D7",
+        "#D7CDF5"
+      ],
+      "bytes": 64170
+    }
+  ]
+}

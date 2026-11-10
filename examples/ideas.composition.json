@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "f6aef020-0eb0-40f9-906b-33041affe974",
+  "name": "Место для новых идей",
+  "catalogVersion": "ochen-originals-2026-11-10-v1",
+  "width": 1000,
+  "height": 1000,
+  "detail": "S",
+  "palette": {
+    "id": "mint",
+    "name": "Мятная",
+    "colors": {
+      "background": "#BEEBEB",
+      "backgroundShade": "#80DADA",
+      "backgroundInk": "#5ABEBE",
+      "accent": "#FFD4F2",
+      "highlight": "#6D7BFC",
+      "soft": "#B6C6FE",
+      "ink": "#181817",
+      "paper": "#FFFFFF"
+    }
+  },
+  "scale": 0.45977487885664153,
+  "instances": [
+    {
+      "id": "b40f246e-6a37-49a5-9c1f-3fa5d8380bd4",
+      "familyId": "pen",
+      "role": "background",
+      "x": 0.14,
+      "y": 0.25,
+      "rotation": -13
+    },
+    {
+      "id": "65027199-eff5-4012-8fbd-849898fe9484",
+      "familyId": "lamp",
+      "role": "main",
+      "x": 0.48631587699288503,
+      "y": 0.5463976994995028,
+      "rotation": -10
+    },
+    {
+      "id": "e9f93617-6cda-4087-b3fb-ff7ae7c10e32",
+      "familyId": "puzzle",
+      "role": "main",
+      "x": 0.8217709666630254,
+      "y": 0.37953088977606964,
+      "rotation": 9
+    },
+    {
+      "id": "82147885-58b0-481f-bdfc-32b92d85c10e",
+      "familyId": "pen",
+      "role": "main",
+      "x": 0.2235219995281659,
+      "y": 0.2675107379117981,
+      "rotation": -8
+    }
+  ],
+  "seed": 2,
+  "layout": "surround",
+  "revision": 6
+}
