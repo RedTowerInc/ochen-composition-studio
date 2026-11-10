@@ -8,6 +8,23 @@ import {
 
 const hex = /^#[0-9a-f]{6}$/i;
 const idPattern = /^[a-zA-Z0-9][a-zA-Z0-9._-]{0,99}$/;
+function assertXmlText(value: string, name: string) {
+  for (const char of value) {
+    const code = char.codePointAt(0)!;
+    if (
+      code === 9 ||
+      code === 10 ||
+      code === 13 ||
+      (code >= 0x20 && code <= 0xd7ff) ||
+      (code >= 0xe000 && code <= 0xfffd) ||
+      (code >= 0x10000 && code <= 0x10ffff)
+    )
+      continue;
+    throw new StudioError(
+      `Поле «${name}» содержит недопустимый символ XML. Удалите его и повторите.`,
+    );
+  }
+}
 const object = (value: unknown): Record<string, unknown> => {
   if (typeof value !== "object" || value === null || Array.isArray(value))
     throw new StudioError("Ожидался объект JSON.");
@@ -36,6 +53,7 @@ const string = (
 ): string => {
   if (typeof value !== "string" || !value.trim() || value.length > max)
     throw new StudioError(`Проверьте поле «${name}».`);
+  assertXmlText(value, name);
   return trim ? value.trim() : value;
 };
 const id = (value: unknown, name: string): string => {

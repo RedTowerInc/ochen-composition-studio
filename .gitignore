@@ -5,3 +5,9 @@ playwright-report/
 .env*
 !.env.example
 *.tsbuildinfo
+# Raw browser traces stay in the local audit workspace; structured results are versioned.
+verification/remediation/**/browser/
+verification/remediation/**/traces/
+verification/remediation/legacy-before-harness/html/
+verification/remediation/baseline-2026-11-10/
+verification/remediation/baseline-verified-2026-11-10/

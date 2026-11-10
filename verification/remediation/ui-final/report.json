@@ -1,0 +1,204 @@
+{
+  "date": "2026-11-10T17:40:56.629Z",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "aspect": "16:9",
+      "innerWidth": 1440,
+      "innerHeight": 900,
+      "dpr": 1,
+      "canvasWidth": 643.546875,
+      "canvasHeight": 361.984375,
+      "fitFraction": 0.9999865115676796,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        786,
+        362
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "aspect": "16:9",
+      "innerWidth": 1366,
+      "innerHeight": 768,
+      "dpr": 1,
+      "canvasWidth": 588.4375,
+      "canvasHeight": 330.984375,
+      "fitFraction": 0.9999881986404834,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        752,
+        331
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "aspect": "16:9",
+      "innerWidth": 1280,
+      "innerHeight": 720,
+      "dpr": 1,
+      "canvasWidth": 503.109375,
+      "canvasHeight": 282.984375,
+      "fitFraction": 0.9999965492491166,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        666,
+        283
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "aspect": "16:9",
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "dpr": 1,
+      "canvasWidth": 312,
+      "canvasHeight": 175.5,
+      "fitFraction": 1,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        312,
+        311
+      ]
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "aspect": "16:9",
+      "innerWidth": 320,
+      "innerHeight": 740,
+      "dpr": 1,
+      "canvasWidth": 242,
+      "canvasHeight": 136.125,
+      "fitFraction": 1,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        242,
+        220
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "aspect": "1:1",
+      "innerWidth": 1024,
+      "innerHeight": 768,
+      "dpr": 1,
+      "canvasWidth": 292,
+      "canvasHeight": 292,
+      "fitFraction": 1,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        676,
+        292
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "aspect": "4:5",
+      "innerWidth": 1024,
+      "innerHeight": 768,
+      "dpr": 1,
+      "canvasWidth": 233.59375,
+      "canvasHeight": 291.984375,
+      "fitFraction": 0.9999732448630138,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        676,
+        292
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "aspect": "1:1",
+      "innerWidth": 768,
+      "innerHeight": 1024,
+      "dpr": 1,
+      "canvasWidth": 451.21875,
+      "canvasHeight": 451.21875,
+      "fitFraction": 1,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        666,
+        451.21875
+      ]
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "aspect": "4:5",
+      "innerWidth": 768,
+      "innerHeight": 1024,
+      "dpr": 1,
+      "canvasWidth": 360.96875,
+      "canvasHeight": 451.203125,
+      "fitFraction": 0.9999826857815638,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        666,
+        451.21875
+      ]
+    }
+  ],
+  "browserZoom": [
+    {
+      "zoom": 125,
+      "settingsValue": "1.25",
+      "innerWidth": 1152,
+      "innerHeight": 720,
+      "dpr": 1.25,
+      "canvasWidth": 507,
+      "canvasHeight": 285.1875,
+      "fitFraction": 0.9999561283082199,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        589.4000244140625,
+        285.20001220703125
+      ],
+      "dragDelta": [
+        0.039447731167607025,
+        0.03506464992676178
+      ],
+      "svgBytes": 212442
+    },
+    {
+      "zoom": 200,
+      "settingsValue": "2",
+      "innerWidth": 720,
+      "innerHeight": 450,
+      "dpr": 2,
+      "canvasWidth": 519.46875,
+      "canvasHeight": 292.1953125,
+      "fitFraction": 0.9999933158654618,
+      "overflow": false,
+      "cssZoom": "",
+      "area": [
+        618,
+        292.203125
+      ],
+      "dragDelta": [
+        0.03850164434106035,
+        0.03422368385872038
+      ],
+      "svgBytes": 212442
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

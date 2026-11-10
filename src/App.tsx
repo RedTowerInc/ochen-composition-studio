@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import {
   ArrowLeft,
   ArrowRight,
-  Check,
   ChevronDown,
   Download,
   FolderOpen,
@@ -22,11 +21,14 @@ import {
   duplicateObject,
   moveLayer,
 } from "./core/commands";
-import { makeCandidates } from "./core/composition";
+import { makeCandidates, resizeScene } from "./core/composition";
 import { historyReducer } from "./core/history";
 import { LatestJob, yieldToPaint } from "./core/jobs";
 import {
+  activeProjectId,
+  ConflictError,
   ProjectRepository,
+  rememberProject,
   SaveQueue,
   type SavedDocument,
 } from "./core/persistence";
@@ -49,6 +51,7 @@ import {
 import { parseJsonFile, parsePalette, validateScene } from "./core/validation";
 import { Canvas } from "./components/SceneView";
 import { Candidates, Inspector, Modal, Sidebar } from "./components/Panels";
+import { RenderBoundary } from "./components/RenderBoundary";
 
 const repository = new ProjectRepository();
 type Source = { catalog: Catalog; assets: AssetStore };
@@ -56,7 +59,14 @@ type OpenProject = {
   scene: SceneDocument;
   storageRevision: number;
   warning?: string;
+  info?: string;
 };
+const withSelection = (project: OpenProject): OpenProject => ({
+  ...project,
+  info: rememberProject(project.scene.id)
+    ? project.info
+    : "Выбор проекта не запоминается в этой вкладке. Проекты доступны в списке сохранённых; для переноса скачайте JSON.",
+});
 const errorMessage = (error: unknown) =>
   error instanceof Error
     ? error.message
@@ -87,8 +97,13 @@ export default function App() {
         repository.db.on("blocked", onBlocked);
         let timer: ReturnType<typeof setTimeout> | undefined;
         try {
+          const preferred = activeProjectId();
           saved = await Promise.race([
-            repository.latest(),
+            preferred
+              ? repository
+                  .get(preferred)
+                  .then((record) => record ?? repository.latest())
+              : repository.latest(),
             new Promise<never>((_, reject) => {
               timer = setTimeout(
                 () =>
@@ -114,11 +129,13 @@ export default function App() {
         }
         if (!active) return;
         setSource(loaded);
-        setProject({
-          scene: saved?.document ?? blankScene(loaded.catalog),
-          storageRevision: saved?.storageRevision ?? 0,
-          warning,
-        });
+        setProject(
+          withSelection({
+            scene: saved?.document ?? blankScene(loaded.catalog),
+            storageRevision: saved?.storageRevision ?? 0,
+            warning,
+          }),
+        );
       } catch (e) {
         if (active) {
           controller.abort();
@@ -178,7 +195,15 @@ export default function App() {
       key={project.scene.id + ":" + project.storageRevision}
       source={source}
       initial={project}
-      onOpen={setProject}
+      onOpen={(next) => setProject(withSelection(next))}
+      onReloadAssets={async (snapshot) => {
+        const loaded = await loadCatalog(
+          new AbortController().signal,
+          () => {},
+        );
+        validateScene(snapshot, loaded.catalog);
+        setSource(loaded);
+      }}
     />
   );
 }
@@ -187,10 +212,12 @@ function Editor({
   source,
   initial,
   onOpen,
+  onReloadAssets,
 }: {
   source: Source;
   initial: OpenProject;
   onOpen: (project: OpenProject) => void;
+  onReloadAssets: (snapshot: SceneDocument) => Promise<void>;
 }) {
   const { catalog, assets } = source;
   const [history, setHistory] = useState<HistoryState>({
@@ -200,11 +227,21 @@ function Editor({
     }),
     historyRef = useRef(history);
   const scene = history.present;
+  const [nameDraft, setNameDraft] = useState(scene.name);
+  const nameDraftRef = useRef(scene.name),
+    nameDirtyRef = useRef(false);
+  useEffect(() => {
+    nameDraftRef.current = scene.name;
+    nameDirtyRef.current = false;
+    setNameDraft(scene.name);
+  }, [scene.name]);
   const [selected, setSelected] = useState<string>(),
-    [notice, setNotice] = useState(initial.warning ?? "");
+    [notice, setNotice] = useState(initial.warning ?? initial.info ?? "");
   const [saveStatus, setSaveStatus] = useState<
     "saving" | "saved" | "dirty" | "conflict" | "error"
-  >(initial.warning ? "error" : "saved");
+  >(
+    initial.warning ? "error" : initial.storageRevision > 0 ? "saved" : "dirty",
+  );
   const saveStatusRef = useRef(saveStatus);
   saveStatusRef.current = saveStatus;
   const [mode, setMode] = useState<InputMode>("meaning"),
@@ -222,6 +259,20 @@ function Editor({
     imports = useRef(0),
     fileInput = useRef<HTMLInputElement>(null);
   const firstSave = useRef(true);
+  const inputVersion = useRef(0),
+    candidateInputVersion = useRef(-1);
+  const inputValues = useRef({ mode, prompt, background });
+  const locked = useRef(false),
+    transitionEpoch = useRef(0);
+  const [transitioning, setTransitioning] = useState(false);
+  const [savedProjects, setSavedProjects] = useState<SavedDocument[]>([]),
+    [projectsOpen, setProjectsOpen] = useState(false);
+  type TransitionMode = "current" | "copy";
+  const [pendingOpen, setPendingOpen] = useState<{
+    target: OpenProject;
+    mode: TransitionMode;
+    message: string;
+  }>();
   const selectedItem = scene.instances.find((item) => item.id === selected);
 
   useEffect(() => {
@@ -240,12 +291,16 @@ function Editor({
           );
         else setSaveStatus("saving");
       },
+      initial.storageRevision > 0
+        ? { id: initial.scene.id, revision: initial.scene.revision }
+        : undefined,
     );
     queue.current = saver;
     return () => {
       saver.close();
       jobs.current.cancel();
       imports.current++;
+      transitionEpoch.current++;
     };
   }, []);
   useEffect(() => {
@@ -264,7 +319,7 @@ function Editor({
   }, [scene]);
   useEffect(() => {
     const listener = (event: BeforeUnloadEvent) => {
-      if (saveStatusRef.current !== "saved") {
+      if (saveStatusRef.current !== "saved" || nameDirtyRef.current) {
         event.preventDefault();
         event.returnValue = "";
       }
@@ -282,7 +337,15 @@ function Editor({
     jobs.current.cancel();
     setBusy(false);
   }
+  function invalidateInput() {
+    inputVersion.current++;
+    cancelGeneration();
+    setCandidates([]);
+    setCandidateRevision(-1);
+    setExplanation("");
+  }
   function commit(next: SceneDocument) {
+    if (locked.current) return false;
     try {
       const validated = validateScene(next, catalog);
       cancelGeneration();
@@ -292,19 +355,137 @@ function Editor({
       });
       historyRef.current = updated;
       setHistory(updated);
+      return true;
     } catch (error) {
       setNotice(errorMessage(error));
+      return false;
     }
   }
+  function confirmName() {
+    const name = nameDraftRef.current.trim() || "Новая композиция";
+    const current = historyRef.current.present;
+    if (name !== current.name && !commit({ ...current, name })) return false;
+    nameDraftRef.current = name;
+    nameDirtyRef.current = false;
+    setNameDraft(name);
+    return true;
+  }
+  function changeComposition(next: SceneDocument) {
+    // A blur may have committed a title since this inspector was rendered.
+    // Apply only the requested properties to the latest scene.
+    const current = historyRef.current.present;
+    let updated = current;
+    if (next.width !== scene.width || next.height !== scene.height)
+      updated = resizeScene(updated, next.width, next.height);
+    if (next.detail !== scene.detail)
+      updated = { ...updated, detail: next.detail };
+    if (next.palette !== scene.palette)
+      updated = { ...updated, palette: next.palette };
+    commit(updated);
+  }
   function travel(type: "undo" | "redo") {
+    if (locked.current) return;
     cancelGeneration();
     const updated = historyReducer(historyRef.current, { type });
     historyRef.current = updated;
+    nameDraftRef.current = updated.present.name;
+    nameDirtyRef.current = false;
+    setNameDraft(updated.present.name);
     setHistory(updated);
   }
   function perform(action: () => void) {
     try {
       action();
+    } catch (error) {
+      setNotice(errorMessage(error));
+    }
+  }
+  async function requestOpen(
+    target: OpenProject,
+    mode: TransitionMode = "current",
+    retry = false,
+  ) {
+    if (locked.current) return;
+    if (!confirmName()) return;
+    locked.current = true;
+    setTransitioning(true);
+    setPendingOpen(undefined);
+    cancelGeneration();
+    imports.current++;
+    const epoch = ++transitionEpoch.current;
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    try {
+      const snapshot = clone(historyRef.current.present);
+      const operation =
+        mode === "copy"
+          ? (async () => {
+              const existing = await repository.get(target.scene.id);
+              if (existing) {
+                if (
+                  JSON.stringify(existing.document) !==
+                  JSON.stringify(target.scene)
+                )
+                  throw new ConflictError();
+                return existing.storageRevision;
+              }
+              return repository.save(target.scene, 0);
+            })()
+          : queue
+              .current!.flush(snapshot, retry)
+              .then(() => target.storageRevision);
+      const storageRevision = await Promise.race([
+        operation,
+        new Promise<never>((_, reject) => {
+          timer = setTimeout(
+            () =>
+              reject(
+                new Error(
+                  "Хранилище отвечает слишком долго. Работа остаётся открытой. Можно повторить переход или скачать проект.",
+                ),
+              ),
+            5000,
+          );
+        }),
+      ]);
+      if (epoch !== transitionEpoch.current) return;
+      queue.current?.close();
+      onOpen({ ...target, storageRevision });
+    } catch (error) {
+      if (epoch === transitionEpoch.current)
+        setPendingOpen({ target, mode, message: errorMessage(error) });
+    } finally {
+      if (timer) clearTimeout(timer);
+      if (epoch === transitionEpoch.current) {
+        locked.current = false;
+        setTransitioning(false);
+      }
+    }
+  }
+  async function showSavedProjects() {
+    if (!confirmName()) return;
+    try {
+      setSavedProjects(await repository.list());
+      setProjectsOpen(true);
+    } catch (error) {
+      setNotice(errorMessage(error));
+    }
+  }
+  async function openSaved(id: string) {
+    // Selecting the current document must not replace its newer in-memory
+    // revision with the older snapshot captured by the project picker.
+    if (id === historyRef.current.present.id) {
+      setProjectsOpen(false);
+      return;
+    }
+    try {
+      const saved = await repository.get(id);
+      if (!saved) throw new Error("Проект больше не найден в этом браузере.");
+      const document = validateScene(saved.document, catalog);
+      setProjectsOpen(false);
+      await requestOpen({
+        scene: document,
+        storageRevision: saved.storageRevision,
+      });
     } catch (error) {
       setNotice(errorMessage(error));
     }
@@ -390,6 +571,9 @@ function Editor({
   }, [selected]);
 
   async function generate() {
+    if (locked.current) return;
+    if (!confirmName()) return;
+    const requestVersion = inputVersion.current;
     const token = ++generation.current,
       snapshot = clone(historyRef.current.present);
     setBusy(true);
@@ -410,6 +594,7 @@ function Editor({
         },
       );
       if (!result || token !== generation.current) return;
+      candidateInputVersion.current = requestVersion;
       setCandidates(result);
       setExplanation(selection.explanation);
       if (!snapshot.instances.length) {
@@ -424,7 +609,10 @@ function Editor({
     }
   }
   function applyCandidate(candidate: SceneDocument) {
-    if (candidateRevision !== historyRef.current.present.revision) {
+    if (
+      candidateRevision !== historyRef.current.present.revision ||
+      candidateInputVersion.current !== inputVersion.current
+    ) {
       setNotice("Параметры изменены. Соберите варианты ещё раз.");
       return;
     }
@@ -433,13 +621,16 @@ function Editor({
     setSelected(undefined);
   }
   function saveProject() {
+    confirmName();
+    const snapshot = clone(historyRef.current.present);
     downloadFile(
-      JSON.stringify(clone(historyRef.current.present), null, 2),
-      safeFileName(scene.name) + ".composition.json",
+      JSON.stringify(snapshot, null, 2),
+      safeFileName(snapshot.name) + ".composition.json",
       "application/json",
     );
   }
   function exportSvg() {
+    confirmName();
     perform(() => {
       const snapshot = clone(historyRef.current.present),
         svg = exportScene(snapshot, catalog, assets);
@@ -447,6 +638,8 @@ function Editor({
     });
   }
   async function importFile(file: File, kind: "palette" | "project") {
+    if (locked.current) return;
+    if (!confirmName()) return;
     const token = ++imports.current,
       snapshot = clone(historyRef.current.present);
     try {
@@ -464,7 +657,7 @@ function Editor({
         setNotice("Палитра применена ко всей композиции.");
       } else {
         const imported = validateScene(data, catalog);
-        onOpen({
+        await requestOpen({
           scene: { ...imported, id: uid(), revision: 0 },
           storageRevision: 0,
         });
@@ -474,24 +667,35 @@ function Editor({
     }
   }
   function fork() {
-    onOpen({
-      scene: {
-        ...clone(historyRef.current.present),
-        id: uid(),
-        name: scene.name + " — копия",
-        revision: 0,
+    if (!confirmName()) return;
+    const current = historyRef.current.present;
+    void requestOpen(
+      {
+        scene: {
+          ...clone(current),
+          id: uid(),
+          name: current.name.slice(0, 92) + " — копия",
+          revision: 0,
+        },
+        storageRevision: 0,
       },
-      storageRevision: 0,
-    });
+      "copy",
+    );
   }
   async function openLatest() {
+    if (!confirmName()) return;
     try {
       const saved = await repository.get(scene.id);
       if (!saved)
         throw new Error("Сохранённая версия не найдена. Сохраните свою копию.");
-      onOpen({
-        scene: validateScene(saved.document, catalog),
-        storageRevision: saved.storageRevision,
+      setPendingOpen({
+        target: {
+          scene: validateScene(saved.document, catalog),
+          storageRevision: saved.storageRevision,
+        },
+        mode: "current",
+        message:
+          "Открытие актуальной версии заменит ваши изменения в памяти. Сначала можно скачать проект или сохранить отдельную копию.",
       });
     } catch (error) {
       setNotice(errorMessage(error));
@@ -508,17 +712,23 @@ function Editor({
       onLayer={layer}
       mode={mode}
       setMode={(value) => {
-        cancelGeneration();
+        if (value === inputValues.current.mode) return;
+        inputValues.current.mode = value;
+        invalidateInput();
         setMode(value);
       }}
       prompt={prompt}
       setPrompt={(value) => {
-        cancelGeneration();
+        if (value === inputValues.current.prompt) return;
+        inputValues.current.prompt = value;
+        invalidateInput();
         setPrompt(value);
       }}
       background={background}
       setBackground={(value) => {
-        cancelGeneration();
+        if (value === inputValues.current.background) return;
+        inputValues.current.background = value;
+        invalidateInput();
         setBackground(value);
       }}
       busy={busy}
@@ -532,7 +742,7 @@ function Editor({
       scene={scene}
       catalog={catalog}
       selected={selectedItem}
-      onChange={commit}
+      onChange={changeComposition}
       onObjectChange={changeSelected}
       onDuplicate={duplicate}
       onDelete={remove}
@@ -551,13 +761,19 @@ function Editor({
       }
     />
   );
+  const visibleSaveStatus =
+    nameDraft !== scene.name &&
+    saveStatus !== "error" &&
+    saveStatus !== "conflict"
+      ? "dirty"
+      : saveStatus;
   const statusText = {
     saved: "Сохранено в браузере",
     saving: "Сохраняем…",
     dirty: "Не сохранено",
     conflict: "Конфликт версий",
     error: "Хранилище недоступно",
-  }[saveStatus];
+  }[visibleSaveStatus];
   return (
     <div className="studio-shell">
       <header className="studio-header">
@@ -576,15 +792,30 @@ function Editor({
           <input
             aria-label="Название проекта"
             maxLength={100}
-            value={scene.name}
-            onChange={(event) =>
-              commit({
-                ...historyRef.current.present,
-                name: event.target.value || "Новая композиция",
-              })
-            }
+            disabled={transitioning}
+            value={nameDraft}
+            onChange={(event) => {
+              nameDraftRef.current = event.target.value;
+              nameDirtyRef.current =
+                event.target.value !== historyRef.current.present.name;
+              setNameDraft(event.target.value);
+            }}
+            onBlur={confirmName}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                confirmName();
+                event.currentTarget.blur();
+              }
+              if (event.key === "Escape") {
+                const current = historyRef.current.present.name;
+                nameDraftRef.current = current;
+                nameDirtyRef.current = false;
+                setNameDraft(current);
+                event.currentTarget.blur();
+              }
+            }}
           />
-          <span className={`save-status ${saveStatus}`} role="status">
+          <span className={`save-status ${visibleSaveStatus}`} role="status">
             <i />
             {statusText}
           </span>
@@ -617,13 +848,30 @@ function Editor({
               <ChevronDown size={13} />
             </summary>
             <div className="menu-content">
+              <button className="mobile-history-action" disabled={!history.past.length} onClick={() => travel("undo")}>
+                Отменить действие
+              </button>
+              <button className="mobile-history-action" disabled={!history.future.length} onClick={() => travel("redo")}>
+                Повторить действие
+              </button>
               <button
+                disabled={transitioning}
                 onClick={() =>
-                  onOpen({ scene: blankScene(catalog), storageRevision: 0 })
+                  void requestOpen({
+                    scene: blankScene(catalog),
+                    storageRevision: 0,
+                  })
                 }
               >
                 <Plus size={15} />
                 Новая композиция
+              </button>
+              <button
+                disabled={transitioning}
+                onClick={() => void showSavedProjects()}
+              >
+                <FolderOpen size={15} />
+                Открыть сохранённый проект
               </button>
               <button onClick={() => fileInput.current?.click()}>
                 <Upload size={15} />
@@ -660,6 +908,12 @@ function Editor({
           }}
         />
       </header>
+      {transitioning && (
+        <div className="notice" role="status">
+          <LoaderCircle size={15} className="spin" /> Сохраняем текущий проект
+          перед переходом…
+        </div>
+      )}
       {(saveStatus === "conflict" || saveStatus === "error") && (
         <div className="storage-banner" role="alert">
           <span>
@@ -698,56 +952,62 @@ function Editor({
           Параметры
         </button>
       </div>
-      <div className="studio-body">
-        <aside className="left-sidebar">{sidebar}</aside>
-        <main className="studio-main">
-          <div className="workspace-heading">
-            <div>
-              <span className="eyebrow">ВАША КОМПОЗИЦИЯ</span>
-              <h2>
-                История в деталях<span>✳</span>
-              </h2>
+      <RenderBoundary
+        onDownload={saveProject}
+        onReload={() => onReloadAssets(clone(historyRef.current.present))}
+      >
+        <div
+          className="studio-body"
+          inert={transitioning}
+          aria-busy={transitioning}
+        >
+          <aside className="left-sidebar">{sidebar}</aside>
+          <main className="studio-main">
+            <div className="workspace-heading">
+              <div>
+                <h2>Композиция</h2>
+              </div>
+              <span className="object-count">
+                {scene.instances.length} / {LIMITS.instances} объектов
+              </span>
             </div>
-            <span className="object-count">
-              {scene.instances.length} / {LIMITS.instances} объектов
-            </span>
-          </div>
-          <Canvas
-            scene={scene}
-            catalog={catalog}
-            assets={assets}
-            selected={selected}
-            onSelect={setSelected}
-            onMove={(id, x, y) =>
-              commit(changeObject(historyRef.current.present, id, { x, y }))
-            }
-          />
-          <Candidates
-            candidates={candidates}
-            catalog={catalog}
-            assets={assets}
-            onApply={applyCandidate}
-            disabled={candidateRevision !== scene.revision}
-            busy={busy}
-          />
-          <footer className="workspace-footer">
-            <span>
-              <Check size={12} />
-              Только оригинальные объекты
-            </span>
-            <span>
-              SVG · {scene.detail} · {catalog.families.length} объектов
-            </span>
-          </footer>
-        </main>
-        <aside className="right-sidebar">{inspector}</aside>
-      </div>
+            <Canvas
+              interactionDisabled={transitioning}
+              scene={scene}
+              catalog={catalog}
+              assets={assets}
+              selected={selected}
+              onSelect={setSelected}
+              onMove={(id, x, y) =>
+                commit(changeObject(historyRef.current.present, id, { x, y }))
+              }
+            />
+            <Candidates
+              candidates={candidates}
+              catalog={catalog}
+              assets={assets}
+              onApply={applyCandidate}
+              disabled={
+                candidateRevision !== scene.revision ||
+                candidateInputVersion.current !== inputVersion.current
+              }
+              busy={busy}
+            />
+          </main>
+          <aside className="right-sidebar">{inspector}</aside>
+        </div>
+      </RenderBoundary>
       <Modal
         title="Сборка и библиотека"
         open={libraryOpen}
         onClose={() => setLibraryOpen(false)}
       >
-        {sidebar}
+        <RenderBoundary
+          onDownload={saveProject}
+          onReload={() => onReloadAssets(clone(historyRef.current.present))}
+        >
+          {sidebar}
+        </RenderBoundary>
       </Modal>
       <Modal
         title="Параметры композиции"
@@ -755,6 +1015,87 @@ function Editor({
         onClose={() => setInspectorOpen(false)}
       >
         {inspector}
+      </Modal>
+      <Modal
+        title="Сохранённые проекты"
+        open={projectsOpen}
+        onClose={() => setProjectsOpen(false)}
+      >
+        <div className="saved-projects">
+          {!savedProjects.length && (
+            <p>В этом браузере пока нет сохранённых проектов.</p>
+          )}
+          {savedProjects
+            .filter((item) => typeof item.id === "string")
+            .map((item) => (
+              <button
+                className="saved-project"
+                key={item.id}
+                onClick={() => void openSaved(item.id)}
+              >
+                <strong>
+                  {typeof item.document?.name === "string"
+                    ? item.document.name
+                    : "Повреждённый проект"}
+                </strong>
+                <small>
+                  {Array.isArray(item.document?.instances)
+                    ? item.document.instances.length
+                    : "?"}{" "}
+                  объектов ·{" "}
+                  {Number.isFinite(item.updatedAt)
+                    ? new Date(item.updatedAt).toLocaleString("ru-RU")
+                    : "Дата недоступна"}
+                </small>
+              </button>
+            ))}
+        </div>
+      </Modal>
+      <Modal
+        title="Текущий проект остаётся открыт"
+        open={!!pendingOpen}
+        onClose={() => setPendingOpen(undefined)}
+      >
+        <div className="leave-project">
+          <p>{pendingOpen?.message}</p>
+          <p>
+            Переход без сохранения может потерять ваши последние изменения.
+            Скачивание файла само по себе не закрывает проект.
+          </p>
+          <button
+            className="primary"
+            onClick={() =>
+              pendingOpen &&
+              void requestOpen(pendingOpen.target, pendingOpen.mode, true)
+            }
+          >
+            Повторить сохранение
+          </button>
+          <button className="secondary" onClick={saveProject}>
+            Скачать проект JSON
+          </button>
+          <button className="secondary" onClick={fork}>
+            Сохранить отдельную копию
+          </button>
+          <button
+            className="text-button"
+            onClick={() => setPendingOpen(undefined)}
+          >
+            Остаться в редакторе
+          </button>
+          <button
+            className="text-button danger"
+            onClick={() => {
+              if (!pendingOpen) return;
+              cancelGeneration();
+              imports.current++;
+              queue.current?.close();
+              onOpen(pendingOpen.target);
+            }}
+          >
+            Продолжить без сохранения
+          </button>
+        </div>
       </Modal>
     </div>
   );

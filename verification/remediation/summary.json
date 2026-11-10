@@ -1,0 +1,139 @@
+{
+  "generatedAt": "2026-11-10T18:08:28.682Z",
+  "version": "0.1.1",
+  "productFingerprint": "66c42d1aad6fbf85ef2b0ca596b34f3f7ba850b1b12e2c8f72b675319efeae7e",
+  "coreUnit": {
+    "passed": 26,
+    "evidence": "npm test: successful final command, recorded in TEST_REPORT.md"
+  },
+  "regressionUnit": {
+    "passed": 39,
+    "failed": 0,
+    "pending": 0,
+    "success": true
+  },
+  "browser": {
+    "startTime": "2026-11-10T17:50:51.150Z",
+    "duration": 149062.285,
+    "expected": 52,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "legacy": {
+    "startTime": "2026-11-10T17:40:42.837Z",
+    "duration": 89991.48199999999,
+    "expected": 38,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "raceRepeats": {
+    "startTime": "2026-11-10T17:33:21.557Z",
+    "duration": 365585.993,
+    "expected": 60,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "quality": {
+    "orderedSets": 3240,
+    "candidates": 9720,
+    "geometryFailures": 0,
+    "renderedScenes": 216,
+    "renderedInstances": 846,
+    "paintFailures": 0
+  },
+  "exports": {
+    "comparisons": 54,
+    "maxMAE": 0,
+    "passed": true
+  },
+  "ui": {
+    "passed": true,
+    "viewports": 9,
+    "realChromeZoom": [
+      125,
+      200
+    ]
+  },
+  "originals": {
+    "variants": 40,
+    "geometry": true,
+    "sourceHashes": true
+  },
+  "cleanZip": {
+    "passed": true,
+    "reproducibleRuntimeFiles": 51,
+    "differences": []
+  },
+  "soak": {
+    "started": "2026-11-10T17:37:17.150Z",
+    "cycles": 114,
+    "samples": [
+      {
+        "elapsedSeconds": 307.4105562,
+        "cycles": 20,
+        "heap": 5975080,
+        "nodes": 26336,
+        "listeners": 272,
+        "dom": 2325,
+        "activeBlobUrls": 0,
+        "busy": false
+      },
+      {
+        "elapsedSeconds": 607.9037192000001,
+        "cycles": 39,
+        "heap": 6246676,
+        "nodes": 26336,
+        "listeners": 272,
+        "dom": 2325,
+        "activeBlobUrls": 0,
+        "busy": false
+      },
+      {
+        "elapsedSeconds": 1209.0428149000002,
+        "cycles": 77,
+        "heap": 6366496,
+        "nodes": 26336,
+        "listeners": 272,
+        "dom": 2325,
+        "activeBlobUrls": 0,
+        "busy": false
+      },
+      {
+        "elapsedSeconds": 1794.7987367,
+        "cycles": 114,
+        "heap": 6409632,
+        "nodes": 26336,
+        "listeners": 272,
+        "dom": 2325,
+        "activeBlobUrls": 0,
+        "busy": false
+      },
+      {
+        "elapsedSeconds": 1800.0020871000002,
+        "heap": 6408784,
+        "nodes": 26336,
+        "listeners": 272,
+        "dom": 2325,
+        "activeBlobUrls": 0
+      }
+    ],
+    "errors": [],
+    "passed": true,
+    "elapsedSeconds": 1800.0020871000002,
+    "heapInvestigationThreshold": 17954610,
+    "restoredExactly": true,
+    "finished": "2026-11-10T18:07:21.472Z"
+  },
+  "notTested": [
+    "WebKit",
+    "other operating systems",
+    "physical touch hardware",
+    "SVG-edit native file dialog",
+    "employer access"
+  ],
+  "publicationEvidence": "release.json and published-qa in the corresponding delivery package; kept outside source to avoid changing the published commit",
+  "codeAcceptancePassed": true
+}

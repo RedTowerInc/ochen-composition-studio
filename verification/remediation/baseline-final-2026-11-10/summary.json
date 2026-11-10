@@ -1,0 +1,118 @@
+{
+  "productCommit": "1d4c23eef2e2459ed99285a54c6887566dd10bf3",
+  "productFingerprint": "c9b9e82a7b0a187a88a1a35b33a314e6772a54b628d74a52055375f7a202e771",
+  "unit": {
+    "passed": 2,
+    "failed": 7,
+    "total": 9
+  },
+  "browser": {
+    "startTime": "2026-11-10T16:36:14.713Z",
+    "duration": 79104.583,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 10,
+    "flaky": 0
+  },
+  "clockControl": {
+    "startTime": "2026-11-10T16:35:23.962Z",
+    "duration": 35959.85,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "testFiles": [
+    {
+      "file": "vitest.regression.config.ts",
+      "sha256": "b990820a32b821a5d57dcac4692674ace03d1c4f1cd68012cc3311597b299376"
+    },
+    {
+      "file": "playwright.regression.config.ts",
+      "sha256": "e93c17ba625e4795a5cbc4b637a3f1556f27db5effe06ab61872acf33da59fcb"
+    },
+    {
+      "file": "tests/regression/unit/audit.test.ts",
+      "sha256": "dbc7e15c9c912f69fbca1b0fac4c2f990d9db9f027c17d6e1d6ff68fe7c05661"
+    },
+    {
+      "file": "tests/regression/browser/audit.spec.ts",
+      "sha256": "84bd95942005e6c539f18517c91d8b9c116d53640f4ab0ceb2ca9d7c3530fc65"
+    }
+  ],
+  "checks": [
+    {
+      "id": "RG10",
+      "project": "chromium",
+      "status": "unexpected",
+      "error": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 5\nReceived: 4\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate"
+    },
+    {
+      "id": "RG10",
+      "project": "firefox",
+      "status": "unexpected",
+      "error": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 5\nReceived: 4\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate"
+    },
+    {
+      "id": "RG11",
+      "project": "chromium",
+      "status": "unexpected",
+      "error": "Error: expect(received).toBeGreaterThanOrEqual(expected)\n\nExpected: >= 420\nReceived:    145.59375\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate"
+    },
+    {
+      "id": "RG11",
+      "project": "firefox",
+      "status": "unexpected",
+      "error": "Error: expect(received).toBeGreaterThanOrEqual(expected)\n\nExpected: >= 420\nReceived:    145.58331298828125\n\nCall Log:\n- Timeout 2500ms exceeded while waiting on the predicate"
+    },
+    {
+      "id": "RG12",
+      "project": "chromium",
+      "status": "unexpected",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('button', { name: 'Повторить загрузку', exact: true })\nExpected: visible\nTimeout: 2500ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('button', { name: 'Повторить загрузку', exact: true }) with timeout 2500ms\n  - waiting for getByRole('button', { name: 'Пов"
+    },
+    {
+      "id": "RG12",
+      "project": "firefox",
+      "status": "unexpected",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('button', { name: 'Повторить загрузку', exact: true })\nExpected: visible\nTimeout: 2500ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('button', { name: 'Повторить загрузку', exact: true }) with timeout 2500ms\n  - waiting for getByRole('button', { name: 'Пов"
+    },
+    {
+      "id": "RG13",
+      "project": "chromium",
+      "status": "unexpected",
+      "error": "Error: expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('.candidate-card:not(:disabled)')\nExpected: 0\nReceived: 3\nTimeout:  2500ms\n\nCall log:\n  - Expect \"toHaveCount\" locator('.candidate-card:not(:disabled)') with timeout 2500ms\n  - waiting for locator('.candidate-card:not(:disabled)')\n    9 × locator resolved to 3 elements\n      - u"
+    },
+    {
+      "id": "RG13",
+      "project": "firefox",
+      "status": "unexpected",
+      "error": "Error: expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('.candidate-card:not(:disabled)')\nExpected: 0\nReceived: 3\nTimeout:  2500ms\n\nCall log:\n  - Expect \"toHaveCount\" locator('.candidate-card:not(:disabled)') with timeout 2500ms\n  - waiting for locator('.candidate-card:not(:disabled)')\n    9 × locator resolved to 3 elements\n      - u"
+    },
+    {
+      "id": "RG14",
+      "project": "chromium",
+      "status": "unexpected",
+      "error": "Error: .segmented button[aria-pressed=false]\n\nexpect(received).toBeGreaterThanOrEqual(expected)\n\nExpected: >= 4.5\nReceived:    2.544773879136219"
+    },
+    {
+      "id": "RG14",
+      "project": "firefox",
+      "status": "unexpected",
+      "error": "Error: .segmented button[aria-pressed=false]\n\nexpect(received).toBeGreaterThanOrEqual(expected)\n\nExpected: >= 4.5\nReceived:    2.544773879136219"
+    },
+    {
+      "id": "RG15",
+      "project": "chromium",
+      "status": "expected",
+      "error": ""
+    },
+    {
+      "id": "RG15",
+      "project": "firefox",
+      "status": "expected",
+      "error": ""
+    }
+  ],
+  "meaning": "Known failures reproduced on the unfixed version. This is not acceptance of a fixed product."
+}

@@ -6,10 +6,12 @@ import {
 } from "./types";
 import {
   assetKey,
+  assertAssetColors,
   sanitizeSvg,
   type AssetStore,
   type LoadedAsset,
 } from "./svg";
+import { parsePalette } from "./validation";
 
 export async function loadCatalog(
   signal: AbortSignal,
@@ -33,6 +35,11 @@ export async function loadCatalog(
     new Set(catalog.families.map((f) => f.id)).size !== catalog.families.length
   )
     throw new StudioError("Некорректный состав библиотеки.");
+  const roles = Object.values(catalog.colorRoles);
+  if (!roles.includes("background") || !roles.includes("object") ||
+    roles.some((role) => !["background", "object", "neutral"].includes(role)))
+    throw new StudioError("В библиотеке повреждены цветовые роли.");
+  for (const palette of catalog.palettes) parsePalette(palette, catalog);
   for (const family of catalog.families) {
     if (
       !Number.isFinite(family.canonicalWidth) ||
@@ -81,10 +88,9 @@ export async function loadCatalog(
               task.family.name +
               "». Повторите загрузку.",
           );
-        assets.set(
-          assetKey(task.family.id, task.detail, task.role),
-          sanitizeSvg(await file.text(), task.variant),
-        );
+        const asset = sanitizeSvg(await file.text(), task.variant);
+        assertAssetColors(asset, catalog);
+        assets.set(assetKey(task.family.id, task.detail, task.role), asset);
         progress(++loaded, tasks.length);
       }
     }),

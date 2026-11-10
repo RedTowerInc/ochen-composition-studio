@@ -1,0 +1,3202 @@
+[
+  {
+    "label": "Книга · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "1812b1d3-e483-4e69-8a2a-2ebddadd038e",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.35381949455079575,
+      "instances": [
+        {
+          "id": "9be13030-d983-4995-b66a-c7179f1b3e54",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6390853628242643,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Книга · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "66766419-6cd3-498e-958a-7cd4ed4055a5",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.35430775407367887,
+      "instances": [
+        {
+          "id": "75c37137-4a89-4e0a-aedf-0d0664cbed38",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6392502213057565,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Телефон · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "591f2b6d-a3ec-464d-8727-564d22b31dc6",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.6408307064713518,
+      "instances": [
+        {
+          "id": "da793137-ac09-445f-b253-b55dfffb1655",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Телефон · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "2a01bdbe-5a97-494f-a41b-68b7a7b3cd30",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.6424303442038817,
+      "instances": [
+        {
+          "id": "8adb72ea-7d75-4553-9c1c-655a0df1d54c",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Пазлы · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "27eeae07-7d86-47b6-bbac-a9d78c018d5d",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.9358516246755971,
+      "instances": [
+        {
+          "id": "fdb27061-d849-4f77-883e-b57f04c4bb41",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Пазлы · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "8fbc6402-ed9b-4ba7-bfd5-a556eb67b939",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.939277784656757,
+      "instances": [
+        {
+          "id": "867abfb5-dd3b-41b7-b2ef-b6fd76b76dd6",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Наушники · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "ba5e4e76-e083-4d24-bf5b-00ffa1afd8ff",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.5750156718429985,
+      "instances": [
+        {
+          "id": "0cd1b2ec-2a56-4a3e-a4ab-8bef5e7c42ce",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6008552301828112,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Наушники · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "93ab6555-d7e6-4207-91b7-bed3d26681d8",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.5763061626489072,
+      "instances": [
+        {
+          "id": "6b6b928a-8038-4ae2-9ef1-5f1ad6e63293",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6010394989566488,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Лампа · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "4140aa78-2043-4a45-82a5-da4e8dfd893d",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.45278881543222116,
+      "instances": [
+        {
+          "id": "e5e1a668-313a-4627-ba18-bd56e709bd19",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.5330673319152341,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Лампа · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "1b769e1d-1e52-4b8b-861f-54e1f72b0b7a",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.4535856016412637,
+      "instances": [
+        {
+          "id": "92b3b407-8970-498b-8d10-8f74e50dd1b1",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.533092601412429,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Кошелёк · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "8a3cf8dc-c453-45ae-8139-5f31fe430adb",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.8086195364974936,
+      "instances": [
+        {
+          "id": "f54bdd07-9743-4ae2-8fee-36fe8ea5acbf",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Кошелёк · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "975c67bd-d121-4def-81ce-0a01179ff826",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.8111705187249796,
+      "instances": [
+        {
+          "id": "a7447a8d-f1a5-4f6b-8695-78aaef911cf4",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Ручка · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "2a8b26d2-347d-4cbb-944b-3245358208e5",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 1.0011363295269868,
+      "instances": [
+        {
+          "id": "af7157d7-5e40-48f5-acdd-f06984e19daf",
+          "familyId": "pen",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Ручка · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "df02f343-2d09-468e-bab9-faad98c3a225",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 1.005038710468938,
+      "instances": [
+        {
+          "id": "a8f23dd1-d098-44f6-aa61-f66f50784545",
+          "familyId": "pen",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Папка · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "01c6d272-aeb5-4f05-b78e-d909bf7377b3",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.4121744836044632,
+      "instances": [
+        {
+          "id": "078eba78-c4c7-4e08-b8f5-30deadbbda75",
+          "familyId": "folder",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Папка · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "c09586fc-9eb6-46c8-a3f3-a58a3911e6b5",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.41283820469780363,
+      "instances": [
+        {
+          "id": "1bbac610-362c-4481-bcde-f39a63258790",
+          "familyId": "folder",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Монета · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "7754d2b9-5cd2-43d0-872d-311bbfea0d67",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 1.6613203922182533,
+      "instances": [
+        {
+          "id": "4977fddb-fa03-4d59-a1f4-395c49ef8e47",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Монета · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "c95e5b65-9546-4036-b48c-b4c630ac4fc3",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 1.7770786448435705,
+      "instances": [
+        {
+          "id": "7afb4660-ee08-49d9-a603-58f8d46f8a8e",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6424133847188205,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Цветы · S",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "bcfa643f-504a-4966-8cf5-79d2d2eeee3f",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.6241702723271229,
+      "instances": [
+        {
+          "id": "b6375ba8-20b8-47d8-b52c-1e92d8600489",
+          "familyId": "flowers",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.5370797762132924,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "Цветы · L",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "9e2c48c9-441c-41f4-aad8-ea4a4fb1a8fa",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.6848167866882897,
+      "instances": [
+        {
+          "id": "ebfa5c27-7202-429e-9905-039f6b5b3991",
+          "familyId": "flowers",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.5371199595298614,
+          "rotation": -13
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, book, lamp · S · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "4805c068-43e3-44c6-9792-2c655472de30",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.35381949455079575,
+      "instances": [
+        {
+          "id": "3b7b03f5-34b2-4fec-b2ee-3cc33d93857c",
+          "familyId": "lamp",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "7087ca08-a3c4-42cf-aaf9-e795b29e6c43",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5825122882425785,
+          "y": 0.6283858700821685,
+          "rotation": 15
+        },
+        {
+          "id": "7d82c687-dce0-488f-b8ab-7baa584bb534",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.24067895354703067,
+          "y": 0.36721565955290747,
+          "rotation": -12
+        },
+        {
+          "id": "dd981e5a-7b04-43d2-ae0b-2871f7cc2a6a",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.28416812483221293,
+          "y": 0.7374290581326931,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, book, lamp · S · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "8736540c-9e1e-45ec-b2b1-c6815e6c2517",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3586474408702023,
+      "instances": [
+        {
+          "id": "82f6b75c-174c-46a7-a375-9bb5ac23ee0d",
+          "familyId": "lamp",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "fce75be9-9d81-4c03-94b0-0e2272a25ce0",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5825122882425785,
+          "y": 0.6660296969022602,
+          "rotation": 15
+        },
+        {
+          "id": "6289bc5e-d297-4940-b5c6-34863b089a58",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.24067895354703067,
+          "y": 0.2745955901686102,
+          "rotation": -12
+        },
+        {
+          "id": "cb5155e6-2536-4585-86e8-c22fe0bdb208",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.28416812483221293,
+          "y": 0.7374290581326931,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, book, lamp · S · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "2a1fddc1-acfe-49fb-80ca-427e624d5979",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3619580326320811,
+      "instances": [
+        {
+          "id": "dcb3e6dc-6cf9-4e1a-9c0e-e184ccf4dda2",
+          "familyId": "lamp",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "0cc0d158-6dd0-4952-870c-5d8ca456deba",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5025122882425785,
+          "y": 0.7356538218672659,
+          "rotation": 15
+        },
+        {
+          "id": "edee9254-6b0e-4cc1-9e1a-4606cc6978fe",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.36067895354703067,
+          "y": 0.26130891859653393,
+          "rotation": -12
+        },
+        {
+          "id": "22bf7f0b-7e3d-43fe-8080-ab3585f7a088",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.784168124832213,
+          "y": 0.2574290581326932,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, book, lamp · L · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "5737f93f-f238-4e88-9217-0852fbb4caee",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.35430775407367887,
+      "instances": [
+        {
+          "id": "e4831a3f-cb0c-4e7b-bc8c-42bfae3fbf79",
+          "familyId": "lamp",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "92d39e0f-626e-4f02-a2e6-02afb0f9cac2",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5825122882425785,
+          "y": 0.6285492998412623,
+          "rotation": 15
+        },
+        {
+          "id": "965a6646-c37a-4261-bf96-3f94257e42d8",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.24067895354703067,
+          "y": 0.3670676836471311,
+          "rotation": -12
+        },
+        {
+          "id": "2c1ccee3-b37e-4db4-8400-ef2b729833a4",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.28416812483221293,
+          "y": 0.7374290581326931,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, book, lamp · L · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "5ee196d0-862a-471b-a33a-e0520e6aa42a",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3591423628037291,
+      "instances": [
+        {
+          "id": "c0b76d97-3460-427c-9a21-70b8cc02caa3",
+          "familyId": "lamp",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "e863b435-1d99-47f8-aa08-99bd1a5a6d33",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5825122882425785,
+          "y": 0.6660296969022602,
+          "rotation": 15
+        },
+        {
+          "id": "a20c7f7e-176c-4bb3-af53-89247e48d84e",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.24067895354703067,
+          "y": 0.2745955901686102,
+          "rotation": -12
+        },
+        {
+          "id": "130c90fb-1c38-47f9-a864-8c287a645b40",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.28416812483221293,
+          "y": 0.7374290581326931,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, book, lamp · L · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "609f6418-dc8c-4b3c-a70a-fa16fb2268cb",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3624575230757635,
+      "instances": [
+        {
+          "id": "4d074de8-3766-471b-b03a-4f5758b4f847",
+          "familyId": "lamp",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "f9df9684-0767-4f2c-998b-45b055277455",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5025122882425785,
+          "y": 0.7357666744167033,
+          "rotation": 15
+        },
+        {
+          "id": "ecdc91d8-ce9d-4cf2-8697-f1679807655f",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.36067895354703067,
+          "y": 0.2612067373394926,
+          "rotation": -12
+        },
+        {
+          "id": "bc2c9092-0cf6-4a83-8c5e-9ec7d8c9596f",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.784168124832213,
+          "y": 0.2574290581326932,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, wallet, phone · S · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "fe8ab775-53a7-4c39-823a-804825c58378",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.35381949455079575,
+      "instances": [
+        {
+          "id": "b52e3100-0e45-4b45-92c0-bc4fd2bc5a1a",
+          "familyId": "phone",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "53e789be-387b-4c4e-bcac-48bff23618f3",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6390853628242643,
+          "rotation": -13
+        },
+        {
+          "id": "9fbf9446-083f-4e7b-a552-a664f6268e4b",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.2586418135277927,
+          "y": 0.30410506804473697,
+          "rotation": -11
+        },
+        {
+          "id": "f82823a6-0786-46e8-8e63-404487baada7",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.30782988473773004,
+          "y": 0.7283357889857143,
+          "rotation": 14
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, wallet, phone · S · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "7738510f-aa6d-4504-ba35-fc20a4228c8a",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3586474408702023,
+      "instances": [
+        {
+          "id": "0e853bd2-885f-4894-8ade-5cdb026cdc3e",
+          "familyId": "phone",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "79328641-2c48-4583-829a-19192a601acd",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5732946768123656,
+          "y": 0.641363821849227,
+          "rotation": -12
+        },
+        {
+          "id": "9f0cd236-2613-4f5e-a855-1314845096ca",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.2350063034053892,
+          "y": 0.2866185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "2088a5a6-df1d-45a4-aaee-eb2c349599a6",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.2819206383917481,
+          "y": 0.7000617433711886,
+          "rotation": 14
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, wallet, phone · S · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "108f499e-cd64-47ad-9f1d-2e024ce868a1",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.4414122349171721,
+      "instances": [
+        {
+          "id": "c1a6a624-25fc-4f9c-a4b4-bc94c6e5c403",
+          "familyId": "phone",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "84061b42-8d23-4895-99f6-a8a46c774802",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5087710445746779,
+          "y": 0.6921245160625384,
+          "rotation": -13
+        },
+        {
+          "id": "25f8d91e-9e89-48b7-acca-c072a99d511a",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.3786418135277927,
+          "y": 0.274105068044737,
+          "rotation": -11
+        },
+        {
+          "id": "43c470a5-e736-41f9-a753-7cc6f129b85a",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.7784575769919706,
+          "y": 0.24833578898571432,
+          "rotation": 14
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, wallet, phone · L · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "c9de853f-0139-4a1b-a701-68ff93263307",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.35430775407367887,
+      "instances": [
+        {
+          "id": "8188d932-3a2a-4c10-954a-e0c104f55810",
+          "familyId": "phone",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "8983c2de-e546-4654-88d9-6c18e8d45d1f",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5887710445746779,
+          "y": 0.6392502213057565,
+          "rotation": -13
+        },
+        {
+          "id": "4085ed79-7c65-4451-91e1-6d17606e5e9a",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.2586418135277927,
+          "y": 0.30410506804473697,
+          "rotation": -11
+        },
+        {
+          "id": "ac102d2a-366d-4079-b3b6-863094c563c8",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.30782988473773004,
+          "y": 0.7283357889857143,
+          "rotation": 14
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, wallet, phone · L · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "0a756abf-f5c5-4dee-999e-d0d1ff7b4e46",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3591423628037291,
+      "instances": [
+        {
+          "id": "38668cc4-f45f-4ea4-be31-ff7fac10654d",
+          "familyId": "phone",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "26a3e2d7-ec98-4d6e-bb5c-13b0b4eba6df",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5732946768123656,
+          "y": 0.641363821849227,
+          "rotation": -12
+        },
+        {
+          "id": "da19ca81-d9f9-4764-9515-a192aede0537",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.2350063034053892,
+          "y": 0.2866185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "305bbd88-521b-4830-b444-e2ba55dfa834",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.2819206383917481,
+          "y": 0.7000617433711886,
+          "rotation": 14
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, wallet, phone · L · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "730787ce-cb72-42ec-b29e-1e0cdb9e7adc",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.44202136960458965,
+      "instances": [
+        {
+          "id": "816a9637-6db7-4548-a23e-5899063c2c39",
+          "familyId": "phone",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "643ddfde-1f1c-49a2-ba31-eb244d8504dc",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.5087710445746779,
+          "y": 0.6922633442574792,
+          "rotation": -13
+        },
+        {
+          "id": "48721c66-4bb0-401e-9d92-b6d9bff921b2",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.3786418135277927,
+          "y": 0.274105068044737,
+          "rotation": -11
+        },
+        {
+          "id": "86337d38-5b72-4b8b-b930-963a069f6b8f",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.7788548937812062,
+          "y": 0.24833578898571432,
+          "rotation": 14
+        }
+      ],
+      "seed": 20470568,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "flowers, lamp, headphones · S · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "496f0580-f418-41f8-a921-a5c99ad5cd42",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3712868286544213,
+      "instances": [
+        {
+          "id": "a53d5377-9576-47b6-a334-dc1ed8936290",
+          "familyId": "headphones",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "d8bd021b-cb9e-4483-93e5-803e89397ceb",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.5732946768123656,
+          "y": 0.6094509466639757,
+          "rotation": 14
+        },
+        {
+          "id": "f49d7525-e099-41da-8e4e-20ca6667b2b2",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.2350063034053892,
+          "y": 0.2866185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "d675f92e-aae9-4dc8-a47d-6f826f3b0da8",
+          "familyId": "flowers",
+          "role": "main",
+          "x": 0.2819206383917481,
+          "y": 0.7000617433711886,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "flowers, lamp, headphones · S · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "6b1d4e1d-c167-4215-8c2d-644f663b19f1",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3120977098183887,
+      "instances": [
+        {
+          "id": "0d1c22d8-1de3-45c3-aac7-0d2aa2d76d5e",
+          "familyId": "headphones",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "d498c4a1-27b4-48fb-a229-aa6ca19b9f0e",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.5732946768123656,
+          "y": 0.641363821849227,
+          "rotation": 14
+        },
+        {
+          "id": "e0c90948-f142-4083-9196-5909b352a7ff",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.2350063034053892,
+          "y": 0.2866185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "a242d6f1-a902-4974-836c-bf2393427492",
+          "familyId": "flowers",
+          "role": "main",
+          "x": 0.2819206383917481,
+          "y": 0.7000617433711886,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "flowers, lamp, headphones · S · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "ff0ee846-6317-4594-a8ec-d58ddbf29613",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3841202582380169,
+      "instances": [
+        {
+          "id": "acf38fd7-d587-46b6-b2c6-0f4c3b523dd3",
+          "familyId": "headphones",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "43a6f20b-af1b-46b6-b752-318a83fafc0e",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.49329467681236566,
+          "y": 0.711363821849227,
+          "rotation": 14
+        },
+        {
+          "id": "7ab45bcc-3a5b-4b14-966d-5d8488dee29e",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.3550063034053892,
+          "y": 0.2566185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "d546afb0-5d2b-445a-aa1d-f673fb93b612",
+          "familyId": "flowers",
+          "role": "main",
+          "x": 0.781210829461377,
+          "y": 0.22006174337118864,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "flowers, lamp, headphones · L · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "da0d8a1e-84d0-4192-a3a4-6fe4ed76290b",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3719401933458362,
+      "instances": [
+        {
+          "id": "814aad29-b75d-4353-83f0-b67ef44b0466",
+          "familyId": "headphones",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "352a51cb-da94-469d-8645-cd4553581b77",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.5732946768123656,
+          "y": 0.6094732308921498,
+          "rotation": 14
+        },
+        {
+          "id": "07e7fbd0-6a17-42f9-a0ee-e9b640527b12",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.2350063034053892,
+          "y": 0.2866185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "9466d295-9c3e-4397-a2aa-3ec9f704a1a8",
+          "familyId": "flowers",
+          "role": "main",
+          "x": 0.2819206383917481,
+          "y": 0.7000617433711886,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "flowers, lamp, headphones · L · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "b9b01c00-2aff-43a8-be6b-207de01c203b",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.37701540066244604,
+      "instances": [
+        {
+          "id": "9f975b59-78df-40dc-a7a0-130542f6be3a",
+          "familyId": "headphones",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "830c9273-51b1-4d74-82ef-aa838021c3f7",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.5825122882425785,
+          "y": 0.6660296969022602,
+          "rotation": 15
+        },
+        {
+          "id": "a127c7a4-8a89-4d1a-bd95-321a4edcbba5",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.24067895354703067,
+          "y": 0.2745955901686102,
+          "rotation": -12
+        },
+        {
+          "id": "576d60e8-634e-4204-8a80-ef1d56d2938b",
+          "familyId": "flowers",
+          "role": "main",
+          "x": 0.28416812483221293,
+          "y": 0.7374290581326931,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "flowers, lamp, headphones · L · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "90da21e6-5ab4-4497-b785-ce61a312f23c",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.3847962063046354,
+      "instances": [
+        {
+          "id": "c944a9e8-6454-4e87-9bb8-4a802731636d",
+          "familyId": "headphones",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "2c45f761-2be0-4747-ae2f-9583ddda282f",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.49329467681236566,
+          "y": 0.711363821849227,
+          "rotation": 14
+        },
+        {
+          "id": "14305dcf-4532-46e8-962b-5eb842ee3462",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.3550063034053892,
+          "y": 0.2566185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "80f01008-d287-4f91-b1de-129617d1b47e",
+          "familyId": "flowers",
+          "role": "main",
+          "x": 0.7819206383917481,
+          "y": 0.22006174337118864,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "pen, folder, puzzle · S · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "e287fddc-c47c-4b7c-a14b-e804e263ed74",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.4121744836044632,
+      "instances": [
+        {
+          "id": "b2199256-c254-4f03-9b5a-3167dc836875",
+          "familyId": "puzzle",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "761a6558-6702-4d70-9123-23cbdeb9f923",
+          "familyId": "folder",
+          "role": "main",
+          "x": 0.5825122882425785,
+          "y": 0.6660296969022602,
+          "rotation": 15
+        },
+        {
+          "id": "89932f62-a232-4027-b618-af8e6efc8acd",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.24067895354703067,
+          "y": 0.2745955901686102,
+          "rotation": -12
+        },
+        {
+          "id": "36fbf495-c79d-4a69-9ea3-e2f9c4f764f2",
+          "familyId": "pen",
+          "role": "main",
+          "x": 0.28416812483221293,
+          "y": 0.7374290581326931,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "pen, folder, puzzle · S · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "1bfc8295-8137-417c-bc9e-c5ab8878d6fe",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.41779869683103477,
+      "instances": [
+        {
+          "id": "468f66e5-b852-4890-bba2-9fbca810c40c",
+          "familyId": "puzzle",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "5fcc16ba-2dff-4d32-9b30-3740d8dbb590",
+          "familyId": "folder",
+          "role": "main",
+          "x": 0.5825122882425785,
+          "y": 0.6660296969022602,
+          "rotation": 15
+        },
+        {
+          "id": "f7e17e60-c7a5-4c78-ae19-d002e131954b",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.24067895354703067,
+          "y": 0.2745955901686102,
+          "rotation": -12
+        },
+        {
+          "id": "5fec1e31-b427-4c20-9400-22c5becfc53e",
+          "familyId": "pen",
+          "role": "main",
+          "x": 0.28416812483221293,
+          "y": 0.7374290581326931,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "pen, folder, puzzle · S · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "c335bbee-4cee-48bf-9080-19cada1fe143",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.5142137807151197,
+      "instances": [
+        {
+          "id": "9c2628e9-d974-4262-9d6c-2d6bc72cb231",
+          "familyId": "puzzle",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "1c97a2b2-a513-4cc9-b515-84539c4366ea",
+          "familyId": "folder",
+          "role": "main",
+          "x": 0.5025122882425785,
+          "y": 0.7276268516259974,
+          "rotation": 15
+        },
+        {
+          "id": "57b196c4-839a-4aa5-b565-7c30e1bb1342",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.36067895354703067,
+          "y": 0.2445955901686102,
+          "rotation": -12
+        },
+        {
+          "id": "2da8c82f-1209-4be6-951d-c11b795448f9",
+          "familyId": "pen",
+          "role": "main",
+          "x": 0.784168124832213,
+          "y": 0.2574290581326932,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "pen, folder, puzzle · L · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "b6a1d849-59bc-4495-93c9-252edecb5a95",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.41283820469780363,
+      "instances": [
+        {
+          "id": "417a2715-45c9-4a75-9953-8174bf9b31bd",
+          "familyId": "puzzle",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "765b89fb-92ca-4187-8127-9e7c727a8e26",
+          "familyId": "folder",
+          "role": "main",
+          "x": 0.5825122882425785,
+          "y": 0.6660296969022602,
+          "rotation": 15
+        },
+        {
+          "id": "52b3a403-b9b3-43d7-97ce-ddc88c41b295",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.24067895354703067,
+          "y": 0.2745955901686102,
+          "rotation": -12
+        },
+        {
+          "id": "6ed3061e-2f2d-42c1-a3c3-90dc45183a4c",
+          "familyId": "pen",
+          "role": "main",
+          "x": 0.28416812483221293,
+          "y": 0.7374290581326931,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "pen, folder, puzzle · L · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "101242fb-9f1c-44bb-a59f-6554648d3864",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.41847147454748124,
+      "instances": [
+        {
+          "id": "1def1f62-903b-4f30-9cbb-ede4fa58ea35",
+          "familyId": "puzzle",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "fa1bcca0-0625-457b-8676-e578ec2f294e",
+          "familyId": "folder",
+          "role": "main",
+          "x": 0.5825122882425785,
+          "y": 0.6660296969022602,
+          "rotation": 15
+        },
+        {
+          "id": "e10d9398-1363-42c2-a19d-d32b6335a80f",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.24067895354703067,
+          "y": 0.2745955901686102,
+          "rotation": -12
+        },
+        {
+          "id": "3007d69d-de8d-429a-819c-0a9884288803",
+          "familyId": "pen",
+          "role": "main",
+          "x": 0.28416812483221293,
+          "y": 0.7374290581326931,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "pen, folder, puzzle · L · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "dca99331-dcbb-4346-acf0-e6f39b850d92",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.5150418148276692,
+      "instances": [
+        {
+          "id": "957c5f94-8886-47df-be8a-d7ba21cd27ed",
+          "familyId": "puzzle",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "2a072e45-f198-4eb9-8c7a-fdf25c607502",
+          "familyId": "folder",
+          "role": "main",
+          "x": 0.5025122882425785,
+          "y": 0.7278603403071853,
+          "rotation": 15
+        },
+        {
+          "id": "b82c6f0b-7021-450b-acf1-152225603d5f",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.36067895354703067,
+          "y": 0.2445955901686102,
+          "rotation": -12
+        },
+        {
+          "id": "75e66a48-ebc6-4d6d-a950-75544775fd9c",
+          "familyId": "pen",
+          "role": "main",
+          "x": 0.784168124832213,
+          "y": 0.2574290581326932,
+          "rotation": -11
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, phone, puzzle, headphones, lamp, wallet · S · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "7a18d7a0-9872-4228-8b7c-5445ad6214b0",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.2901319855316525,
+      "instances": [
+        {
+          "id": "20d2007f-4c10-4503-9fe1-b099f4cb0d9a",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.3109762628050521,
+          "y": 0.5550916969054379,
+          "rotation": -12
+        },
+        {
+          "id": "e08651ed-37fa-45f9-b33d-6d7d656735df",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.8361383262052149,
+          "y": 0.6970275249909432,
+          "rotation": -11
+        },
+        {
+          "id": "889d9fe5-6ba4-484e-9559-773fcbc51d58",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.14104868264501383,
+          "y": 0.19370301097101555,
+          "rotation": 6
+        },
+        {
+          "id": "397dbcdf-e55c-46de-a7e3-ad789913970a",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.636471860583406,
+          "y": 0.6949837113311514,
+          "rotation": 14
+        },
+        {
+          "id": "cfdb3cf5-3e1a-45a5-9c0a-6f67c7aab082",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.1479550022422336,
+          "y": 0.8513533714460209,
+          "rotation": 7
+        },
+        {
+          "id": "c9435d59-7917-439a-996f-d7754d18cd7e",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.6781528400443494,
+          "y": 0.2673209382942878,
+          "rotation": -13
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, phone, puzzle, headphones, lamp, wallet · S · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "7e13c9fe-1f2c-4447-93d8-8d78ee393fa0",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.24388025979173758,
+      "instances": [
+        {
+          "id": "c5ee4a39-c1d6-4f04-8ab1-754f3096e904",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.3055664261127822,
+          "y": 0.5166714963642881,
+          "rotation": -11
+        },
+        {
+          "id": "6514a863-66a9-48f0-918a-5518ad8dbdfa",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.8369325796960242,
+          "y": 0.8188284996846991,
+          "rotation": -10
+        },
+        {
+          "id": "f9e23914-bd6e-4fc3-88fe-1e6c6ac79049",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.19217634213622659,
+          "y": 0.1274166485796256,
+          "rotation": 10
+        },
+        {
+          "id": "f2bfb31f-3ddf-4af4-b2d9-7a2c3f07444f",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.6756152829527855,
+          "y": 0.670103102826979,
+          "rotation": 15
+        },
+        {
+          "id": "1b316532-1c70-4bd5-a7f2-37ef6752e8dc",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.11081901331337882,
+          "y": 0.8007275538961403,
+          "rotation": 12
+        },
+        {
+          "id": "e8753226-b77d-4023-acb1-6327f5b61465",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.712961901242379,
+          "y": 0.2599115886259824,
+          "rotation": -12
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, phone, puzzle, headphones, lamp, wallet · S · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "728bc772-c11a-4abd-bd63-b34154a58caf",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.24277672920444465,
+      "instances": [
+        {
+          "id": "247e08f7-04ce-414d-8e5a-4c09f33f430d",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.3555664261127822,
+          "y": 0.396671496364288,
+          "rotation": -11
+        },
+        {
+          "id": "1df5f0ac-b477-49eb-a3fe-e1a549c69e2a",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.8031966489430165,
+          "y": 0.8195351580571665,
+          "rotation": -10
+        },
+        {
+          "id": "e344db20-6a6a-4a72-bb58-1913f253b01c",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.2421763421362266,
+          "y": 0.7871404201281257,
+          "rotation": 10
+        },
+        {
+          "id": "27a5bc13-2eb2-4ae5-a02a-f972f4caf2f3",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.6956152829527854,
+          "y": 0.660103102826979,
+          "rotation": 15
+        },
+        {
+          "id": "3e95940b-cf24-41d3-bd0b-5afb3c6a46ae",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.13698848589323462,
+          "y": 0.0907275538961403,
+          "rotation": 12
+        },
+        {
+          "id": "31a361ea-2df1-4710-b450-2357801b649f",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.692961901242379,
+          "y": 0.17991158862598242,
+          "rotation": -12
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, phone, puzzle, headphones, lamp, wallet · L · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "65d8748c-a0a9-4e6f-b33a-f13afcbd89c9",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.29053235834041663,
+      "instances": [
+        {
+          "id": "34dd888d-b375-4f07-aa9e-5b9841d60a44",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.3109762628050521,
+          "y": 0.5550916969054379,
+          "rotation": -12
+        },
+        {
+          "id": "600dfa69-599f-417e-9c64-0c29d4e6c4bb",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.8362306975079188,
+          "y": 0.6971466321909859,
+          "rotation": -11
+        },
+        {
+          "id": "b3fa9f87-892d-49b1-a37d-2014b6e48548",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.14094300038693502,
+          "y": 0.19346271059843897,
+          "rotation": 6
+        },
+        {
+          "id": "b7ab5ec2-3d3e-4319-a149-6b4edd775317",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.636471860583406,
+          "y": 0.6949837113311514,
+          "rotation": 14
+        },
+        {
+          "id": "60feb5f6-0256-4e68-89f6-8705faceca6d",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.1479550022422336,
+          "y": 0.8513533714460209,
+          "rotation": 7
+        },
+        {
+          "id": "fa3973aa-8bdf-42ee-9011-0e112c09b733",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.6781528400443494,
+          "y": 0.2673209382942878,
+          "rotation": -13
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, phone, puzzle, headphones, lamp, wallet · L · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "f5c42d57-9f70-491e-b79c-1659e187cd1e",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.24421680670653578,
+      "instances": [
+        {
+          "id": "124a1d98-e703-4316-91c4-db2f628cdd25",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.3055664261127822,
+          "y": 0.5166714963642881,
+          "rotation": -11
+        },
+        {
+          "id": "1d2c68f1-19b6-4b28-8a97-afa717a797cf",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.8370251254192531,
+          "y": 0.8188947928056935,
+          "rotation": -10
+        },
+        {
+          "id": "a2613066-9367-4eba-96e3-0df9bf96e843",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.19217634213622659,
+          "y": 0.12727505501997982,
+          "rotation": 10
+        },
+        {
+          "id": "bc2e9ca3-4bf7-4f85-811d-ed77b03837d7",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.6756152829527855,
+          "y": 0.670103102826979,
+          "rotation": 15
+        },
+        {
+          "id": "38f95dd5-1942-41a6-bd6e-4febee41471d",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.11064834358946973,
+          "y": 0.8007275538961403,
+          "rotation": 12
+        },
+        {
+          "id": "92192cfa-b1b2-4adf-9a51-73c9bb2e4185",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.712961901242379,
+          "y": 0.2599115886259824,
+          "rotation": -12
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "book, phone, puzzle, headphones, lamp, wallet · L · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "aeecb0f2-718e-496c-9522-683501c20d99",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.24311175328252432,
+      "instances": [
+        {
+          "id": "fab2b8a1-037c-45a1-ad5b-0e93a025371c",
+          "familyId": "book",
+          "role": "main",
+          "x": 0.3555664261127822,
+          "y": 0.396671496364288,
+          "rotation": -11
+        },
+        {
+          "id": "de8a1fdb-1dee-438b-a88e-8e5711d79a45",
+          "familyId": "lamp",
+          "role": "main",
+          "x": 0.8033118076483918,
+          "y": 0.8196011512092878,
+          "rotation": -10
+        },
+        {
+          "id": "4f194a1b-f703-4a69-8a7f-e73aee91fc12",
+          "familyId": "headphones",
+          "role": "main",
+          "x": 0.2421763421362266,
+          "y": 0.7871404201281257,
+          "rotation": 10
+        },
+        {
+          "id": "c1fd6958-5c5e-4d3f-8d38-92735b753eae",
+          "familyId": "phone",
+          "role": "main",
+          "x": 0.6956152829527854,
+          "y": 0.660103102826979,
+          "rotation": 15
+        },
+        {
+          "id": "0372bada-7a3c-405f-a385-c6a49c428c8a",
+          "familyId": "wallet",
+          "role": "main",
+          "x": 0.13698848589323462,
+          "y": 0.0907275538961403,
+          "rotation": 12
+        },
+        {
+          "id": "be40eb3c-96e1-4e8f-8c67-1a54b68fbd2d",
+          "familyId": "puzzle",
+          "role": "main",
+          "x": 0.692961901242379,
+          "y": 0.17991158862598242,
+          "rotation": -12
+        }
+      ],
+      "seed": 20889484,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, coin, coin · S · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "32c216a5-8efd-4f35-a42e-5c281b79a075",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 1.1296978667084123,
+      "instances": [
+        {
+          "id": "96573042-a624-4d10-a0e0-828f653a5a77",
+          "familyId": "coin",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "853e1a54-0779-4d7b-bebe-7f31d6e607fe",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.5732946768123656,
+          "y": 0.641363821849227,
+          "rotation": 14
+        },
+        {
+          "id": "bc13879b-c05a-4f17-8696-1f5415b35a75",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.2350063034053892,
+          "y": 0.2866185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "8be00581-ca53-4ee6-9f12-046d9f836e2a",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.2819206383917481,
+          "y": 0.7000617433711886,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, coin, coin · S · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "0b9dc2f9-d070-4488-8192-df24e5a3f705",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.9261942147649522,
+      "instances": [
+        {
+          "id": "ebeab6e2-e2d1-46d7-b1f9-b50429ab17db",
+          "familyId": "coin",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "2a948eae-0682-478d-84a8-163820cb8241",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.5732946768123656,
+          "y": 0.641363821849227,
+          "rotation": 14
+        },
+        {
+          "id": "01439b99-0705-4848-9aa7-6b866188ae10",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.2350063034053892,
+          "y": 0.2866185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "9a1343f2-d58a-4e4b-be7b-2b1ac32471f1",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.2819206383917481,
+          "y": 0.7000617433711886,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, coin, coin · S · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "3dbed6dd-6a77-413b-9723-9f97a1985a14",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "S",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.891219048612989,
+      "instances": [
+        {
+          "id": "a8083946-8ff7-4bea-ba5b-ffecaa456883",
+          "familyId": "coin",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "ee397047-c6ae-4fc8-a2bd-a8bfa43c4d42",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.49329467681236566,
+          "y": 0.711363821849227,
+          "rotation": 14
+        },
+        {
+          "id": "68aa571f-0f44-4bff-ac0a-f542924b7f25",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.3550063034053892,
+          "y": 0.2566185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "67c6f949-aa14-4a71-bd73-80284457774d",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.7819206383917481,
+          "y": 0.22006174337118864,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, coin, coin · L · 1200:675",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "1cf9e1dc-f098-4269-ab97-2f4ee3e8f888",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1200,
+      "height": 675,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 1.208413478493628,
+      "instances": [
+        {
+          "id": "2d2836ab-9488-436c-9f1d-bc3d3229b2f9",
+          "familyId": "coin",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "b6eaa352-c021-4521-a1b1-cb31d6f2b1bd",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.5732946768123656,
+          "y": 0.641363821849227,
+          "rotation": 14
+        },
+        {
+          "id": "d21471f6-d1cd-4e87-84a6-1e972233da78",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.2350063034053892,
+          "y": 0.2866185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "933381c7-cd7e-4ecd-b139-96f120214c09",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.2819206383917481,
+          "y": 0.7000617433711886,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, coin, coin · L · 1000:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "65dec88f-ace5-4108-a833-b1cd90f9ac80",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 1000,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.9907300047276046,
+      "instances": [
+        {
+          "id": "8deec6be-8dfd-4f75-8f89-f5df64e61a97",
+          "familyId": "coin",
+          "role": "background",
+          "x": 0.14,
+          "y": 0.25,
+          "rotation": -13
+        },
+        {
+          "id": "d81aa423-7cbd-4c7f-9c14-b1e4712d0d73",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.5732946768123656,
+          "y": 0.641363821849227,
+          "rotation": 14
+        },
+        {
+          "id": "82ca3fb5-5682-444a-9ada-c4b2b0436cf8",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.2350063034053892,
+          "y": 0.2866185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "eed0c43f-251f-4751-95a1-28fb464cc728",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.2819206383917481,
+          "y": 0.7000617433711886,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  },
+  {
+    "label": "coin, coin, coin · L · 800:1000",
+    "scene": {
+      "schemaVersion": 1,
+      "id": "7a04df1d-8776-440a-bbb2-43a7074eec3b",
+      "name": "Новая композиция",
+      "catalogVersion": "ochen-originals-2026-11-10-v1",
+      "width": 800,
+      "height": 1000,
+      "detail": "L",
+      "palette": {
+        "id": "lilac",
+        "name": "Лиловая",
+        "colors": {
+          "background": "#D7CDF5",
+          "accent": "#F9ECB0",
+          "backgroundShade": "#AA9BF0",
+          "highlight": "#F9A3AA",
+          "backgroundInk": "#7864D7",
+          "soft": "#FFE3E1",
+          "ink": "#181817",
+          "paper": "#FFFFFF"
+        }
+      },
+      "scale": 0.9533178227308977,
+      "instances": [
+        {
+          "id": "a2139269-5bcd-4796-969b-9557e08da64c",
+          "familyId": "coin",
+          "role": "background",
+          "x": 0.17,
+          "y": 0.76,
+          "rotation": -13
+        },
+        {
+          "id": "0e2d5634-70fc-4eb9-afa8-54fdb8b75e1e",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.49329467681236566,
+          "y": 0.711363821849227,
+          "rotation": 14
+        },
+        {
+          "id": "6638bee7-7749-48cb-a7e6-70295ae95ef6",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.3550063034053892,
+          "y": 0.2566185743547976,
+          "rotation": -13
+        },
+        {
+          "id": "0774bc12-194f-437b-a31c-74f91259a527",
+          "familyId": "coin",
+          "role": "main",
+          "x": 0.7819206383917481,
+          "y": 0.22006174337118864,
+          "rotation": -12
+        }
+      ],
+      "seed": 20365839,
+      "layout": "diagonal",
+      "revision": 0
+    }
+  }
+]

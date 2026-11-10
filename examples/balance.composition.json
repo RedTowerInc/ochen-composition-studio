@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "99bbdea4-da22-4af4-bd3f-3fc86bc99b4d",
+  "id": "34eed78c-3922-45e8-8c19-488a630729b4",
   "name": "Время для себя",
   "catalogVersion": "ochen-originals-2026-11-10-v1",
   "width": 800,
@@ -23,7 +23,7 @@
   "scale": 0.44202136960458965,
   "instances": [
     {
-      "id": "64967e28-312c-45f3-94bd-b3c1e8fa1c3c",
+      "id": "d11ba3ab-8892-4c1a-9587-71e815770589",
       "familyId": "headphones",
       "role": "background",
       "x": 0.17,
@@ -31,31 +31,31 @@
       "rotation": -13
     },
     {
-      "id": "7ed770b1-40fd-4011-85e1-e3171f4c37b7",
+      "id": "ae48a8b7-c76d-439b-9536-75bd8e750135",
       "familyId": "book",
       "role": "main",
-      "x": 0.37631587699288505,
-      "y": 0.4263976994995028,
-      "rotation": -12
+      "x": 0.4828972806874663,
+      "y": 0.6877139380557988,
+      "rotation": -14
     },
     {
-      "id": "9c8f7603-0c50-4443-a84c-d33df9d33812",
-      "familyId": "flowers",
-      "role": "main",
-      "x": 0.7217709666630253,
-      "y": 0.6695308897760697,
-      "rotation": 9
-    },
-    {
-      "id": "76ac856a-1bd2-4c18-a2b5-e652bd0efb85",
+      "id": "61584a04-096f-4b75-bad6-04bc3673486e",
       "familyId": "headphones",
       "role": "main",
-      "x": 0.6635219995281658,
-      "y": 0.19751073791179807,
-      "rotation": -9
+      "x": 0.3738611059170216,
+      "y": 0.26676924934610724,
+      "rotation": -7
+    },
+    {
+      "id": "70348da4-8f62-41b4-a96a-a2946f4e9cbe",
+      "familyId": "flowers",
+      "role": "main",
+      "x": 0.7809347831649488,
+      "y": 0.2419771184772253,
+      "rotation": 9
     }
   ],
-  "seed": 2,
+  "seed": 104731,
   "layout": "diagonal",
   "revision": 5
 }

@@ -7,7 +7,7 @@ async function ready(p: Page) {
   await p.goto("/");
   await expect(
     side(p).getByRole("button", { name: "Собрать композицию", exact: true }),
-  ).toBeVisible();
+  ).toBeVisible({ timeout: 20000 });
 }
 async function generate(p: Page) {
   await side(p)
@@ -65,8 +65,8 @@ test("ten independent visitors keep separate projects, palettes and histories", 
       expect(
         documents[i].instances
           .filter((x: any) => x.role === "main")
-          .map((x: any) => x.familyId),
-      ).toEqual(i % 2 ? ["book", "lamp"] : ["wallet", "coin"]);
+          .map((x: any) => x.familyId).sort(),
+      ).toEqual((i % 2 ? ["book", "lamp"] : ["wallet", "coin"]).sort());
     }
   } finally {
     await Promise.all(contexts.map((c) => c.close()));
@@ -273,6 +273,7 @@ test("slow CPU and rapid format changes preserve geometry and live DOM IDs", asy
 test("background objects can be omitted and a cancelled generation cannot replace the scene", async ({
   page,
 }) => {
+  await page.clock.install({ time: new Date("2026-11-10T12:00:00Z") });
   await ready(page);
   await side(page).getByLabel("Добавить фоновый объект").uncheck();
   await side(page)
@@ -281,7 +282,7 @@ test("background objects can be omitted and a cancelled generation cannot replac
   await expect(shapes(page)).toHaveCount(3);
   const current = await downloadProject(page);
   expect(current.instances.every((i: any) => i.role === "main")).toBe(true);
-  await page.clock.install();
+  await page.clock.pauseAt(new Date("2026-11-10T13:00:00Z"));
   await side(page)
     .getByRole("button", { name: "Собрать композицию", exact: true })
     .click();

@@ -1,0 +1,247 @@
+{
+  "variants": 40,
+  "allGeometryMatches": true,
+  "sourceFilesHashesMatch": true,
+  "results": [
+    {
+      "id": "book",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "book",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "phone",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "phone",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "puzzle",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "puzzle",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "headphones",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "headphones",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "lamp",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "lamp",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "wallet",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "wallet",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "pen",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "pen",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "folder",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "folder",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "coin",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "coin",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "flowers",
+      "detail": "L",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "flowers",
+      "detail": "L",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "book",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "book",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "phone",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "phone",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "puzzle",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "puzzle",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "headphones",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "headphones",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "lamp",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "lamp",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "wallet",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "wallet",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "pen",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "pen",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "folder",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "folder",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "coin",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "coin",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "flowers",
+      "detail": "S",
+      "role": "main",
+      "geometryMatchesNativeSheet": true
+    },
+    {
+      "id": "flowers",
+      "detail": "S",
+      "role": "background",
+      "geometryMatchesNativeSheet": true
+    }
+  ]
+}

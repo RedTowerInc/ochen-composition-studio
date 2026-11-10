@@ -1,0 +1,14 @@
+{
+  "origin": "http://127.0.0.1:4178",
+  "started": "2026-11-10T18:01:00.956Z",
+  "errors": [],
+  "runtimeFiles": 51,
+  "runtimeDifferences": [],
+  "vector": {
+    "valid": true,
+    "paths": 381,
+    "uniqueIds": true
+  },
+  "passed": true,
+  "finished": "2026-11-10T18:01:03.714Z"
+}

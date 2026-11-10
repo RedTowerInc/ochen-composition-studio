@@ -1,0 +1,237 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.regression.config.ts",
+      "additional.spec.ts",
+      "--grep",
+      "U12",
+      "--project",
+      "chromium"
+    ],
+    "configFile": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\playwright.regression.config.ts",
+    "rootDir": "C:/Users/Andy/Documents/ChatGPT/Вакансии/app/tests/regression/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Andy/Documents/ChatGPT/Вакансии/app/verification/remediation/rotation-before-fix/traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Andy/Documents/ChatGPT/Вакансии/app/tests/regression/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 20000
+      },
+      {
+        "outputDir": "C:/Users/Andy/Documents/ChatGPT/Вакансии/app/verification/remediation/rotation-before-fix/traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Andy/Documents/ChatGPT/Вакансии/app/tests/regression/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 20000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\verification\\remediation\\rotation-before-fix\\traces",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\tests\\regression\\browser",
+        "snapshotDir": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\tests\\regression\\browser",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 20000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4177",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.8127.18 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "channel": "chrome"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "verification/remediation/rotation-before-fix/browser",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "verification/remediation/rotation-before-fix/browser.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node scripts/serve-preview.mjs",
+      "url": "http://127.0.0.1:4177",
+      "env": {
+        "PORT": "4177"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "additional.spec.ts",
+      "file": "additional.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "U12: pointer cancellation and Escape discard a rotation draft",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 20000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2904,
+                  "error": {
+                    "message": "Error: locator.fill: Error: strict mode violation: getByLabel('Поворот объекта') resolved to 2 elements:\n    1) <input max=\"180\" min=\"-180\" value=\"-9\" type=\"range\" id=\"_r_1_-rotation\" aria-label=\"Поворот объекта\"/> aka getByRole('slider', { name: 'Поворот объекта' })\n    2) <input max=\"180\" min=\"-180\" value=\"-9\" type=\"range\" id=\"_r_3_-rotation\" aria-label=\"Поворот объекта\"/> aka locator('[id=\"_r_3_-rotation\"]')\n\nCall log:\n\u001b[2m  - waiting for getByLabel('Поворот объекта')\u001b[22m\n",
+                    "stack": "Error: locator.fill: Error: strict mode violation: getByLabel('Поворот объекта') resolved to 2 elements:\n    1) <input max=\"180\" min=\"-180\" value=\"-9\" type=\"range\" id=\"_r_1_-rotation\" aria-label=\"Поворот объекта\"/> aka getByRole('slider', { name: 'Поворот объекта' })\n    2) <input max=\"180\" min=\"-180\" value=\"-9\" type=\"range\" id=\"_r_3_-rotation\" aria-label=\"Поворот объекта\"/> aka locator('[id=\"_r_3_-rotation\"]')\n\nCall log:\n\u001b[2m  - waiting for getByLabel('Поворот объекта')\u001b[22m\n\n    at C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\tests\\regression\\browser\\additional.spec.ts:121:16",
+                    "location": {
+                      "file": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\tests\\regression\\browser\\additional.spec.ts",
+                      "column": 16,
+                      "line": 121
+                    },
+                    "snippet": " \u001b[90m 119 |\u001b[39m   \u001b[36mconst\u001b[39m before\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m snapshot(page)\u001b[33m,\u001b[39m selected\u001b[33m=\u001b[39mbefore\u001b[33m.\u001b[39minstances\u001b[33m.\u001b[39mat(\u001b[33m-\u001b[39m\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 120 |\u001b[39m   \u001b[36mconst\u001b[39m slider\u001b[33m=\u001b[39mpage\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Поворот объекта'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 121 |\u001b[39m   \u001b[36mawait\u001b[39m slider\u001b[33m.\u001b[39mfill(\u001b[32m'42'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 122 |\u001b[39m   \u001b[36mawait\u001b[39m slider\u001b[33m.\u001b[39mdispatchEvent(\u001b[32m'pointercancel'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 123 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'.workspace-heading'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 124 |\u001b[39m   expect((\u001b[36mawait\u001b[39m snapshot(page))\u001b[33m.\u001b[39minstances)\u001b[33m.\u001b[39mtoEqual(before\u001b[33m.\u001b[39minstances)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\tests\\regression\\browser\\additional.spec.ts",
+                        "column": 16,
+                        "line": 121
+                      },
+                      "message": "Error: locator.fill: Error: strict mode violation: getByLabel('Поворот объекта') resolved to 2 elements:\n    1) <input max=\"180\" min=\"-180\" value=\"-9\" type=\"range\" id=\"_r_1_-rotation\" aria-label=\"Поворот объекта\"/> aka getByRole('slider', { name: 'Поворот объекта' })\n    2) <input max=\"180\" min=\"-180\" value=\"-9\" type=\"range\" id=\"_r_3_-rotation\" aria-label=\"Поворот объекта\"/> aka locator('[id=\"_r_3_-rotation\"]')\n\nCall log:\n\u001b[2m  - waiting for getByLabel('Поворот объекта')\u001b[22m\n\n\n  119 |   const before=await snapshot(page), selected=before.instances.at(-1);\n  120 |   const slider=page.getByLabel('Поворот объекта');\n> 121 |   await slider.fill('42');\n      |                ^\n  122 |   await slider.dispatchEvent('pointercancel');\n  123 |   await page.locator('.workspace-heading').click();\n  124 |   expect((await snapshot(page)).instances).toEqual(before.instances);\n    at C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\tests\\regression\\browser\\additional.spec.ts:121:16"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T17:36:17.122Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\verification\\remediation\\rotation-before-fix\\traces\\additional-U12-pointer-can-a2ef6-pe-discard-a-rotation-draft-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\verification\\remediation\\rotation-before-fix\\traces\\additional-U12-pointer-can-a2ef6-pe-discard-a-rotation-draft-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\verification\\remediation\\rotation-before-fix\\traces\\additional-U12-pointer-can-a2ef6-pe-discard-a-rotation-draft-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\tests\\regression\\browser\\additional.spec.ts",
+                    "column": 16,
+                    "line": 121
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "56e05f8ba0b761aee7c1-8b987dfaab581a094880",
+          "file": "additional.spec.ts",
+          "line": 116,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T17:36:16.089Z",
+    "duration": 4843.8820000000005,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

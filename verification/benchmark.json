@@ -3,36 +3,36 @@
     {
       "objects": 1,
       "exports": 25,
-      "p95Ms": 1.2000000476837158,
-      "maxMs": 1.899999976158142,
+      "p95Ms": 1.5,
+      "maxMs": 1.600000023841858,
       "svgBytes": 29618
     },
     {
       "objects": 10,
       "exports": 25,
-      "p95Ms": 13.599999904632568,
-      "maxMs": 18.59999990463257,
+      "p95Ms": 14.600000023841858,
+      "maxMs": 16.200000047683716,
       "svgBytes": 389273
     },
     {
       "objects": 25,
       "exports": 25,
-      "p95Ms": 28.799999952316284,
-      "maxMs": 37,
+      "p95Ms": 29,
+      "maxMs": 39.39999997615814,
       "svgBytes": 976275
     },
     {
       "objects": 50,
       "exports": 25,
-      "p95Ms": 53.699999928474426,
-      "maxMs": 59.10000002384186,
+      "p95Ms": 69.60000002384186,
+      "maxMs": 79.29999995231628,
       "svgBytes": 1948521
     }
   ],
   "composition": {
     "samples": 100,
-    "p95Ms": 0.8999999761581421,
-    "maxMs": 4.399999976158142
+    "p95Ms": 1.100000023841858,
+    "maxMs": 2.6999999284744263
   },
   "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
   "environment": {
@@ -41,5 +41,5 @@
     "cpu": "Intel(R) Core(TM) i5-10500H CPU @ 2.50GHz",
     "logicalCPUs": 12
   },
-  "date": "2026-11-10T12:54:14.407Z"
+  "date": "2026-11-10T17:49:07.592Z"
 }

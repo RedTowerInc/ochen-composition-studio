@@ -20,10 +20,12 @@ export function addObject(
     );
   const family = familyById(catalog, familyId),
     next = clone(scene);
-  if (!next.instances.length)
-    next.scale =
-      Math.min(scene.width * 0.55, scene.height * 0.76) /
-      Math.max(family.canonicalWidth, family.canonicalHeight);
+  const variant = family.variants[scene.detail].main;
+  const fit = Math.min(
+    (scene.width * 0.72) / (variant.viewBox[2] * variant.sourceScale),
+    (scene.height * 0.72) / (variant.viewBox[3] * variant.sourceScale),
+  );
+  next.scale = next.instances.length ? Math.min(next.scale, fit) : fit;
   const offset = (scene.instances.length % 5) * 0.035;
   next.instances.push({
     id: uid(),

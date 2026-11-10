@@ -793,6 +793,10 @@ button svg {
 .interactive-scene {
   touch-action: none;
 }
+.menu-content .mobile-history-action { display: none; }
+@media (max-width: 799px) {
+  .menu-content .mobile-history-action { display: flex; }
+}
 .scene-object {
   cursor: grab;
 }
@@ -1786,4 +1790,91 @@ button svg {
   height: 13px;
   margin: 0;
   accent-color: #7b60ce;
+}
+.saved-projects,
+.leave-project {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.saved-projects {
+  max-height: 65vh;
+  overflow: auto;
+}
+.saved-project {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.saved-project:hover {
+  background: var(--pale);
+}
+.saved-project small {
+  color: #766783;
+  font-size: 11px;
+}
+.saved-project strong {
+  overflow-wrap: anywhere;
+}
+.render-error {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.render-error p {
+  max-width: 620px;
+  line-height: 1.7;
+}
+.leave-project p {
+  line-height: 1.65;
+}
+.segmented button,
+.sidebar-tabs button {
+  color: #766783;
+}
+.zoom-control button:nth-child(2) {
+  width: 64px;
+}
+.workspace-heading h2 {
+  margin-top: 0;
+}
+.candidates {
+  padding-bottom: 20px;
+}
+@media (max-height: 820px) and (min-width: 800px) {
+  .studio-main {
+    padding: 16px 24px 0;
+  }
+  .workspace-heading {
+    padding-bottom: 12px;
+  }
+  .workspace-heading h2 {
+    font-size: 18px;
+  }
+  .candidate-art {
+    height: 64px;
+  }
+  .candidate-label {
+    min-height: 46px;
+    padding: 8px 10px;
+  }
+  .candidates {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .candidates-heading {
+    margin-bottom: 8px;
+  }
+  .canvas-area {
+    padding: 16px 24px;
+  }
 }

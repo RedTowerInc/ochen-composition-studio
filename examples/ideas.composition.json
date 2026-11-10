@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "f6aef020-0eb0-40f9-906b-33041affe974",
+  "id": "490e61b3-bf5f-4f98-ab2a-0e0d61829cc4",
   "name": "Место для новых идей",
   "catalogVersion": "ochen-originals-2026-11-10-v1",
   "width": 1000,
@@ -20,10 +20,10 @@
       "paper": "#FFFFFF"
     }
   },
-  "scale": 0.45977487885664153,
+  "scale": 0.45896722032115983,
   "instances": [
     {
-      "id": "b40f246e-6a37-49a5-9c1f-3fa5d8380bd4",
+      "id": "7a283453-113d-4f2e-bc27-6d99134483eb",
       "familyId": "pen",
       "role": "background",
       "x": 0.14,
@@ -31,31 +31,31 @@
       "rotation": -13
     },
     {
-      "id": "65027199-eff5-4012-8fbd-849898fe9484",
+      "id": "2a5b6cdc-8e36-4aa6-bd25-6ebfa9f8842d",
       "familyId": "lamp",
       "role": "main",
-      "x": 0.48631587699288503,
-      "y": 0.5463976994995028,
-      "rotation": -10
+      "x": 0.6228972806874663,
+      "y": 0.5055790236964822,
+      "rotation": -12
     },
     {
-      "id": "e9f93617-6cda-4087-b3fb-ff7ae7c10e32",
+      "id": "5b39f439-2410-4036-b7fa-3ce6d5f8ca83",
       "familyId": "puzzle",
       "role": "main",
-      "x": 0.8217709666630254,
-      "y": 0.37953088977606964,
+      "x": 0.2638611059170216,
+      "y": 0.25676924934610723,
       "rotation": 9
     },
     {
-      "id": "82147885-58b0-481f-bdfc-32b92d85c10e",
+      "id": "0a3f6a5c-8c3f-46e7-97c4-767c6cc59be1",
       "familyId": "pen",
       "role": "main",
-      "x": 0.2235219995281659,
-      "y": 0.2675107379117981,
-      "rotation": -8
+      "x": 0.28421054807491597,
+      "y": 0.7819771184772253,
+      "rotation": -6
     }
   ],
-  "seed": 2,
+  "seed": 104731,
   "layout": "surround",
   "revision": 6
 }

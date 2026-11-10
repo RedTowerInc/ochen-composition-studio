@@ -1,0 +1,45 @@
+{
+  "viewport": [
+    1366,
+    768
+  ],
+  "horizontalOverflow": false,
+  "canvas": {
+    "width": 145.59375,
+    "height": 76.421875
+  },
+  "text": [
+    {
+      "selector": ".segmented button[aria-pressed=false]",
+      "text": "По объектам",
+      "color": "rgb(161, 150, 174)",
+      "background": "rgb(245, 243, 248)",
+      "fontSize": "10px",
+      "contrast": 2.54
+    },
+    {
+      "selector": ".sidebar-tabs button[aria-pressed=false]",
+      "text": "Объекты",
+      "color": "rgb(145, 129, 157)",
+      "background": "rgb(255, 255, 255)",
+      "fontSize": "10px",
+      "contrast": 3.6
+    },
+    {
+      "selector": ".save-status",
+      "text": "Не сохранено",
+      "color": "rgb(118, 103, 131)",
+      "background": "rgb(255, 255, 255)",
+      "fontSize": "10px",
+      "contrast": 5.2
+    },
+    {
+      "selector": ".workspace-footer",
+      "text": "Только оригинальные объектыSVG · L · 10 объектов",
+      "color": "rgb(118, 103, 131)",
+      "background": "rgb(249, 248, 251)",
+      "fontSize": "9px",
+      "contrast": 4.92
+    }
+  ]
+}

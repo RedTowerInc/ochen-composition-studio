@@ -1,6 +1,6 @@
 {
   "algorithm": "sha256(file names + sha256 content)",
-  "fingerprint": "c9b9e82a7b0a187a88a1a35b33a314e6772a54b628d74a52055375f7a202e771",
+  "fingerprint": "66c42d1aad6fbf85ef2b0ca596b34f3f7ba850b1b12e2c8f72b675319efeae7e",
   "entries": [
     {
       "file": ".openai/hosting.json",
@@ -12,11 +12,11 @@
     },
     {
       "file": "package-lock.json",
-      "sha256": "f5c961f104c09b0872c9f562e5641429c547b35bd01c0f0b5534e48bd7b64c96"
+      "sha256": "7eb816f2a349cb8d845b479f64d4d6f792e677d09198dd56d2072a1df3d00143"
     },
     {
       "file": "package.json",
-      "sha256": "089652a6b6edfd1c61c49d7bd435c9e6f5b318d83b8e38552c44ce9db492a3e7"
+      "sha256": "b4053c3828bfabc9fb480a35ee46a142ad214ac2c5132ee1a03ddaed619a6178"
     },
     {
       "file": "public/catalog/assets/book-L-background.svg",
@@ -208,27 +208,35 @@
     },
     {
       "file": "src/App.tsx",
-      "sha256": "ba93db2d490903c6c7851ed13546eacb6973de50ed162c6315071fa04f525d42"
+      "sha256": "880b4148dc926d70609e82382504f0c9561a512a18cf75e99efaaf20f7867306"
     },
     {
       "file": "src/components/Panels.tsx",
-      "sha256": "c0c73ca9e4c4f9d2d62a83ed9b89d6f11c64898b14bd0f3a62ed0940e8116f92"
+      "sha256": "1a78270ab204fb957e8df3a175ae1dfae770c5a97f334c2cfa5580dc6f58e52e"
+    },
+    {
+      "file": "src/components/RenderBoundary.tsx",
+      "sha256": "39a7670fcb4790de15aadcc5a3d31926f4857c59a8ce236c915456bbc2c5fafa"
     },
     {
       "file": "src/components/SceneView.tsx",
-      "sha256": "11f5df13ff59477ce90b5ad5cca1ff5732545c943a697f4c70eeeaf917220b18"
+      "sha256": "6546629a154ffb34d7be879a90095819eb2ae6427d59bd3c988166fa8db0bb26"
     },
     {
       "file": "src/core/catalog.ts",
-      "sha256": "6e99653b5c1ffd154adcbbc4b810d417bcc8bb445cb8080ccae58e0819ac53db"
+      "sha256": "660ac5c9107db30a219e2d7eafbfa16f815247a7d66b5d9f4ea79d751e92dc1e"
     },
     {
       "file": "src/core/commands.ts",
-      "sha256": "1a8143d8b00e05593667177f25e20cb835c6d5a254dfbddbdb76cf00f7158e0f"
+      "sha256": "8bbc142a6936e7bd267db8288b97001d347e6f505c820c876772d549e20646ec"
     },
     {
       "file": "src/core/composition.ts",
-      "sha256": "0f40532c3551b8b80a0c7ae56ccddff658ece659d1801d1617f538be17a3ef5a"
+      "sha256": "f49ad81bf3e5e4dfd84c757f3d9e34ff162b2462f911b9a062bfea6a8ba7677f"
+    },
+    {
+      "file": "src/core/geometry.ts",
+      "sha256": "bfbb933daa2f685c7027e6a0cc2311efd1952d35891327a9670ae70484f36ed0"
     },
     {
       "file": "src/core/history.ts",
@@ -240,15 +248,15 @@
     },
     {
       "file": "src/core/persistence.ts",
-      "sha256": "872cda9c6869ef556271130b5c233524b10674ccc3cf373b4550ada045a51b20"
+      "sha256": "091a1352e0179f9af03356941a3d61e05d0e8c876262e169dd9fc97242aedce0"
     },
     {
       "file": "src/core/semantics.ts",
-      "sha256": "5d1e22486d6608597c152f36f37d20316ff03a91fe1013586ca4135362125209"
+      "sha256": "8815edcfdcca31dcacf133f017eb1f8fba3dfa19a5d18c7a832a3b93bf9871e6"
     },
     {
       "file": "src/core/svg.ts",
-      "sha256": "23b0416e4289a9f6682471dbb523850dea20df601927a587275588ec99bae54e"
+      "sha256": "ca1ce53520c5b080e3d91524ba99c766f0c113a80d2ae4236c8f2d6ce30f5cd6"
     },
     {
       "file": "src/core/types.ts",
@@ -256,7 +264,7 @@
     },
     {
       "file": "src/core/validation.ts",
-      "sha256": "e36498a900d79a2da47436aa5e869e98fbf546b0495cb8c403e6e61e1356f01e"
+      "sha256": "3ba6056352e45e17e504f1d613ab981b32a085d127113726e4296773663b8067"
     },
     {
       "file": "src/main.tsx",
@@ -264,7 +272,7 @@
     },
     {
       "file": "src/styles.css",
-      "sha256": "1ddfa2ddf73374167e25c676567423996ee7dce5d5da80d8f4f3c9cadb53a072"
+      "sha256": "2199e59bd4f5e30dc59bc8a763ef05fe06bfb59167206143856eecdec327be0d"
     },
     {
       "file": "tsconfig.json",
@@ -272,7 +280,7 @@
     },
     {
       "file": "vite.config.ts",
-      "sha256": "e9f99b82eb3ee5e4ed80d48094b149a2bc6876f6243403650b55dbce5a3b63a1"
+      "sha256": "526f3eee80848a22b18b0b2e95e2943e6fd081c1eaeb323a3b515758b8ff9fc2"
     }
   ]
 }

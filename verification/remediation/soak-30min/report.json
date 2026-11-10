@@ -1,0 +1,60 @@
+{
+  "started": "2026-11-10T17:37:17.150Z",
+  "cycles": 114,
+  "samples": [
+    {
+      "elapsedSeconds": 307.4105562,
+      "cycles": 20,
+      "heap": 5975080,
+      "nodes": 26336,
+      "listeners": 272,
+      "dom": 2325,
+      "activeBlobUrls": 0,
+      "busy": false
+    },
+    {
+      "elapsedSeconds": 607.9037192000001,
+      "cycles": 39,
+      "heap": 6246676,
+      "nodes": 26336,
+      "listeners": 272,
+      "dom": 2325,
+      "activeBlobUrls": 0,
+      "busy": false
+    },
+    {
+      "elapsedSeconds": 1209.0428149000002,
+      "cycles": 77,
+      "heap": 6366496,
+      "nodes": 26336,
+      "listeners": 272,
+      "dom": 2325,
+      "activeBlobUrls": 0,
+      "busy": false
+    },
+    {
+      "elapsedSeconds": 1794.7987367,
+      "cycles": 114,
+      "heap": 6409632,
+      "nodes": 26336,
+      "listeners": 272,
+      "dom": 2325,
+      "activeBlobUrls": 0,
+      "busy": false
+    },
+    {
+      "elapsedSeconds": 1800.0020871000002,
+      "heap": 6408784,
+      "nodes": 26336,
+      "listeners": 272,
+      "dom": 2325,
+      "activeBlobUrls": 0
+    }
+  ],
+  "errors": [],
+  "passed": true,
+  "elapsedSeconds": 1800.0020871000002,
+  "heapInvestigationThreshold": 17954610,
+  "restoredExactly": true,
+  "finished": "2026-11-10T18:07:21.472Z"
+}

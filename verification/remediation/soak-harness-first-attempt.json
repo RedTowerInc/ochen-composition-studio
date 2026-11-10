@@ -1,0 +1,9 @@
+{
+  "started": "2026-11-10T17:21:42.029Z",
+  "cycles": 1,
+  "samples": [],
+  "errors": [],
+  "passed": false,
+  "failure": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Удалить объект', exact: true })\u001b[22m\n\n    at C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\scripts\\soak.mjs:59:77",
+  "finished": "2026-11-10T17:22:13.694Z"
+}

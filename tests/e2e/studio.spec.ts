@@ -96,28 +96,24 @@ test("unknown input and invalid palette/project leave the current scene intact",
     .getByRole("button", { name: "Собрать композицию", exact: true })
     .click();
   await expect(page.getByRole("alert")).toContainText("Не найдены");
-  await page
-    .locator(".right-sidebar input[type=file]")
-    .setInputFiles({
-      name: "bad.json",
-      mimeType: "application/json",
-      buffer: Buffer.from("{"),
-    });
+  await page.locator(".right-sidebar input[type=file]").setInputFiles({
+    name: "bad.json",
+    mimeType: "application/json",
+    buffer: Buffer.from("{"),
+  });
   await expect(page.getByRole("alert")).toContainText("JSON");
   expect((await project(page)).instances).toEqual(before.instances);
   await page.locator(".project-menu summary").click();
-  await page
-    .locator(".studio-header input[type=file]")
-    .setInputFiles({
-      name: "bad-project.json",
-      mimeType: "application/json",
-      buffer: Buffer.from(
-        JSON.stringify({
-          ...before,
-          instances: [{ ...before.instances[0], familyId: "unknown" }],
-        }),
-      ),
-    });
+  await page.locator(".studio-header input[type=file]").setInputFiles({
+    name: "bad-project.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(
+      JSON.stringify({
+        ...before,
+        instances: [{ ...before.instances[0], familyId: "unknown" }],
+      }),
+    ),
+  });
   await expect(page.getByRole("alert")).toContainText("Неизвестный объект");
   await expect(objects(page)).toHaveCount(4);
 });
@@ -135,10 +131,12 @@ test("two real tabs cannot silently overwrite one shared project", async ({
   await ready(other);
   await expect(objects(other)).toHaveCount(4);
   await page.getByLabel("Название проекта").fill("Версия A");
+  await page.getByLabel("Название проекта").press("Enter");
   await expect(
     page.getByText("Сохранено в браузере", { exact: true }),
   ).toBeVisible();
   await other.getByLabel("Название проекта").fill("Версия B");
+  await other.getByLabel("Название проекта").press("Enter");
   await expect(other.locator(".storage-banner")).toContainText(
     "другой вкладке",
   );
@@ -228,12 +226,12 @@ for (const width of [1440, 1280, 1024, 768, 390, 320])
       await expect(
         page
           .getByRole("dialog")
-          .getByRole("button", { name: "Загрузить палитру", exact: true }),
+          .getByRole("button", { name: "Загрузить JSON-палитру", exact: true }),
       ).toBeVisible();
       await page.keyboard.press("Escape");
     } else
       await expect(
-        page.getByRole("button", { name: "Загрузить палитру", exact: true }),
+        page.getByRole("button", { name: "Загрузить JSON-палитру", exact: true }),
       ).toBeVisible();
     await expect(
       page.getByRole("button", { name: "Скачать SVG", exact: true }),
@@ -358,6 +356,7 @@ test("closing before an uncommitted autosave preserves the previous commit", asy
   page,
   context,
 }) => {
+  await page.clock.install({ time: new Date("2026-11-10T12:00:00Z") });
   await ready(page);
   await generate(page);
   await expect(
@@ -365,12 +364,20 @@ test("closing before an uncommitted autosave preserves the previous commit", asy
   ).toBeVisible();
   const saved = await project(page);
   await page.locator(".project-menu summary").click();
-  await page.clock.install();
-  await page.getByLabel("Название проекта").fill("Ещё не сохранено");
+  await page.clock.pauseAt(new Date("2026-11-10T13:00:00Z"));
+  await objects(page).first().focus();
+  await page
+    .locator(".right-sidebar")
+    .getByRole("button", { name: "Дубликат", exact: true })
+    .click();
+  await expect(objects(page)).toHaveCount(saved.instances.length + 1);
   page.once("dialog", (dialog) => dialog.accept());
+  const closed = page.waitForEvent("close");
   await page.close({ runBeforeUnload: true });
+  await closed;
   const restored = await context.newPage();
   await ready(restored);
   await expect(restored.getByLabel("Название проекта")).toHaveValue(saved.name);
   await expect(objects(restored)).toHaveCount(saved.instances.length);
+  expect(await project(restored)).toEqual(saved);
 });

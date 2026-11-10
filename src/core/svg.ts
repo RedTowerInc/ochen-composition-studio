@@ -1,4 +1,5 @@
 import DOMPurify from "dompurify";
+import { validateScene } from "./validation";
 import {
   LIMITS,
   StudioError,
@@ -18,6 +19,81 @@ export type AssetStore = ReadonlyMap<string, LoadedAsset>;
 export const assetKey = (id: string, detail: string, role: string) =>
   `${id}:${detail}:${role}`;
 
+function elementsIn(root: Element): Element[] {
+  const result: Element[] = [],
+    stack = [{ node: root, depth: 0 }];
+  while (stack.length) {
+    const { node, depth } = stack.pop()!;
+    if (depth > 128 || result.length >= LIMITS.svgNodes)
+      throw new StudioError("SVG превышает допустимую сложность или глубину.");
+    result.push(node);
+    for (
+      let child = node.lastElementChild;
+      child;
+      child = child.previousElementSibling
+    )
+      stack.push({ node: child, depth: depth + 1 });
+  }
+  return result;
+}
+function references(element: Element): string[] {
+  const refs: string[] = [];
+  for (const attr of element.attributes) {
+    if (/^on/i.test(attr.name))
+      throw new StudioError("SVG содержит обработчик события.");
+    if (attr.localName === "href") {
+      if (!/^#[^\s]+$/.test(attr.value))
+        throw new StudioError("В SVG найдена внешняя ссылка.");
+      refs.push(attr.value.slice(1));
+    }
+    for (const match of attr.value.matchAll(/url\(([^)]+)\)/gi)) {
+      const target = match[1].trim().replace(/^(['"])(.*)\1$/, "$2");
+      if (!/^#[^\s'"()]+$/.test(target))
+        throw new StudioError("В SVG найдена внешняя ссылка.");
+      refs.push(target.slice(1));
+    }
+  }
+  return refs;
+}
+function validateResources(root: Element) {
+  const elements = elementsIn(root),
+    ids = new Map<string, Element>();
+  for (const element of elements) {
+    const id = element.getAttribute("id");
+    if (!id) continue;
+    if (ids.has(id))
+      throw new StudioError("В SVG повторяется идентификатор ресурса: " + id);
+    ids.set(id, element);
+  }
+  const graph = new Map<Element, Element[]>();
+  for (const element of elements) {
+    const edges = [...element.children];
+    for (const ref of references(element)) {
+      const target = ids.get(ref);
+      if (!target)
+        throw new StudioError("В исходном SVG отсутствует ресурс: " + ref);
+      edges.push(target);
+    }
+    graph.set(element, edges);
+  }
+  const state = new Map<Element, number>();
+  const stack = [{ node: root, exit: false }];
+  while (stack.length) {
+    const { node, exit } = stack.pop()!;
+    if (exit) {
+      state.set(node, 2);
+      continue;
+    }
+    if (state.get(node) === 2) continue;
+    if (state.get(node) === 1)
+      throw new StudioError("В SVG обнаружена циклическая ссылка.");
+    state.set(node, 1);
+    stack.push({ node, exit: true });
+    for (const child of graph.get(node) ?? [])
+      stack.push({ node: child, exit: false });
+  }
+}
+
 export function sanitizeSvg(
   source: string,
   variant: AssetVariant,
@@ -26,32 +102,32 @@ export function sanitizeSvg(
     throw new StudioError("SVG содержит неподдерживаемую структуру.");
   const parsed = new DOMParser().parseFromString(source, "image/svg+xml");
   if (
-    parsed.querySelector("parsererror") ||
-    parsed.documentElement.localName !== "svg"
+    parsed.documentElement.localName !== "svg" ||
+    parsed.documentElement.namespaceURI !== "http://www.w3.org/2000/svg"
   )
     throw new StudioError("Некорректный SVG в каталоге.");
-  if (
-    parsed.querySelector(
-      "script,foreignObject,image,a,animate,animateTransform,set,style",
-    )
-  )
-    throw new StudioError(
-      "Каталог должен содержать только самостоятельные векторные объекты.",
-    );
-  for (const el of parsed.querySelectorAll("*"))
-    for (const attr of [...el.attributes]) {
-      if (/^on/i.test(attr.name))
-        throw new StudioError("SVG содержит обработчик события.");
-      if (attr.localName === "href" && !/^#[^\s]+$/.test(attr.value))
-        throw new StudioError("В SVG найдена внешняя ссылка.");
-      for (const match of attr.value.matchAll(/url\(([^)]+)\)/gi)) {
-        const target = match[1].trim().replace(/^(['"])(.*)\1$/, "$2");
-        if (!/^#[^\s'"()]+$/.test(target))
-          throw new StudioError("В SVG найдена внешняя ссылка.");
-      }
-    }
+  const forbidden = new Set([
+    "script",
+    "foreignobject",
+    "image",
+    "a",
+    "animate",
+    "animatetransform",
+    "set",
+    "style",
+    "parsererror",
+  ]);
+  for (const element of elementsIn(parsed.documentElement)) {
+    if (forbidden.has(element.localName.toLowerCase()))
+      throw new StudioError(
+        "Каталог должен содержать только самостоятельные векторные объекты.",
+      );
+    references(element);
+  }
+  validateResources(parsed.documentElement);
   const clean = DOMPurify.sanitize(source, {
     USE_PROFILES: { svg: true, svgFilters: true },
+    ADD_TAGS: ["use"],
     FORBID_TAGS: [
       "script",
       "foreignObject",
@@ -67,6 +143,7 @@ export function sanitizeSvg(
   const root = (clean as Element).querySelector("svg") as SVGSVGElement | null;
   if (!root)
     throw new StudioError("Некорректная структура SVG после проверки.");
+  validateResources(root);
   const nodes = root.querySelectorAll("*").length;
   if (!nodes || nodes > LIMITS.svgNodes)
     throw new StudioError("SVG пуст или превышает допустимую сложность.");
@@ -82,6 +159,23 @@ const asHex = (value: string) => {
   if (v === "BLACK") return "#000000";
   return v;
 };
+
+export function assertAssetColors(asset: LoadedAsset, catalog: Catalog) {
+  const allowed = new Set(Object.values(catalog.palettes[0].colors).map(asHex));
+  const check = (value: string) => {
+    if (value.trim().toLowerCase() === "none" || /^url\(/i.test(value.trim())) return;
+    if (!allowed.has(asHex(value)))
+      throw new StudioError("В исходном SVG найден цвет вне палитры библиотеки.");
+  };
+  for (const element of [asset.root, ...asset.root.querySelectorAll("*")]) {
+    for (const name of ["fill", "stroke", "stop-color", "flood-color", "lighting-color"]) {
+      const value = element.getAttribute(name);
+      if (value !== null) check(value);
+    }
+    for (const match of (element.getAttribute("style") ?? "").matchAll(/(?:^|;)\s*(?:fill|stroke|stop-color|flood-color|lighting-color)\s*:\s*([^;]+)/gi))
+      check(match[1]);
+  }
+}
 
 export function assetMarkup(
   asset: LoadedAsset,
@@ -108,7 +202,7 @@ export function assetMarkup(
   );
   const rewriteRefs = (value: string) =>
     value.replace(
-      /url\(\s*['"]?#([^)'"\s]+)['"]?\s*\)/g,
+      /url\(\s*['"]?#([^)'"\s]+)['"]?\s*\)/gi,
       (_match, id: string) => {
         const target = ids.get(id);
         if (!target)
@@ -163,7 +257,7 @@ export function exportScene(
   catalog: Catalog,
   assets: AssetStore,
 ): string {
-  const snapshot = structuredClone(scene);
+  const snapshot = validateScene(structuredClone(scene), catalog);
   if (!snapshot.instances.length)
     throw new StudioError("Добавьте хотя бы один объект перед экспортом.");
   let nodeCount = 0;

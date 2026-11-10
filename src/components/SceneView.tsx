@@ -56,6 +56,7 @@ export function SceneView({
   onSelect,
   onMove,
   interactive = false,
+  interactionDisabled = false,
   svgRef,
 }: {
   scene: SceneDocument;
@@ -65,6 +66,7 @@ export function SceneView({
   onSelect?: (id?: string) => void;
   onMove?: (id: string, x: number, y: number) => void;
   interactive?: boolean;
+  interactionDisabled?: boolean;
   svgRef?: React.RefObject<SVGSVGElement | null>;
 }) {
   const localRef = useRef<SVGSVGElement>(null),
@@ -94,7 +96,7 @@ export function SceneView({
     window.addEventListener("blur", cancel);
     return () => window.removeEventListener("blur", cancel);
   }, []);
-  useEffect(cancel, [scene.id, scene.revision]);
+  useEffect(cancel, [scene.id, scene.revision, interactionDisabled]);
   const point = (event: ReactPointerEvent<SVGSVGElement>) => {
     const matrix = ref.current?.getScreenCTM();
     if (!matrix) return null;
@@ -103,7 +105,13 @@ export function SceneView({
     );
   };
   const start = (event: ReactPointerEvent<SVGSVGElement>) => {
-    if (!interactive || event.button !== 0 || gesture.current) return;
+    if (
+      !interactive ||
+      interactionDisabled ||
+      event.button !== 0 ||
+      gesture.current
+    )
+      return;
     const target = (event.target as Element).closest("[data-instance]"),
       id = target?.getAttribute("data-instance") ?? undefined;
     onSelect?.(id);
@@ -215,24 +223,6 @@ export function SceneView({
                   strokeWidth="1.5"
                   vectorEffect="non-scaling-stroke"
                 />
-                {[
-                  [-width / 2 - 7, -height / 2 - 7],
-                  [width / 2 + 7, -height / 2 - 7],
-                  [-width / 2 - 7, height / 2 + 7],
-                  [width / 2 + 7, height / 2 + 7],
-                ].map(([x, y], i) => (
-                  <rect
-                    key={i}
-                    x={x - 4}
-                    y={y - 4}
-                    width="8"
-                    height="8"
-                    fill="white"
-                    stroke="#7960D8"
-                    strokeWidth="1"
-                    vectorEffect="non-scaling-stroke"
-                  />
-                ))}
               </g>
             )}
           </g>
@@ -249,6 +239,7 @@ export function Canvas({
   selected,
   onSelect,
   onMove,
+  interactionDisabled = false,
 }: {
   scene: SceneDocument;
   catalog: Catalog;
@@ -256,6 +247,7 @@ export function Canvas({
   selected?: string;
   onSelect: (id?: string) => void;
   onMove: (id: string, x: number, y: number) => void;
+  interactionDisabled?: boolean;
 }) {
   const area = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState({ width: 800, height: 600 }),
@@ -272,12 +264,8 @@ export function Canvas({
     return () => observer.disconnect();
   }, []);
   const fitted = Math.max(
-    120,
-    Math.min(
-      size.width - 88,
-      ((size.height - 110) * scene.width) / scene.height,
-      1100,
-    ),
+    1,
+    Math.min(size.width, (size.height * scene.width) / scene.height, 1100),
   );
   return (
     <section className="canvas-section" aria-label="Рабочая область">
@@ -285,9 +273,6 @@ export function Canvas({
         <span>
           <span className="canvas-dot" />
           {scene.width} × {scene.height}
-        </span>
-        <span>
-          {scene.detail === "L" ? "Больше деталей" : "Меньше деталей"} · SVG
         </span>
       </div>
       <div className="canvas-area" ref={area}>
@@ -304,6 +289,7 @@ export function Canvas({
               onSelect={onSelect}
               onMove={onMove}
               interactive
+              interactionDisabled={interactionDisabled}
             />
             {!scene.instances.length && (
               <div className="canvas-empty">
@@ -319,7 +305,6 @@ export function Canvas({
               </div>
             )}
           </div>
-          <span className="artboard-caption">{scene.name}</span>
         </div>
       </div>
       <div className="canvas-bottom">
@@ -336,7 +321,7 @@ export function Canvas({
             −
           </button>
           <button onClick={() => setZoom(1)} title="Вписать в рабочую область">
-            {Math.round(zoom * 100)}%
+            {zoom === 1 ? "Вписать" : `${Math.round(zoom * 100)}%`}
           </button>
           <button
             aria-label="Увеличить масштаб"

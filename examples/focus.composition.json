@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "7ec0310d-8c92-4d2e-95f1-0788ad7dac72",
+  "id": "4a5ce1bb-4686-4a7a-a2c8-50ff0444e6bf",
   "name": "Фокус на главном",
   "catalogVersion": "ochen-originals-2026-11-10-v1",
   "width": 1200,
@@ -20,10 +20,10 @@
       "paper": "#FFFFFF"
     }
   },
-  "scale": 0.5763061626489072,
+  "scale": 0.35430775407367887,
   "instances": [
     {
-      "id": "eb2894c5-c865-4e8f-92bf-4a30d372b749",
+      "id": "ccf4a3f4-d3b1-44cb-b863-8257b70ae431",
       "familyId": "phone",
       "role": "background",
       "x": 0.14,
@@ -31,31 +31,31 @@
       "rotation": -13
     },
     {
-      "id": "01600867-4a44-474e-800e-76ec36d3e62b",
-      "familyId": "headphones",
-      "role": "main",
-      "x": 0.3050699749775231,
-      "y": 0.541345579174813,
-      "rotation": -9
-    },
-    {
-      "id": "5dc45065-3f23-4384-8342-f66f33a2f0f6",
+      "id": "67e8e15e-0f02-4087-ba2a-23b26b4e21e4",
       "familyId": "book",
       "role": "main",
-      "x": 0.7072570200846531,
-      "y": 0.6826025246735663,
+      "x": 0.5879890395328402,
+      "y": 0.6554711198341102,
       "rotation": 9
     },
     {
-      "id": "5d82856d-a006-42f1-af07-f5acbac4ea28",
+      "id": "0aec28bd-4b6a-4cab-bbd7-8528da2a4c08",
+      "familyId": "headphones",
+      "role": "main",
+      "x": 0.22518459109589456,
+      "y": 0.2809366128314286,
+      "rotation": -13
+    },
+    {
+      "id": "48cb6ac5-9c09-4291-8402-a7dbd4bb7a55",
       "familyId": "phone",
       "role": "main",
-      "x": 0.7044074362469837,
-      "y": 0.3090651281108149,
-      "rotation": -11
+      "x": 0.3149159526824951,
+      "y": 0.7055815490987152,
+      "rotation": -6
     }
   ],
-  "seed": 314189,
+  "seed": 628376,
   "layout": "diagonal",
   "revision": 5
 }

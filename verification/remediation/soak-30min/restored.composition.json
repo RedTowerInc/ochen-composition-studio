@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "c7b33550-9758-47e7-912d-8169027d443e",
+  "name": "Новая композиция",
+  "catalogVersion": "ochen-originals-2026-11-10-v1",
+  "width": 1200,
+  "height": 675,
+  "detail": "L",
+  "palette": {
+    "id": "lilac",
+    "name": "Лиловая",
+    "colors": {
+      "background": "#D7CDF5",
+      "backgroundShade": "#AA9BF0",
+      "backgroundInk": "#7864D7",
+      "accent": "#F9ECB0",
+      "highlight": "#F9A3AA",
+      "soft": "#FFE3E1",
+      "ink": "#181817",
+      "paper": "#FFFFFF"
+    }
+  },
+  "scale": 0.35430775407367887,
+  "instances": [
+    {
+      "id": "6edb0d7a-3109-4aeb-a6e5-e6e8cf91c61b",
+      "familyId": "phone",
+      "role": "background",
+      "x": 0.14,
+      "y": 0.25,
+      "rotation": -13
+    },
+    {
+      "id": "2dc8ff3f-a3fc-4b09-9faf-06a465a0098f",
+      "familyId": "book",
+      "role": "main",
+      "x": 0.5704709717445076,
+      "y": 0.6336857453454287,
+      "rotation": 9
+    },
+    {
+      "id": "0026d5c0-0ed6-4225-8a5f-3feeed91fb15",
+      "familyId": "headphones",
+      "role": "main",
+      "x": 0.24471381843090056,
+      "y": 0.28806641369126734,
+      "rotation": -12
+    },
+    {
+      "id": "d8a24af1-0642-43d3-a947-dd089981000e",
+      "familyId": "phone",
+      "role": "main",
+      "x": 0.28669217573478817,
+      "y": 0.7232576672080904,
+      "rotation": -9
+    }
+  ],
+  "seed": 2,
+  "layout": "diagonal",
+  "revision": 1141
+}

@@ -15,7 +15,11 @@ import {
   Upload,
   X,
 } from "lucide-react";
-import { LAYOUTS, resizeScene } from "../core/composition";
+import {
+  LAYOUTS,
+  resizeScene,
+  type CompositionCandidate,
+} from "../core/composition";
 import { assetKey, type AssetStore } from "../core/svg";
 import {
   familyById,
@@ -223,7 +227,6 @@ export function Sidebar({
               <br />
               <strong>Студии Очень</strong>
             </p>
-            <span>↗</span>
           </div>
         </div>
       )}
@@ -384,6 +387,7 @@ export function Inspector({
     [height, setHeight] = useState(String(scene.height));
   const [rotation, setRotation] = useState(selected?.rotation ?? 0),
     [sizeError, setSizeError] = useState("");
+  const rotationCancelled = useRef(false);
   useEffect(() => {
     setWidth(String(scene.width));
     setHeight(String(scene.height));
@@ -560,7 +564,7 @@ export function Inspector({
           onClick={() => fileRef.current?.click()}
         >
           <Upload size={14} />
-          Загрузить палитру
+          Загрузить JSON-палитру
         </button>
         <button
           className="text-button palette-sample"
@@ -607,14 +611,31 @@ export function Inspector({
             min="-180"
             max="180"
             value={rotation}
-            onChange={(event) => setRotation(Number(event.target.value))}
-            onPointerUp={() => {
-              if (rotation !== selected.rotation) onObjectChange({ rotation });
+            onChange={(event) => {
+              rotationCancelled.current = false;
+              setRotation(Number(event.target.value));
             }}
-            onKeyUp={() => {
-              if (rotation !== selected.rotation) onObjectChange({ rotation });
+            onPointerDown={() => { rotationCancelled.current = false; }}
+            onPointerCancel={() => {
+              rotationCancelled.current = true;
+              setRotation(selected.rotation);
+            }}
+            onKeyDown={(event) => {
+              if (event.key === "Escape") {
+                event.preventDefault();
+                rotationCancelled.current = true;
+                setRotation(selected.rotation);
+                event.currentTarget.blur();
+              }
+            }}
+            onPointerUp={() => {
+              if (!rotationCancelled.current && rotation !== selected.rotation) onObjectChange({ rotation });
+            }}
+            onKeyUp={(event) => {
+              if (event.key !== "Escape" && !rotationCancelled.current && rotation !== selected.rotation) onObjectChange({ rotation });
             }}
             onBlur={() => {
+              if (rotationCancelled.current) return;
               if (rotation !== selected.rotation) onObjectChange({ rotation });
             }}
           />
@@ -670,10 +691,6 @@ export function Inspector({
           </p>
         </div>
       )}
-      <div className="inspector-footer">
-        <span className="status-dot" />
-        Вектор остаётся вектором
-      </div>
     </div>
   );
 }
@@ -686,7 +703,7 @@ export function Candidates({
   disabled,
   busy,
 }: {
-  candidates: SceneDocument[];
+  candidates: CompositionCandidate[];
   catalog: Catalog;
   assets: AssetStore;
   onApply: (scene: SceneDocument) => void;
@@ -701,13 +718,21 @@ export function Candidates({
           {busy
             ? "Собираем варианты…"
             : candidates.length
-              ? "Выберите настроение"
+              ? "Выберите вариант"
               : "Появятся после сборки"}
         </span>
       </div>
       <div className="candidate-grid">
-        {LAYOUTS.map((layout, index) => {
-          const scene = candidates[index];
+        {(candidates.length
+          ? candidates.map((scene) => ({
+              scene,
+              layout: LAYOUTS.find((layout) => layout.id === scene.layout)!,
+            }))
+          : LAYOUTS.map((layout) => ({
+              layout,
+              scene: undefined as CompositionCandidate | undefined,
+            }))
+        ).map(({ layout, scene }, index) => {
           return (
             <button
               key={layout.id}
@@ -726,8 +751,12 @@ export function Candidates({
                 )}
               </div>
               <div className="candidate-label">
-                <span>{layout.name}</span>
-                <small>{layout.description}</small>
+                <span>{scene?.fallback ? "Вписано в холст" : layout.name}</span>
+                <small>
+                  {scene?.fallback
+                    ? "Все выбранные предметы видны"
+                    : layout.description}
+                </small>
               </div>
               <span className="candidate-apply">↗</span>
             </button>

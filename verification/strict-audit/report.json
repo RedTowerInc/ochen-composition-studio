@@ -1,0 +1,370 @@
+{
+  "date": "2026-11-10T16:04:56.674Z",
+  "checks": [
+    {
+      "id": "new-project",
+      "unsavedObjects": 5,
+      "initial": [
+        {
+          "id": "cb30747a-35e5-4bb3-b4a9-f3525ca6e032",
+          "name": "Новая композиция",
+          "revision": 1,
+          "objects": 4
+        }
+      ],
+      "after": [
+        {
+          "id": "cb30747a-35e5-4bb3-b4a9-f3525ca6e032",
+          "name": "Новая композиция",
+          "revision": 1,
+          "objects": 4
+        },
+        {
+          "id": "cd067de3-0a4b-4699-8c37-8d1939859a19",
+          "name": "Новая композиция",
+          "revision": 0,
+          "objects": 0
+        }
+      ],
+      "visibleName": "Новая композиция",
+      "menu": [
+        "Новая композиция",
+        "Открыть файл проекта",
+        "Скачать проект JSON",
+        "Сохранить отдельно"
+      ]
+    },
+    {
+      "id": "geometry-and-meaning",
+      "pairs": {
+        "total": 270,
+        "poor": 30,
+        "worst": 0.08182807389049465,
+        "samples": [
+          {
+            "first": "puzzle",
+            "second": "book",
+            "w": 1200,
+            "h": 675,
+            "best": 0.4556869960855362
+          },
+          {
+            "first": "puzzle",
+            "second": "lamp",
+            "w": 1200,
+            "h": 675,
+            "best": 0.4619751322548592
+          },
+          {
+            "first": "pen",
+            "second": "book",
+            "w": 1200,
+            "h": 675,
+            "best": 0.4031533706786782
+          },
+          {
+            "first": "pen",
+            "second": "lamp",
+            "w": 1200,
+            "h": 675,
+            "best": 0.4205162498944602
+          },
+          {
+            "first": "coin",
+            "second": "book",
+            "w": 1200,
+            "h": 675,
+            "best": 0.12895036574925592
+          },
+          {
+            "first": "coin",
+            "second": "phone",
+            "w": 1200,
+            "h": 675,
+            "best": 0.4839828215186187
+          },
+          {
+            "first": "coin",
+            "second": "headphones",
+            "w": 1200,
+            "h": 675,
+            "best": 0.29968744530161945
+          },
+          {
+            "first": "coin",
+            "second": "lamp",
+            "w": 1200,
+            "h": 675,
+            "best": 0.17330323155591365
+          },
+          {
+            "first": "coin",
+            "second": "folder",
+            "w": 1200,
+            "h": 675,
+            "best": 0.21521273860188742
+          },
+          {
+            "first": "coin",
+            "second": "flowers",
+            "w": 1200,
+            "h": 675,
+            "best": 0.3473768391834371
+          },
+          {
+            "first": "pen",
+            "second": "book",
+            "w": 1000,
+            "h": 1000,
+            "best": 0.48441024457656273
+          },
+          {
+            "first": "coin",
+            "second": "book",
+            "w": 1000,
+            "h": 1000,
+            "best": 0.1549407316269721
+          }
+        ]
+      },
+      "coinFirst": [
+        {
+          "layout": "diagonal",
+          "scale": 1.6586067351873324,
+          "objects": [
+            {
+              "family": "lamp",
+              "role": "background",
+              "visibleBox": 0.16922930879887024,
+              "width": 1953.9466872107744,
+              "height": 2181.4619124310666
+            },
+            {
+              "family": "coin",
+              "role": "main",
+              "visibleBox": 0.9999999999999999,
+              "width": 513.737839124513,
+              "height": 371.9632859915956
+            },
+            {
+              "family": "book",
+              "role": "main",
+              "visibleBox": 0.14548726565205683,
+              "width": 2625.8483761956713,
+              "height": 1978.9151290587224
+            },
+            {
+              "family": "lamp",
+              "role": "main",
+              "visibleBox": 0.2178978327116988,
+              "width": 1729.777306822326,
+              "height": 2005.7587230957506
+            }
+          ]
+        },
+        {
+          "layout": "surround",
+          "scale": 1.6586067351873324,
+          "objects": [
+            {
+              "family": "lamp",
+              "role": "background",
+              "visibleBox": 0.16922930879887024,
+              "width": 1953.9466872107744,
+              "height": 2181.4619124310666
+            },
+            {
+              "family": "coin",
+              "role": "main",
+              "visibleBox": 1.0000000000000002,
+              "width": 530.2925209560821,
+              "height": 401.52155317264493
+            },
+            {
+              "family": "book",
+              "role": "main",
+              "visibleBox": 0.14548726565205683,
+              "width": 2625.8483761956713,
+              "height": 1978.9151290587224
+            },
+            {
+              "family": "lamp",
+              "role": "main",
+              "visibleBox": 0.21485454464913487,
+              "width": 1729.777306822326,
+              "height": 2005.7587230957506
+            }
+          ]
+        },
+        {
+          "layout": "headline",
+          "scale": 1.6586067351873324,
+          "objects": [
+            {
+              "family": "lamp",
+              "role": "background",
+              "visibleBox": 0.16922930879887024,
+              "width": 1953.9466872107744,
+              "height": 2181.4619124310666
+            },
+            {
+              "family": "coin",
+              "role": "main",
+              "visibleBox": 1,
+              "width": 509.20467210526175,
+              "height": 364.2847432249804
+            },
+            {
+              "family": "book",
+              "role": "main",
+              "visibleBox": 0.14548726565205683,
+              "width": 2625.8483761956713,
+              "height": 1978.9151290587224
+            },
+            {
+              "family": "lamp",
+              "role": "main",
+              "visibleBox": 0.19381265723577723,
+              "width": 1759.7360874115661,
+              "height": 2029.9353417132731
+            }
+          ]
+        }
+      ],
+      "semantics": [
+        {
+          "prompt": "Идеальная команда",
+          "result": {
+            "ids": [
+              "puzzle",
+              "book"
+            ],
+            "unknown": [],
+            "explanation": "Подбор по теме «идеи и поиск решений». Каждый объект можно заменить или удалить."
+          }
+        },
+        {
+          "prompt": "Предел возможностей",
+          "error": "Пока не нашёл подходящий смысл в этой библиотеке. Уточните тему или переключитесь на выбор объектов."
+        },
+        {
+          "prompt": "Безработица",
+          "result": {
+            "ids": [
+              "book",
+              "phone",
+              "puzzle"
+            ],
+            "unknown": [],
+            "explanation": "Подбор по теме «работа и повседневные задачи». Каждый объект можно заменить или удалить."
+          }
+        },
+        {
+          "prompt": "Нет денег",
+          "error": "Пока не нашёл подходящий смысл в этой библиотеке. Уточните тему или переключитесь на выбор объектов."
+        },
+        {
+          "prompt": "Светлое будущее",
+          "result": {
+            "ids": [
+              "lamp"
+            ],
+            "unknown": [],
+            "explanation": "Подобраны объекты, упомянутые в заголовке."
+          }
+        },
+        {
+          "prompt": "Время для новых идей",
+          "result": {
+            "ids": [
+              "puzzle",
+              "book"
+            ],
+            "unknown": [],
+            "explanation": "Подбор по теме «идеи и поиск решений». Каждый объект можно заменить или удалить."
+          }
+        },
+        {
+          "prompt": "книга, телефон, пазлы, наушники, лампа, кошелек, ручка, папка, монета, цветы",
+          "result": {
+            "ids": [
+              "book",
+              "phone",
+              "puzzle",
+              "headphones",
+              "lamp",
+              "wallet"
+            ],
+            "unknown": [],
+            "explanation": "Подобраны объекты, упомянутые в заголовке."
+          }
+        }
+      ],
+      "invalidXmlTitle": {
+        "acceptedProject": true,
+        "xmlParserError": "This page contains the following errors:error on line 2 at column 146: Invalid character U+0000Below is a rendering of the page up to the first error."
+      }
+    },
+    {
+      "id": "stale-request-candidates",
+      "request": "Цветы",
+      "backgroundChecked": false,
+      "candidateEnabled": true,
+      "beforeFamilies": [
+        "Лампа",
+        "Монета",
+        "Книга",
+        "Лампа"
+      ],
+      "afterFamilies": [
+        "Лампа",
+        "Монета",
+        "Книга",
+        "Лампа"
+      ]
+    },
+    {
+      "id": "clear-name",
+      "value": "Новая композиция"
+    },
+    {
+      "id": "broken-local-svg-reference",
+      "pageErrors": [
+        "В исходном SVG отсутствует ресурс: missing"
+      ],
+      "body": "",
+      "rootChildren": 0
+    },
+    {
+      "id": "mobile",
+      "horizontalOverflow": false,
+      "objects": 4
+    },
+    {
+      "id": "firefox-close-test-clock",
+      "trials": [
+        {
+          "paused": false,
+          "beforeName": "Новая композиция",
+          "afterFillMs": 89,
+          "dialogMs": 684,
+          "restoredName": "Новая композиция",
+          "recordNames": [
+            "Новая композиция"
+          ]
+        },
+        {
+          "paused": true,
+          "beforeName": "Новая композиция",
+          "afterFillMs": 78,
+          "dialogMs": 478,
+          "restoredName": "Новая композиция",
+          "recordNames": [
+            "Новая композиция"
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
