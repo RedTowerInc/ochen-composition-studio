@@ -1,0 +1,11 @@
+{
+  "started": "2026-11-11T06:55:11.330Z",
+  "cycles": 3,
+  "transitions": [],
+  "samples": [],
+  "errors": [],
+  "passed": false,
+  "elapsedSeconds": 16.8302471,
+  "failure": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Сохранить отдельную копию', exact: true })\u001b[22m\n\n    at menu (C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\scripts\\soak-mixed.mjs:23:102)\n    at async transition (C:\\Users\\Andy\\Documents\\ChatGPT\\Вакансии\\app\\scripts\\soak-mixed.mjs:50:3)\n    at async file:///C:/Users/Andy/Documents/ChatGPT/%D0%92%D0%B0%D0%BA%D0%B0%D0%BD%D1%81%D0%B8%D0%B8/app/scripts/soak-mixed.mjs:86:41",
+  "finished": "2026-11-11T06:56:17.227Z"
+}

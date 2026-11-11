@@ -1,0 +1,45 @@
+{
+  "export": [
+    {
+      "objects": 1,
+      "exports": 25,
+      "p95Ms": 1.600000023841858,
+      "maxMs": 2.899999976158142,
+      "svgBytes": 29618
+    },
+    {
+      "objects": 10,
+      "exports": 25,
+      "p95Ms": 18.200000047683716,
+      "maxMs": 19.59999990463257,
+      "svgBytes": 389273
+    },
+    {
+      "objects": 25,
+      "exports": 25,
+      "p95Ms": 57.60000002384186,
+      "maxMs": 59.299999952316284,
+      "svgBytes": 976275
+    },
+    {
+      "objects": 50,
+      "exports": 25,
+      "p95Ms": 89.5,
+      "maxMs": 94.79999995231628,
+      "svgBytes": 1948521
+    }
+  ],
+  "composition": {
+    "samples": 100,
+    "p95Ms": 1.9000000953674316,
+    "maxMs": 3.3000000715255737
+  },
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "environment": {
+    "node": "v24.16.0",
+    "platform": "win32",
+    "cpu": "Intel(R) Core(TM) i5-10500H CPU @ 2.50GHz",
+    "logicalCPUs": 12
+  },
+  "date": "2026-11-11T07:24:40.868Z"
+}

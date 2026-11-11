@@ -1,6 +1,6 @@
 {
   "algorithm": "sha256(file names + sha256 content)",
-  "fingerprint": "66c42d1aad6fbf85ef2b0ca596b34f3f7ba850b1b12e2c8f72b675319efeae7e",
+  "fingerprint": "6a29267d50ac6d45040529cd6244b318b79af6a33df49d5a6205e9b0a3593e6c",
   "entries": [
     {
       "file": ".openai/hosting.json",
@@ -12,11 +12,11 @@
     },
     {
       "file": "package-lock.json",
-      "sha256": "7eb816f2a349cb8d845b479f64d4d6f792e677d09198dd56d2072a1df3d00143"
+      "sha256": "5f2eeb5dcb755f87c0b1ed241c4254364cf7f30a5f1d0a3b115ddc64dc42f7a7"
     },
     {
       "file": "package.json",
-      "sha256": "b4053c3828bfabc9fb480a35ee46a142ad214ac2c5132ee1a03ddaed619a6178"
+      "sha256": "59185df6e997cc55555b86acadf3d4f9aaf3cf5158a6a1d865afbb5eaad649f7"
     },
     {
       "file": "public/catalog/assets/book-L-background.svg",
@@ -212,7 +212,7 @@
     },
     {
       "file": "src/components/Panels.tsx",
-      "sha256": "1a78270ab204fb957e8df3a175ae1dfae770c5a97f334c2cfa5580dc6f58e52e"
+      "sha256": "078859023f3df268ecb3632e68b60c876f3c18568257bf48fb15a3c6a665ef1c"
     },
     {
       "file": "src/components/RenderBoundary.tsx",
@@ -224,7 +224,7 @@
     },
     {
       "file": "src/core/catalog.ts",
-      "sha256": "660ac5c9107db30a219e2d7eafbfa16f815247a7d66b5d9f4ea79d751e92dc1e"
+      "sha256": "1dfad30926f10741da0338c8129d5e2c89e7ae45ad12492b4a014faaaa37e522"
     },
     {
       "file": "src/core/commands.ts",
@@ -252,7 +252,7 @@
     },
     {
       "file": "src/core/semantics.ts",
-      "sha256": "8815edcfdcca31dcacf133f017eb1f8fba3dfa19a5d18c7a832a3b93bf9871e6"
+      "sha256": "98d13cf65aff3b923944878961eb97fbbc9b133ad2d1254110daed4319da382d"
     },
     {
       "file": "src/core/svg.ts",

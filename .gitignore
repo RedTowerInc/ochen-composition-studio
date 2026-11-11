@@ -11,3 +11,10 @@ verification/remediation/**/traces/
 verification/remediation/legacy-before-harness/html/
 verification/remediation/baseline-2026-11-10/
 verification/remediation/baseline-verified-2026-11-10/
+verification/re-audit-*/probe-traces/
+verification/re-audit-*/legacy-traces/
+verification/re-audit-*/verification/
+verification/stabilization-*/legacy-traces/
+verification/stabilization-*/legacy-final-traces/
+verification/e2e/**/browser/
+verification/e2e/latest/

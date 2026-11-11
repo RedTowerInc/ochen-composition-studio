@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "34eed78c-3922-45e8-8c19-488a630729b4",
+  "id": "297e8a41-bf32-4da8-9e67-5af515a084eb",
   "name": "Время для себя",
   "catalogVersion": "ochen-originals-2026-11-10-v1",
   "width": 800,
@@ -23,7 +23,7 @@
   "scale": 0.44202136960458965,
   "instances": [
     {
-      "id": "d11ba3ab-8892-4c1a-9587-71e815770589",
+      "id": "90be4ec8-d4b8-4241-bff7-43850b8256f4",
       "familyId": "headphones",
       "role": "background",
       "x": 0.17,
@@ -31,7 +31,7 @@
       "rotation": -13
     },
     {
-      "id": "ae48a8b7-c76d-439b-9536-75bd8e750135",
+      "id": "a34d6026-1947-4e34-9b4b-c8488d2a89c8",
       "familyId": "book",
       "role": "main",
       "x": 0.4828972806874663,
@@ -39,7 +39,7 @@
       "rotation": -14
     },
     {
-      "id": "61584a04-096f-4b75-bad6-04bc3673486e",
+      "id": "8273f17c-dbb2-459e-831c-59c63b22e287",
       "familyId": "headphones",
       "role": "main",
       "x": 0.3738611059170216,
@@ -47,7 +47,7 @@
       "rotation": -7
     },
     {
-      "id": "70348da4-8f62-41b4-a96a-a2946f4e9cbe",
+      "id": "51e37283-4c28-4138-a7e2-650af8a8119d",
       "familyId": "flowers",
       "role": "main",
       "x": 0.7809347831649488,

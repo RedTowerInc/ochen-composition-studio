@@ -1,7 +1,7 @@
 {
   "dist/assets/index-CKh2zNZj.css": "6ce0ad098023549d3f71c3ffb2d92fc0762265d1e7ac35b7b7464e51078ffed7",
-  "dist/assets/index-DzfXmodT.js": "811f21cffb03e627855741dd3e793321710bb636a3d1c480918e15695a8aec2f",
-  "dist/assets/index-DzfXmodT.js.map": "de54a902eda056dc92a7dd167fc005222e51764c9077090779aba829d7076a98",
+  "dist/assets/index-P2mXy2R1.js": "56295fc3f28485dc8bf4a12f869a27f751f51c63566167510d5741a66404f5c7",
+  "dist/assets/index-P2mXy2R1.js.map": "3c1f21cb4b06df0213f293aa42117acba6e18f8fc7c23fd4355d40a457b6be05",
   "dist/catalog/assets/book-L-background.svg": "1e3e928690d1946713a0deffbecf4cc18baf57d079ec970baa22b4e3603bf762",
   "dist/catalog/assets/book-L-main.svg": "b4d213529684cb65ad13a73d50062b6b344f22da92b35bc41ba9d906a2a63dd5",
   "dist/catalog/assets/book-S-background.svg": "09d8b5773d699f303ff9dc6b45106a727698921b84b0e4898b5fb78f8499c692",
@@ -43,11 +43,11 @@
   "dist/catalog/assets/wallet-S-background.svg": "22ee9f2b2d7a1a139402dbfefaef0b69557194da9ac40e7178e3e9cb337a8d6f",
   "dist/catalog/assets/wallet-S-main.svg": "febfe44cb2adaf8ef59df715ca35848fc6d2152ed953273db44dc5b2588f034f",
   "dist/catalog/manifest.json": "c3ed5d6a8fc78fc85d15422a6d90377e56b7fa7a750deb8bc2bf86d5a07e3bcc",
-  "dist/fonts/OFL.txt": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
   "dist/fonts/manrope-400.ttf": "ed335894f8d954263675f7e457bf657374d8b7be629be4dc43aef97c309ad3ae",
   "dist/fonts/manrope-500.ttf": "437dc9f921739a6893128fa4dfc299424951148475815a9a213a46457878c42b",
   "dist/fonts/manrope-600.ttf": "68ed4be49ec7d32f07b42f9232dc01ca1df7a77be1d9b0731aac74db58235f34",
   "dist/fonts/manrope-700.ttf": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06",
   "dist/fonts/manrope-800.ttf": "a8291b05b2732801abdbbb6d06866c57431c3b990638462423e692151b5e0895",
-  "dist/index.html": "faf68bad59467a061246ee6c49336ee5b39840f585a450be99f8d7cdd7eda801"
+  "dist/fonts/OFL.txt": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+  "dist/index.html": "aa7af4265bf4c784e2509617c32d9de6514368e1ae4c7bfe96be1d418b24daa7"
 }

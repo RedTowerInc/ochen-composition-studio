@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "6cd5dd04-0611-4ff9-8845-02996f61316f",
+  "name": "Проверка поставки",
+  "catalogVersion": "ochen-originals-2026-11-10-v1",
+  "width": 1200,
+  "height": 630,
+  "detail": "S",
+  "palette": {
+    "id": "mint",
+    "name": "Мятная",
+    "colors": {
+      "background": "#BEEBEB",
+      "backgroundShade": "#80DADA",
+      "backgroundInk": "#5ABEBE",
+      "accent": "#FFD4F2",
+      "highlight": "#6D7BFC",
+      "soft": "#B6C6FE",
+      "ink": "#181817",
+      "paper": "#FFFFFF"
+    }
+  },
+  "scale": 0.33068723713543363,
+  "instances": [
+    {
+      "id": "e1cc238f-9df0-4468-8921-2b213b112081",
+      "familyId": "phone",
+      "role": "background",
+      "x": 0.14,
+      "y": 0.25,
+      "rotation": -13
+    },
+    {
+      "id": "0ab4899f-025d-4d3a-ad0c-254d1927266f",
+      "familyId": "book",
+      "role": "main",
+      "x": 0.5704709717445076,
+      "y": 0.6336857453454287,
+      "rotation": 9
+    },
+    {
+      "id": "5ec2ef6a-146d-4864-8df9-df5a4c832f43",
+      "familyId": "headphones",
+      "role": "main",
+      "x": 0.24471381843090056,
+      "y": 0.28806641369126734,
+      "rotation": -12
+    },
+    {
+      "id": "f3311039-5deb-413d-8522-a3fef54f2184",
+      "familyId": "phone",
+      "role": "main",
+      "x": 0.28669217573478817,
+      "y": 0.7232576672080904,
+      "rotation": -9
+    }
+  ],
+  "seed": 2,
+  "layout": "diagonal",
+  "revision": 0
+}

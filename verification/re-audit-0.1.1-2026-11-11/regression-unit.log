@@ -1,0 +1,18 @@
+
+ RUN  v5.1.0 C:/Users/Andy/Documents/ChatGPT/Вакансии/app
+
+ ✓ tests/regression/unit/semantics.test.ts (5 tests) 62ms
+ ✓ tests/regression/unit/audit.test.ts (13 tests) 87ms
+ ✓ tests/regression/unit/contracts.test.ts (21 tests) 1803ms
+   ✓ bounded composition contracts (5)
+     ✓ C13 extreme 128×128 stays finite, serializable and vector 510ms
+     ✓ C13 extreme 4096×4096 stays finite, serializable and vector 420ms
+     ✓ C13 extreme 128×4096 stays finite, serializable and vector 409ms
+     ✓ C13 extreme 4096×128 stays finite, serializable and vector 391ms
+
+ Test Files  3 passed (3)
+      Tests  39 passed (39)
+   Start at  02:26:35
+   Duration  3.71s (environment 54%, tests 33%, import 12%, transform 1%)
+
+JSON report written to C:/Users/Andy/Documents/ChatGPT/Вакансии/app/verification/remediation/re-audit-2026-11-11/unit.json

@@ -1,0 +1,53 @@
+{
+  "sourcePath": "C:/Users/Andy/Downloads/Новая композиция.svg",
+  "sha256": "0995a66d184812000a292bccffa5d4f2a712a3fba3d760c87b05985d4d0f5a40",
+  "started": "2026-11-11T07:10:10.147Z",
+  "analysis": {
+    "width": "1200",
+    "height": "630",
+    "paths": 532,
+    "images": 0,
+    "uniqueIds": true,
+    "instances": [
+      {
+        "family": "phone",
+        "role": "background",
+        "detail": "L",
+        "scale": 0.5996016545902896
+      },
+      {
+        "family": "phone",
+        "role": "main",
+        "detail": "L",
+        "scale": 0.5996016545902896
+      },
+      {
+        "family": "wallet",
+        "role": "main",
+        "detail": "L",
+        "scale": 0.5996016545902896
+      },
+      {
+        "family": "coin",
+        "role": "main",
+        "detail": "L",
+        "scale": 0.5996016545902896
+      }
+    ]
+  },
+  "pixels": {
+    "width": 512,
+    "height": 269,
+    "previewVsFresh": 0,
+    "userVsFresh": 0
+  },
+  "editor": {
+    "editor": "SVG-edit 7.4.2",
+    "paths": 532,
+    "images": 0,
+    "nodeEdited": true,
+    "reopened": true
+  },
+  "passed": true,
+  "finished": "2026-11-11T07:10:20.533Z"
+}

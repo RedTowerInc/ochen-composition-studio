@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 const root='verification/remediation/';
 const read=async file=>JSON.parse(await readFile(file,'utf8'));
+assert.equal((await read('package.json')).version,'0.1.1','This collector belongs to the historical 0.1.1 evidence; use record-stabilization.mjs for 0.1.2');
 const fingerprint=await read('verification/source-fingerprint.json');
 for(const item of fingerprint.entries)
  assert.equal(createHash('sha256').update(await readFile(item.file)).digest('hex'),item.sha256,`Changed product: ${item.file}`);

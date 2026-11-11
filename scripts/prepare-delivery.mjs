@@ -1,6 +1,7 @@
 import { chromium } from "@playwright/test";
 import { mkdir, copyFile, writeFile } from "node:fs/promises";
 const browser = await chromium.launch({ channel: "chrome", headless: true });
+const origin = process.env.OCHEN_BASE_URL ?? "http://127.0.0.1:5173";
 await mkdir("examples", { recursive: true });
 await mkdir("verification/visual-matrix", { recursive: true });
 const context = await browser.newContext({
@@ -31,7 +32,7 @@ const save = async (name, type) => {
   if (type !== "svg") await page.locator(".project-menu summary").click();
 };
 try {
-  await page.goto("http://127.0.0.1:5173/");
+  await page.goto(origin);
   await left
     .getByRole("button", { name: "Собрать композицию", exact: true })
     .waitFor();
@@ -102,7 +103,7 @@ try {
       viewport: { width: 1440, height: 1000 },
     }),
     matrix = await matrixContext.newPage();
-  await matrix.goto("http://127.0.0.1:5173/");
+  await matrix.goto(origin);
   await matrix
     .locator(".left-sidebar")
     .getByRole("button", { name: "Собрать композицию", exact: true })

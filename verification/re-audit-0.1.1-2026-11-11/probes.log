@@ -1,0 +1,71 @@
+
+ RUN  v5.1.0 C:/Users/Andy/Documents/ChatGPT/Вакансии/app
+
+ ❯ verification/re-audit-0.1.1-2026-11-11/probes.test.ts (6 tests | 4 failed) 1027ms
+   ✓ control: a genuinely unsupported phrase is rejected 40ms
+   ✓ control: the unchanged original catalogue is accepted 515ms
+   × M04: an unsupported word Президент must ask for clarification 20ms
+   × M04: an unsupported word Эпидемия must ask for clarification 1ms
+   × M04: explicit exclusion of study must not confidently choose study 1ms
+   × S10: positive but inconsistent variant viewBox must be rejected 448ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  verification/re-audit-0.1.1-2026-11-11/probes.test.ts > M04: an unsupported word Президент must ask for clarification
+ FAIL  verification/re-audit-0.1.1-2026-11-11/probes.test.ts > M04: an unsupported word Эпидемия must ask for clarification
+AssertionError: expected [Function] to throw an error
+
+- Expected:
+null
+
++ Received:
+undefined
+
+ ❯ verification/re-audit-0.1.1-2026-11-11/probes.test.ts:22:55
+     20|
+     21| it.each(['Президент', 'Эпидемия'])('M04: an unsupported word %s must a…
+     22|   expect(()=>selectObjects(prompt,'meaning',catalog)).toThrow(/Уточнит…
+       |                                                       ^
+     23| });
+     24| it('M04: explicit exclusion of study must not confidently choose study…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  verification/re-audit-0.1.1-2026-11-11/probes.test.ts > M04: explicit exclusion of study must not confidently choose study
+AssertionError: expected [ 'book', 'pen', 'lamp' ] to include 'flowers'
+ ❯ verification/re-audit-0.1.1-2026-11-11/probes.test.ts:28:22
+     26|   try { result=selectObjects('Не учиться, а отдыхать','meaning',catalo…
+     27|   catch(error) { expect(String(error)).toMatch(/Уточните|уточн|неодноз…
+     28|   expect(result.ids).toContain('flowers');
+       |                      ^
+     29| });
+     30| it('S10: positive but inconsistent variant viewBox must be rejected', …
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  verification/re-audit-0.1.1-2026-11-11/probes.test.ts > S10: positive but inconsistent variant viewBox must be rejected
+AssertionError: inconsistent viewBox must be rejected: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ verification/re-audit-0.1.1-2026-11-11/probes.test.ts:37:60
+     35|     :new Response(readFileSync('public'+String(url),'utf8')));
+     36|   const rejected=await loadCatalog(new AbortController().signal,()=>{}…
+     37|   expect(rejected,'inconsistent viewBox must be rejected').toBe(true);
+       |                                                            ^
+     38| });
+     39|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed | 2 passed (6)
+   Start at  02:37:37
+   Duration  2.30s (tests 49%, environment 48%, transform 2%, import 1%)
+
+JSON report written to C:/Users/Andy/Documents/ChatGPT/Вакансии/app/verification/re-audit-0.1.1-2026-11-11/probes.json

@@ -1,0 +1,9 @@
+{
+  "randomSeed": 20261111,
+  "sets": 1400,
+  "candidates": 4199,
+  "fallbacks": 0,
+  "minInside": 0.9999999999999862,
+  "failures": [],
+  "scope": "independent main bounding boxes, validation and exact main multiset; no alpha analysis of this random corpus"
+}

@@ -21,69 +21,68 @@ const themes: {
 }[] = [
   {
     words: [
-      "финанс",
-      "деньг",
+      "финанс*",
+      "деньг*",
       "денег",
-      "денеж",
-      "бюджет",
-      "накоп",
-      "сбережен",
-      "покуп",
-      "инвест",
+      "денеж*",
+      "бюджет*",
+      "накоп*",
+      "сбережен*",
+      "покуп*",
+      "инвест*",
     ],
     tags: ["finance", "time", "communication"],
     name: "деньги и планирование",
     preferred: ["wallet", "coin", "phone"],
   },
   {
-    words: ["фокус", "сосредоточ", "главном", "тишин", "концентрац"],
+    words: ["фокус*", "сосредоточ*", "главном", "тишин*", "концентрац*"],
     tags: ["focus", "study", "time"],
     name: "фокус и спокойная работа",
     preferred: ["headphones", "book", "phone"],
   },
   {
     words: [
-      "учеб",
-      "учеба",
-      "обучен",
-      "знани",
+      "учеб*",
+      "обучен*",
+      "знани*",
       "читать",
-      "чтени",
-      "изуч",
-      "учит",
-      "учить",
-      "учиться",
+      "чтени*",
+      "изуч*",
+      "учит*",
+      "учусь",
+      "учимся",
     ],
     tags: ["study", "ideas", "work"],
     name: "обучение и знания",
     preferred: ["book", "pen", "lamp"],
   },
   {
-    words: ["иде", "творч", "вдохнов", "решени", "смысл", "проект"],
+    words: ["идея", "идеи", "идею", "идее", "идеей", "идей*", "идеям*", "идеях", "творч*", "вдохнов*", "решени*", "смысл*", "проект*"],
     tags: ["ideas", "work", "study"],
     name: "идеи и поиск решений",
     preferred: ["lamp", "puzzle", "pen"],
   },
   {
-    words: ["врем", "дедлайн", "успев", "план", "продуктив", "организ"],
+    words: ["врем*", "дедлайн*", "успев*", "план", "планы", "плана", "плану", "планом", "плане", "планов", "планир*", "продуктив*", "организа*", "организо*"],
     tags: ["time", "work", "study"],
     name: "время и организация",
     preferred: ["folder", "phone", "pen"],
   },
   {
-    words: ["связ", "общен", "цифров", "коммуника", "онлайн", "контакт"],
+    words: ["связ*", "общен*", "цифров*", "коммуника*", "онлайн", "контакт*"],
     tags: ["communication", "focus", "ideas"],
     name: "общение и цифровая среда",
     preferred: ["phone", "headphones", "puzzle"],
   },
   {
-    words: ["уют", "дом", "баланс", "отдых", "настроен", "комфорт"],
+    words: ["уют*", "дом", "дома", "дому", "домом", "доме", "домашн*", "баланс*", "отдых*", "настроен*", "комфорт*"],
     tags: ["calm", "focus", "study"],
     name: "уют и баланс",
     preferred: ["flowers", "headphones", "book"],
   },
   {
-    words: ["работ", "задач", "офис", "начать", "дела", "дело"],
+    words: ["работ*", "задач*", "офис*", "начать", "дела", "дело", "делами", "делах"],
     tags: ["work", "time", "ideas"],
     name: "работа и повседневные задачи",
     preferred: ["folder", "pen", "lamp"],
@@ -146,12 +145,31 @@ export function selectObjects(
     throw new StudioError(
       "В заголовке упомянуто больше 6 объектов. Сократите набор или добавьте остальные вручную.",
     );
-  const theme = themes
+  const words = [...new Set(text.match(/[\p{L}\p{N}]+/gu) ?? [])];
+  // Match complete words or explicitly declared word prefixes. A fragment in
+  // the middle of an unrelated word is never evidence for a semantic theme.
+  const ranked = themes
     .map((item) => ({
       ...item,
-      score: item.words.filter((word) => text.includes(word)).length,
+      score: words.reduce((score, word) => score + (
+        item.words.some((term) => term.endsWith("*")
+          ? word.startsWith(term.slice(0, -1)) : word === term)
+          // Time is often framing ("время для …"), rather than the subject.
+          ? word.startsWith("врем") ? 0.5 : 1
+          : 0
+      ), 0),
     }))
-    .sort((a, b) => b.score - a.score)[0];
+    .sort((a, b) => b.score - a.score);
+  const theme = ranked[0];
+  if ((theme.score || direct.length) && words.some((word) =>
+    ["не", "без", "ни", "нельзя", "ничего", "никаких", "никакой"].includes(word)))
+    throw new StudioError(
+      "В запросе есть отрицание. Уточните тему без исключений или выберите нужные объекты.",
+    );
+  if (theme.score && theme.score === ranked[1].score)
+    throw new StudioError(
+      "Нашёл несколько равнозначных тем. Уточните главную тему или выберите нужные объекты.",
+    );
   if (!direct.length && !theme.score)
     throw new StudioError(
       "Пока не нашёл подходящий смысл в этой библиотеке. Уточните тему или переключитесь на выбор объектов.",

@@ -1,0 +1,32 @@
+{
+  "editor": "SVG-edit 7.4.2",
+  "import": "public loadFromString API",
+  "results": [
+    {
+      "name": "focus",
+      "width": "1200",
+      "height": "675",
+      "groups": 9,
+      "paths": 447,
+      "images": 0,
+      "editedNode": true,
+      "reopenedPaths": 447
+    },
+    {
+      "name": "ideas",
+      "width": "1000",
+      "height": "1000",
+      "groups": 9,
+      "paths": 132,
+      "images": 0
+    },
+    {
+      "name": "balance",
+      "width": "800",
+      "height": "1000",
+      "groups": 9,
+      "paths": 352,
+      "images": 0
+    }
+  ]
+}

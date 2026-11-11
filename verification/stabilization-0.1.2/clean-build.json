@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "runtimeFiles": 51,
+  "differences": [],
+  "node": "v24.16.0",
+  "sourceArchive": "deliverables/v0.1.2-candidate/ochen-composition-studio-source.zip",
+  "sourceArchiveSha256": "4e044f8db99045a8e181933b22ce536931aa404bcac48973387473902ab41e21",
+  "commands": [
+    "npm ci",
+    "npm run build"
+  ],
+  "dependenciesReused": false
+}

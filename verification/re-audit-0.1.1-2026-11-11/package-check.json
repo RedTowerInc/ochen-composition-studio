@@ -1,0 +1,30 @@
+{
+  "version": "0.1.1",
+  "commit": "d9891945df4d77b5a79219a272168e90b741f52b",
+  "archives": {
+    "source": {
+      "sha256": "9216068d484cbb06c5e9a21141eba32c1be8d7ea160ea13f030180ba98fbf8ba",
+      "hash_matches": true,
+      "files": 292,
+      "source_files_checked": 70,
+      "differences": [],
+      "missing_delivery_documents": [],
+      "videos": [
+        "examples/demo.webm"
+      ]
+    },
+    "ready": {
+      "sha256": "b4acf7c7b6e23192ffa8b85b85757df2d051b2de821cdddcd2f3fe6514b770b9",
+      "hash_matches": true,
+      "files": 343,
+      "source_files_checked": 70,
+      "differences": [],
+      "missing_delivery_documents": [],
+      "videos": [
+        "examples/demo.webm"
+      ]
+    }
+  },
+  "dist_differences": [],
+  "passed": true
+}
